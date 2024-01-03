@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def rotate_string(string, direction, n)
 	total = len(string)
 	if n le total
