@@ -19,8 +19,10 @@ log_files = glob.glob(f'{log_directory}/query.log') + glob.glob(f'{log_directory
 earliest_date = datetime.now().replace(tzinfo=None) - timedelta(days=days_to_look_back)
 data = defaultdict(list)
 dashboard_widget_count = defaultdict(lambda: defaultdict(Counter))
+m2m_threshold_entries = defaultdict(Counter)
+widget_types = defaultdict(lambda: defaultdict(lambda: defaultdict(str)))
+query_sources = defaultdict(str)
 timestamp_count = Counter()
-m2m_threshold_entries = []
 earliest_timestamp = None
 latest_timestamp = None
 total_slow_queries = 0
@@ -29,9 +31,26 @@ total_duration = 0
 max_values = defaultdict(lambda: defaultdict(lambda: {'translationDuration': 0, 'dataSourceExecuteDuration': 0, 'throttlingTimeWaiting': 0}))
 
 def parse_log_line(line):
-    pattern = r'"(duration|translationDuration|dataSourceExecuteDuration|concurrentQuery|throttlingTimeWaiting|widget|dashboard|cubeName|querySource|Log_DateTime|JAQL Text)":\s*([^,}]+)'
+    # Improved pattern to capture both quoted strings and numerical values
+    pattern = r'"([^"]+)"\s*:\s*(?:"([^"]+)"|(\b\d+\b))'
     matches = re.findall(pattern, line)
-    return {match[0]: match[1].strip('"') for match in matches}
+    result = {}
+    for key, str_val, num_val in matches:
+        # Assigning the correct captured value (string or numerical)
+        result[key] = str_val if str_val else num_val
+    return result
+
+def process_log_line_for_m2m(entry):
+    m2m_flag = entry.get('m2mThresholdFlag\\', '').replace('\\', '').replace("'", "")
+    # Check if the m2mThresholdFlag is set to '1'
+    if m2m_flag == '1':
+        cube_name = entry.get('cubeName', 'No CubeName').strip("\\").strip("'").strip('"')
+        dashboard = entry.get('dashboard', 'No Dashboard').strip("\\").strip("'").strip('"')
+        widget = entry.get('widget', 'No Widget').strip("\\").strip("'").strip('"')
+        widgetType = entry.get('widgetType', 'No Widget').strip("\\").strip("'").strip('"')
+
+        # Increment the count for the dashboard/widget combination
+        m2m_threshold_entries[(dashboard, widget, widgetType)].update([cube_name])
 
 def is_valid_duration(entry):
     try:
@@ -41,16 +60,6 @@ def is_valid_duration(entry):
     except ValueError:
         # If conversion fails, it's not a valid duration
         return False
-
-def process_log_line_for_m2m(entry):
-    try:
-        if entry.get('m2mThresholdFlag') == '1':  # Ensure this is string comparison
-            cube_name = entry.get('cubeName', 'No CubeName')
-            dashboard = entry.get('dashboard', 'No Dashboard')
-            widget = entry.get('widget', 'No Widget')
-          m2m_threshold_entries.append((cube_name, dashboard, widget))
-    except KeyError:
-        pass  # Handle or log as needed
 
 def calculate_stats(entries):
     durations = [float(entry['duration']) for entry in entries]
@@ -90,8 +99,12 @@ def process_slow_query(entry, timestamp):
         cube_name = entry['cubeName']
         dashboard = entry.get('dashboard', 'No Dashboard')
         data[cube_name].append(entry)
+        widgetType = entry.get('widgetType', 'No WidgetType').strip("\\").strip("'").strip('"')
+        querySource = entry.get('querySource', 'No QuerySource').strip("\\").strip("'").strip('"')
         dashboard_widget_count[cube_name][dashboard][entry.get('widget', 'No Widget')] += 1
-        timestamp_count[timestamp.strftime('%Y-%m-%d %H')] += 1
+        widget_types[cube_name][dashboard][entry.get('widget', 'No Widget')] = widgetType
+        query_sources[cube_name] = querySource
+        timestamp_count[timestamp.strftime('%Y-%m-%d %H:%M')] += 1
         total_slow_queries += 1
         update_max_values(cube_name, dashboard, entry)
 
@@ -121,6 +134,7 @@ for log_file in log_files:
                         total_queries += 1
                         total_duration += duration
                         update_timestamp_range(timestamp)
+                        process_log_line_for_m2m(entry)
 
                         if duration > slow_query_threshold:
                             process_slow_query(entry, timestamp)
@@ -137,14 +151,15 @@ sorted_cubes = sorted(data.items(), key=lambda x: calculate_stats(x[1])['count']
 # Loop to display the nested results in sorted order
 for cube_name, entries in sorted_cubes:
     stats = calculate_stats(entries)
-    print(f"\nCubeName: {cube_name}")
+    querySource = query_sources[cube_name]
+    print(f"\nCubeName: {cube_name} (Query Source: {querySource})")
     print(f"Count of Slow Queries: {stats['count']}")
-    print(f"Average Duration: {stats['average_duration']:.2f}")
-    print(f"Slowest Duration: {stats['max_duration']:.2f}")
+    print(f"Average Duration: {stats['average_duration']:.3f}")
+    print(f"Slowest Duration: {stats['max_duration']:.3f}")
     if 'p50_duration' in stats:
-        print(f"P50 Duration: {stats['p50_duration']:.2f}")
+        print(f"P50 Duration: {stats['p50_duration']:.3f}")
     if 'p95_duration' in stats:
-        print(f"P95 Duration: {stats['p95_duration']:.2f}")
+        print(f"P95 Duration: {stats['p95_duration']:.3f}")
     print(f"Maximum Concurrent Queries: {stats['max_concurrent_query']}")
 
     for dashboard, widgets in dashboard_widget_count[cube_name].items():
@@ -155,7 +170,8 @@ for cube_name, entries in sorted_cubes:
         print(f"    Max Throttling Time Waiting: {max_vals['throttlingTimeWaiting']}")
         for widget, freq in widgets.items():
             if freq > repeat_offender_threshold:
-                print(f"    Widget: {widget} - Count: {freq}")
+                widgetType = widget_types[cube_name][dashboard][widget]
+                print(f"    Widget: {widget} (Type: {widgetType}) - Count: {freq}")
 
 # Calculate the percentage of slow queries
 if total_queries > 0:
@@ -168,6 +184,11 @@ overall_average_duration = total_duration / total_queries if total_queries else 
 # Display the result
 day_suffix = "day" if days_to_look_back == 1 else "days"
 print(f"\nFound {total_slow_queries} slow queries (duration > {slow_query_threshold} seconds) which is {slow_queries_percentage:.4f}% of {total_queries} total queries over the past {days_to_look_back} {day_suffix}. The overall average response time is {overall_average_duration:.3f} seconds")
+
+print("\nSummary of detected possible M2Ms based on m2mThresholdFlag:")
+for (dashboard, widget, widgetType), cube_names in m2m_threshold_entries.items():
+    for cube_name, count in cube_names.items():
+        print(f"Dashboard: {dashboard}, Widget: {widget}, Widget Type: {widgetType}, Cube: {cube_name} - Count: {count}")
 
 if earliest_timestamp and latest_timestamp:
     print(f"\nTimestamp range of processed data: {earliest_timestamp} to {latest_timestamp}")
