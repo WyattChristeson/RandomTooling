@@ -1,5 +1,5 @@
 #Find OOM-Killed Containers on any given node and try to parse out the container ID, the individual thread that ran out of memory, the parent process that failed, and resolve the container ID to any present log files within the system.
-#Run once per node in the environment, copy and paste into any Shell session to a node running Sisense
+#Run once per node in the environment, copy and paste into any root privileged Shell session to any Kubernetes worker node.
 journalctl --since "3 days ago" | awk -v RS='\n' -v container_path="/var/log/containers/" '
     /kernel:.*invoked oom-killer/ {
         split($0, a, "kernel: ");
