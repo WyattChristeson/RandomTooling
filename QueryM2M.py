@@ -31,18 +31,15 @@ total_duration = 0
 max_values = defaultdict(lambda: defaultdict(lambda: {'translationDuration': 0, 'dataSourceExecuteDuration': 0, 'throttlingTimeWaiting': 0}))
 
 def parse_log_line(line):
-    # Improved pattern to capture both quoted strings and numerical values
     pattern = r'"([^"]+)"\s*:\s*(?:"([^"]+)"|(\b\d+\b))'
     matches = re.findall(pattern, line)
     result = {}
     for key, str_val, num_val in matches:
-        # Assigning the correct captured value (string or numerical)
         result[key] = str_val if str_val else num_val
     return result
 
 def process_log_line_for_m2m(entry):
     m2m_flag = entry.get('m2mThresholdFlag\\', '').replace('\\', '').replace("'", "")
-    # Check if the m2mThresholdFlag is set to '1'
     if m2m_flag == '1':
         cube_name = entry.get('cubeName', 'No CubeName').strip("\\").strip("'").strip('"')
         dashboard = entry.get('dashboard', 'No Dashboard').strip("\\").strip("'").strip('"')
@@ -54,11 +51,9 @@ def process_log_line_for_m2m(entry):
 
 def is_valid_duration(entry):
     try:
-        # Try converting the duration to a float
         float_duration = float(entry.get('duration', '0').replace('"', ''))
         return float_duration > slow_query_threshold
     except ValueError:
-        # If conversion fails, it's not a valid duration
         return False
 
 def calculate_stats(entries):
@@ -73,13 +68,12 @@ def calculate_stats(entries):
     }
     if count >= 2:
         stats['p50_duration'] = sorted_durations[int(count * 0.5)]
-        # Use ceil to ensure the P95 is never less than the median
         p95_index = ceil(count * 0.95) - 1
         stats['p95_duration'] = sorted_durations[p95_index]
     return stats
 
 def parse_timestamp(timestamp_str):
-    return datetime.fromisoformat(timestamp_str.replace('Z', '')).replace(tzinfo=None)
+    return datetime.fromisoformat(timestamp_str.replace('Z', '')).replace(tzinfo=None) #fromisoformat was introduced in Python 3.7, and will cause issues in old clients
 
 def update_max_values(cube_name, dashboard, entry):
     max_vals = max_values[cube_name][dashboard]
@@ -93,7 +87,7 @@ def process_slow_query(entry, timestamp):
         duration = float(entry.get('duration', 0))
     except ValueError:
         print(f"Warning: Invalid duration value '{entry.get('duration')}' in entry: {entry}")
-        return  # Skip this entry
+        return 
 
     if duration > slow_query_threshold:
         cube_name = entry['cubeName']
@@ -128,7 +122,6 @@ for log_file in log_files:
                         try:
                             duration = float(duration_str)
                         except ValueError:
-                            # Skip malformed duration entries
                             continue
 
                         total_queries += 1
@@ -140,7 +133,6 @@ for log_file in log_files:
                             process_slow_query(entry, timestamp)
 
                 except KeyError as e:
-                    # Skip lines with missing keys
                     continue
 
 
