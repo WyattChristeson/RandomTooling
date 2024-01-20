@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from xml.etree import ElementTree as ET
 
 def parse_kml(file_path):
