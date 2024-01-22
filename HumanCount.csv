@@ -1,0 +1,3145 @@
+STNAME,CTYNAME,YEAR,POPESTIMATE,POPEST_MALE,POPEST_FEM,male_female
+Alabama,Autauga County,4,59759,29105,30654,Female
+Alabama,Baldwin County,4,246435,120164,126271,Female
+Alabama,Barbour County,4,24706,13064,11642,Male
+Alabama,Bibb County,4,22005,11775,10230,Male
+Alabama,Blount County,4,59512,29583,29929,Female
+Alabama,Bullock County,4,10202,5653,4549,Male
+Alabama,Butler County,4,18650,8764,9886,Female
+Alabama,Calhoun County,4,115788,56321,59467,Female
+Alabama,Chambers County,4,34088,16253,17835,Female
+Alabama,Cherokee County,4,25302,12747,12555,Male
+Alabama,Chilton County,4,45884,22559,23325,Female
+Alabama,Choctaw County,4,12439,5916,6523,Female
+Alabama,Clarke County,4,22515,10710,11805,Female
+Alabama,Clay County,4,14198,6968,7230,Female
+Alabama,Cleburne County,4,15346,7652,7694,Female
+Alabama,Coffee County,4,54805,27271,27534,Female
+Alabama,Colbert County,4,58033,27988,30045,Female
+Alabama,Conecuh County,4,11206,5398,5808,Female
+Alabama,Coosa County,4,10166,5114,5052,Male
+Alabama,Covington County,4,37602,18282,19320,Female
+Alabama,Crenshaw County,4,13025,6374,6651,Female
+Alabama,Cullman County,4,90665,45264,45401,Female
+Alabama,Dale County,4,49544,24296,25248,Female
+Alabama,Dallas County,4,36767,17169,19598,Female
+Alabama,DeKalb County,4,71998,35995,36003,Female
+Alabama,Elmore County,4,89563,43693,45870,Female
+Alabama,Escambia County,4,36666,18364,18302,Male
+Alabama,Etowah County,4,103088,50181,52907,Female
+Alabama,Fayette County,4,16118,7935,8183,Female
+Alabama,Franklin County,4,31932,15964,15968,Female
+Alabama,Geneva County,4,26783,13177,13606,Female
+Alabama,Greene County,4,7422,3448,3974,Female
+Alabama,Hale County,4,14595,6939,7656,Female
+Alabama,Henry County,4,17655,8581,9074,Female
+Alabama,Houston County,4,108079,51910,56169,Female
+Alabama,Jackson County,4,52891,26117,26774,Female
+Alabama,Jefferson County,4,665409,315909,349500,Female
+Alabama,Lamar County,4,13705,6777,6928,Female
+Alabama,Lauderdale County,4,95878,46193,49685,Female
+Alabama,Lawrence County,4,33214,16282,16932,Female
+Alabama,Lee County,4,180773,89202,91571,Female
+Alabama,Limestone County,4,110900,55822,55078,Male
+Alabama,Lowndes County,4,9777,4694,5083,Female
+Alabama,Macon County,4,18516,8452,10064,Female
+Alabama,Madison County,4,403565,199291,204274,Female
+Alabama,Marengo County,4,18745,8903,9842,Female
+Alabama,Marion County,4,29156,14465,14691,Female
+Alabama,Marshall County,4,99423,49239,50184,Female
+Alabama,Mobile County,4,411411,196896,214515,Female
+Alabama,Monroe County,4,19404,9290,10114,Female
+Alabama,Montgomery County,4,226361,106477,119884,Female
+Alabama,Morgan County,4,124211,61554,62657,Female
+Alabama,Perry County,4,8035,3761,4274,Female
+Alabama,Pickens County,4,18697,9517,9180,Male
+Alabama,Pike County,4,33014,15812,17202,Female
+Alabama,Randolph County,4,22479,10995,11484,Female
+Alabama,Russell County,4,58555,27888,30667,Female
+Alabama,St. Clair County,4,93932,46643,47289,Female
+Alabama,Shelby County,4,230115,112209,117906,Female
+Alabama,Sumter County,4,11853,5464,6389,Female
+Alabama,Talladega County,4,80704,39421,41283,Female
+Alabama,Tallapoosa County,4,40977,20015,20962,Female
+Alabama,Tuscaloosa County,4,236780,114154,122626,Female
+Alabama,Walker County,4,64339,31368,32971,Female
+Alabama,Washington County,4,15122,7431,7691,Female
+Alabama,Wilcox County,4,10059,4687,5372,Female
+Alabama,Winston County,4,23755,11855,11900,Female
+Alaska,Aleutians East Borough,4,3398,2373,1025,Male
+Alaska,Aleutians West Census Area,4,5122,3630,1492,Male
+Alaska,Anchorage Municipality,4,287145,147178,139967,Male
+Alaska,Bethel Census Area,4,18257,9597,8660,Male
+Alaska,Bristol Bay Borough,4,865,462,403,Male
+Alaska,Chugach Census Area,4,6874,3704,3170,Male
+Alaska,Copper River Census Area,4,2589,1400,1189,Male
+Alaska,Denali Borough,4,1585,866,719,Male
+Alaska,Dillingham Census Area,4,4723,2469,2254,Male
+Alaska,Fairbanks North Star Borough,4,95356,51464,43892,Male
+Alaska,Haines Borough,4,2056,1075,981,Male
+Alaska,Hoonah-Angoon Census Area,4,2287,1247,1040,Male
+Alaska,Juneau City and Borough,4,31685,16232,15453,Male
+Alaska,Kenai Peninsula Borough,4,60690,31817,28873,Male
+Alaska,Ketchikan Gateway Borough,4,13741,7085,6656,Male
+Alaska,Kodiak Island Borough,4,12720,6820,5900,Male
+Alaska,Kusilvak Census Area,4,8278,4435,3843,Male
+Alaska,Lake and Peninsula Borough,4,1381,727,654,Male
+Alaska,Matanuska-Susitna Borough,4,113325,59311,54014,Male
+Alaska,Nome Census Area,4,9835,5177,4658,Male
+Alaska,North Slope Borough,4,10805,6873,3932,Male
+Alaska,Northwest Arctic Borough,4,7423,3966,3457,Male
+Alaska,Petersburg Borough,4,3360,1739,1621,Male
+Alaska,Prince of Wales-Hyder Census Area,4,5650,3107,2543,Male
+Alaska,Sitka City and Borough,4,8382,4323,4059,Male
+Alaska,Skagway Municipality,4,1081,568,513,Male
+Alaska,Southeast Fairbanks Census Area,4,7021,3998,3023,Male
+Alaska,Wrangell City and Borough,4,2070,1098,972,Male
+Alaska,Yakutat City and Borough,4,700,408,292,Male
+Alaska,Yukon-Koyukuk Census Area,4,5179,2798,2381,Male
+Arizona,Apache County,4,65432,32405,33027,Female
+Arizona,Cochise County,4,125663,63913,61750,Male
+Arizona,Coconino County,4,144060,71451,72609,Female
+Arizona,Gila County,4,53922,26884,27038,Female
+Arizona,Graham County,4,38779,20474,18305,Male
+Arizona,Greenlee County,4,9302,4851,4451,Male
+Arizona,La Paz County,4,16506,8438,8068,Male
+Arizona,Maricopa County,4,4551524,2268611,2282913,Female
+Arizona,Mohave County,4,220816,111884,108932,Male
+Arizona,Navajo County,4,108650,54576,54074,Male
+Arizona,Pima County,4,1057597,523349,534248,Female
+Arizona,Pinal County,4,464154,240591,223563,Male
+Arizona,Santa Cruz County,4,48759,23871,24888,Female
+Arizona,Yavapai County,4,246191,121511,124680,Female
+Arizona,Yuma County,4,207842,106225,101617,Male
+Arkansas,Arkansas County,4,16512,8070,8442,Female
+Arkansas,Ashley County,4,18354,8946,9408,Female
+Arkansas,Baxter County,4,42435,20720,21715,Female
+Arkansas,Benton County,4,302863,152320,150543,Male
+Arkansas,Boone County,4,38284,18923,19361,Female
+Arkansas,Bradley County,4,10135,4907,5228,Female
+Arkansas,Calhoun County,4,4695,2409,2286,Male
+Arkansas,Carroll County,4,28742,14492,14250,Male
+Arkansas,Chicot County,4,9873,5032,4841,Male
+Arkansas,Clark County,4,21250,10209,11041,Female
+Arkansas,Clay County,4,14265,7071,7194,Female
+Arkansas,Cleburne County,4,25284,12647,12637,Male
+Arkansas,Cleveland County,4,7467,3683,3784,Female
+Arkansas,Columbia County,4,22216,10788,11428,Female
+Arkansas,Conway County,4,21046,10488,10558,Female
+Arkansas,Craighead County,4,113017,55126,57891,Female
+Arkansas,Crawford County,4,61075,30139,30936,Female
+Arkansas,Crittenden County,4,47061,22238,24823,Female
+Arkansas,Cross County,4,16601,8124,8477,Female
+Arkansas,Dallas County,4,6191,3058,3133,Female
+Arkansas,Desha County,4,10771,5070,5701,Female
+Arkansas,Drew County,4,16911,8312,8599,Female
+Arkansas,Faulkner County,4,127665,61981,65684,Female
+Arkansas,Franklin County,4,17271,8621,8650,Female
+Arkansas,Fulton County,4,12382,6160,6222,Female
+Arkansas,Garland County,4,100089,48500,51589,Female
+Arkansas,Grant County,4,18160,9094,9066,Male
+Arkansas,Greene County,4,46448,22990,23458,Female
+Arkansas,Hempstead County,4,19453,9556,9897,Female
+Arkansas,Hot Spring County,4,33203,17531,15672,Male
+Arkansas,Howard County,4,12557,6116,6441,Female
+Arkansas,Independence County,4,37945,18778,19167,Female
+Arkansas,Izard County,4,14048,7426,6622,Male
+Arkansas,Jackson County,4,16624,8339,8285,Male
+Arkansas,Jefferson County,4,64246,32006,32240,Female
+Arkansas,Johnson County,4,26001,12979,13022,Female
+Arkansas,Lafayette County,4,6101,2967,3134,Female
+Arkansas,Lawrence County,4,16205,8034,8171,Female
+Arkansas,Lee County,4,8364,4713,3651,Male
+Arkansas,Lincoln County,4,12916,8267,4649,Male
+Arkansas,Little River County,4,11821,5737,6084,Female
+Arkansas,Logan County,4,21253,10531,10722,Female
+Arkansas,Lonoke County,4,75225,37303,37922,Female
+Arkansas,Madison County,4,17486,8790,8696,Male
+Arkansas,Marion County,4,17254,8605,8649,Female
+Arkansas,Miller County,4,42552,21219,21333,Female
+Arkansas,Mississippi County,4,38896,19088,19808,Female
+Arkansas,Monroe County,4,6564,3124,3440,Female
+Arkansas,Montgomery County,4,8556,4270,4286,Female
+Arkansas,Nevada County,4,8181,4020,4161,Female
+Arkansas,Newton County,4,7078,3624,3454,Male
+Arkansas,Ouachita County,4,22049,10656,11393,Female
+Arkansas,Perry County,4,10063,5085,4978,Male
+Arkansas,Phillips County,4,15304,7214,8090,Female
+Arkansas,Pike County,4,10179,5092,5087,Male
+Arkansas,Poinsett County,4,22495,11053,11442,Female
+Arkansas,Polk County,4,19337,9542,9795,Female
+Arkansas,Pope County,4,64065,31950,32115,Female
+Arkansas,Prairie County,4,8069,4096,3973,Male
+Arkansas,Pulaski County,4,399145,190836,208309,Female
+Arkansas,Randolph County,4,18837,9377,9460,Female
+Arkansas,St. Francis County,4,22451,12464,9987,Male
+Arkansas,Saline County,4,127357,62467,64890,Female
+Arkansas,Scott County,4,9805,4996,4809,Male
+Arkansas,Searcy County,4,7918,4047,3871,Male
+Arkansas,Sebastian County,4,129059,63785,65274,Female
+Arkansas,Sevier County,4,15686,7985,7701,Male
+Arkansas,Sharp County,4,17810,8785,9025,Female
+Arkansas,Stone County,4,12575,6242,6333,Female
+Arkansas,Union County,4,37752,18480,19272,Female
+Arkansas,Van Buren County,4,16102,8111,7991,Male
+Arkansas,Washington County,4,256054,128781,127273,Male
+Arkansas,White County,4,77755,38149,39606,Female
+Arkansas,Woodruff County,4,6049,2940,3109,Female
+Arkansas,Yell County,4,20129,10203,9926,Male
+California,Alameda County,4,1628997,809336,819661,Female
+California,Alpine County,4,1190,659,531,Male
+California,Amador County,4,41412,22574,18838,Male
+California,Butte County,4,207303,103224,104079,Female
+California,Calaveras County,4,46563,23334,23229,Male
+California,Colusa County,4,21914,11206,10708,Male
+California,Contra Costa County,4,1156966,569885,587081,Female
+California,Del Norte County,4,27082,14508,12574,Male
+California,El Dorado County,4,192646,96450,96196,Male
+California,Fresno County,4,1015190,510159,505031,Male
+California,Glenn County,4,28339,14469,13870,Male
+California,Humboldt County,4,135010,66937,68073,Female
+California,Imperial County,4,178713,91643,87070,Male
+California,Inyo County,4,18718,9465,9253,Male
+California,Kern County,4,916108,468118,447990,Male
+California,Kings County,4,152981,84475,68506,Male
+California,Lake County,4,68191,34193,33998,Male
+California,Lassen County,4,29904,18258,11646,Male
+California,Los Angeles County,4,9721138,4826280,4894858,Female
+California,Madera County,4,160256,78703,81553,Female
+California,Marin County,4,256018,125816,130202,Female
+California,Mariposa County,4,17020,8581,8439,Male
+California,Mendocino County,4,89783,44531,45252,Female
+California,Merced County,4,290014,147319,142695,Male
+California,Modoc County,4,8511,4228,4283,Female
+California,Mono County,4,12978,6972,6006,Male
+California,Monterey County,4,432858,220507,212351,Male
+California,Napa County,4,134300,67293,67007,Male
+California,Nevada County,4,102293,50676,51617,Female
+California,Orange County,4,3151184,1564652,1586532,Female
+California,Placer County,4,417772,205654,212118,Female
+California,Plumas County,4,19351,9715,9636,Male
+California,Riverside County,4,2473902,1243923,1229979,Male
+California,Sacramento County,4,1584169,781715,802454,Female
+California,San Benito County,4,67579,34215,33364,Male
+California,San Bernardino County,4,2193656,1101641,1092015,Male
+California,San Diego County,4,3276208,1660496,1615712,Male
+California,San Francisco County,4,808437,415434,393003,Male
+California,San Joaquin County,4,793229,397830,395399,Male
+California,San Luis Obispo County,4,282013,142483,139530,Male
+California,San Mateo County,4,729181,363587,365594,Female
+California,Santa Barbara County,4,443837,222705,221132,Male
+California,Santa Clara County,4,1870945,955195,915750,Male
+California,Santa Cruz County,4,264370,131901,132469,Female
+California,Shasta County,4,180930,89433,91497,Female
+California,Sierra County,4,3217,1630,1587,Male
+California,Siskiyou County,4,43660,21767,21893,Female
+California,Solano County,4,448747,224222,224525,Female
+California,Sonoma County,4,482650,237789,244861,Female
+California,Stanislaus County,4,551275,275524,275751,Female
+California,Sutter County,4,98503,49275,49228,Male
+California,Tehama County,4,65245,32608,32637,Female
+California,Trinity County,4,15781,8134,7647,Male
+California,Tulare County,4,477544,239668,237876,Male
+California,Tuolumne County,4,54531,28066,26465,Male
+California,Ventura County,4,832605,414927,417678,Female
+California,Yolo County,4,222115,108011,114104,Female
+California,Yuba County,4,84310,43017,41293,Male
+Colorado,Adams County,4,527575,268719,258856,Male
+Colorado,Alamosa County,4,16592,8230,8362,Female
+Colorado,Arapahoe County,4,655808,328180,327628,Male
+Colorado,Archuleta County,4,14003,7045,6958,Male
+Colorado,Baca County,4,3432,1720,1712,Male
+Colorado,Bent County,4,5399,3412,1987,Male
+Colorado,Boulder County,4,327468,165545,161923,Male
+Colorado,Broomfield County,4,76121,38450,37671,Male
+Colorado,Chaffee County,4,20223,10741,9482,Male
+Colorado,Cheyenne County,4,1732,892,840,Male
+Colorado,Clear Creek County,4,9355,4913,4442,Male
+Colorado,Conejos County,4,7579,3858,3721,Male
+Colorado,Costilla County,4,3603,1885,1718,Male
+Colorado,Crowley County,4,5614,4096,1518,Male
+Colorado,Custer County,4,5335,2683,2652,Male
+Colorado,Delta County,4,31602,15892,15710,Male
+Colorado,Denver County,4,713252,361025,352227,Male
+Colorado,Dolores County,4,2455,1340,1115,Male
+Colorado,Douglas County,4,375988,189776,186212,Male
+Colorado,Eagle County,4,55285,29301,25984,Male
+Colorado,Elbert County,4,27799,14221,13578,Male
+Colorado,El Paso County,4,740567,377383,363184,Male
+Colorado,Fremont County,4,49621,28767,20854,Male
+Colorado,Garfield County,4,62271,32086,30185,Male
+Colorado,Gilpin County,4,5891,3095,2796,Male
+Colorado,Grand County,4,15769,8458,7311,Male
+Colorado,Gunnison County,4,17267,9338,7929,Male
+Colorado,Hinsdale County,4,775,399,376,Male
+Colorado,Huerfano County,4,7082,3584,3498,Male
+Colorado,Jackson County,4,1302,688,614,Male
+Colorado,Jefferson County,4,576143,290495,285648,Male
+Colorado,Kiowa County,4,1424,718,706,Male
+Colorado,Kit Carson County,4,6961,3530,3431,Male
+Colorado,Lake County,4,7327,3958,3369,Male
+Colorado,La Plata County,4,56607,28724,27883,Male
+Colorado,Larimer County,4,366778,183706,183072,Male
+Colorado,Las Animas County,4,14327,7416,6911,Male
+Colorado,Lincoln County,4,5510,3169,2341,Male
+Colorado,Logan County,4,20823,11646,9177,Male
+Colorado,Mesa County,4,158636,78889,79747,Female
+Colorado,Mineral County,4,931,478,453,Male
+Colorado,Moffat County,4,13177,6786,6391,Male
+Colorado,Montezuma County,4,26468,13198,13270,Female
+Colorado,Montrose County,4,43811,21754,22057,Female
+Colorado,Morgan County,4,29239,15208,14031,Male
+Colorado,Otero County,4,18303,9083,9220,Female
+Colorado,Ouray County,4,5100,2583,2517,Male
+Colorado,Park County,4,17939,9613,8326,Male
+Colorado,Phillips County,4,4449,2225,2224,Male
+Colorado,Pitkin County,4,16876,8814,8062,Male
+Colorado,Prowers County,4,11854,5971,5883,Male
+Colorado,Pueblo County,4,169544,84215,85329,Female
+Colorado,Rio Blanco County,4,6569,3413,3156,Male
+Colorado,Rio Grande County,4,11325,5662,5663,Female
+Colorado,Routt County,4,25007,13047,11960,Male
+Colorado,Saguache County,4,6623,3353,3270,Male
+Colorado,San Juan County,4,803,458,345,Male
+Colorado,San Miguel County,4,8003,4324,3679,Male
+Colorado,Sedgwick County,4,2295,1134,1161,Female
+Colorado,Summit County,4,30565,16637,13928,Male
+Colorado,Teller County,4,24857,12627,12230,Male
+Colorado,Washington County,4,4812,2545,2267,Male
+Colorado,Weld County,4,350176,178394,171782,Male
+Colorado,Yuma County,4,9899,5049,4850,Male
+Connecticut,Capitol Planning Region,4,981447,479259,502188,Female
+Connecticut,Greater Bridgeport Planning Region,4,327286,160445,166841,Female
+Connecticut,Lower Connecticut River Valley Planning Region,4,176622,86999,89623,Female
+Connecticut,Naugatuck Valley Planning Region,4,454083,221745,232338,Female
+Connecticut,Northeastern Connecticut Planning Region,4,96196,48147,48049,Male
+Connecticut,Northwest Hills Planning Region,4,113234,56235,56999,Female
+Connecticut,South Central Connecticut Planning Region,4,573244,276852,296392,Female
+Connecticut,Southeastern Connecticut Planning Region,4,280403,140143,140260,Female
+Connecticut,Western Connecticut Planning Region,4,623690,306429,317261,Female
+Delaware,Kent County,4,186946,90346,96600,Female
+Delaware,New Castle County,4,575494,279827,295667,Female
+Delaware,Sussex County,4,255956,124347,131609,Female
+District of Columbia,District of Columbia,4,671803,319682,352121,Female
+Florida,Alachua County,4,284030,137148,146882,Female
+Florida,Baker County,4,27803,14312,13491,Male
+Florida,Bay County,4,185134,92016,93118,Female
+Florida,Bradford County,4,27313,14514,12799,Male
+Florida,Brevard County,4,630693,311159,319534,Female
+Florida,Broward County,4,1947026,957315,989711,Female
+Florida,Calhoun County,4,13464,7291,6173,Male
+Florida,Charlotte County,4,202661,99826,102835,Female
+Florida,Citrus County,4,162529,79314,83215,Female
+Florida,Clay County,4,226589,112291,114298,Female
+Florida,Collier County,4,397994,196409,201585,Female
+Florida,Columbia County,4,71908,36818,35090,Male
+Florida,DeSoto County,4,35312,19844,15468,Male
+Florida,Dixie County,4,17124,9397,7727,Male
+Florida,Duval County,4,1016536,493894,522642,Female
+Florida,Escambia County,4,324878,160572,164306,Female
+Florida,Flagler County,4,126705,61498,65207,Female
+Florida,Franklin County,4,12498,6768,5730,Male
+Florida,Gadsden County,4,43403,20812,22591,Female
+Florida,Gilchrist County,4,18992,9789,9203,Male
+Florida,Glades County,4,12454,7141,5313,Male
+Florida,Gulf County,4,15314,8440,6874,Male
+Florida,Hamilton County,4,13217,7167,6050,Male
+Florida,Hardee County,4,25645,13752,11893,Male
+Florida,Hendry County,4,41339,22675,18664,Male
+Florida,Hernando County,4,206896,100555,106341,Female
+Florida,Highlands County,4,105618,51742,53876,Female
+Florida,Hillsborough County,4,1513301,746763,766538,Female
+Florida,Holmes County,4,19651,10468,9183,Male
+Florida,Indian River County,4,167352,80856,86496,Female
+Florida,Jackson County,4,48211,26220,21991,Male
+Florida,Jefferson County,4,15042,7919,7123,Male
+Florida,Lafayette County,4,7786,4245,3541,Male
+Florida,Lake County,4,410139,199809,210330,Female
+Florida,Lee County,4,822453,405071,417382,Female
+Florida,Leon County,4,297369,140641,156728,Female
+Florida,Levy County,4,45260,22392,22868,Female
+Florida,Liberty County,4,7603,4572,3031,Male
+Florida,Madison County,4,18198,9510,8688,Male
+Florida,Manatee County,4,429125,208368,220757,Female
+Florida,Marion County,4,396415,191490,204925,Female
+Florida,Martin County,4,162006,80425,81581,Female
+Florida,Miami-Dade County,4,2673837,1314091,1359746,Female
+Florida,Monroe County,4,81708,42521,39187,Male
+Florida,Nassau County,4,97899,48426,49473,Female
+Florida,Okaloosa County,4,216482,110329,106153,Male
+Florida,Okeechobee County,4,40412,21516,18896,Male
+Florida,Orange County,4,1452726,716680,736046,Female
+Florida,Osceola County,4,422545,210150,212395,Female
+Florida,Palm Beach County,4,1518477,741455,777022,Female
+Florida,Pasco County,4,608794,298559,310235,Female
+Florida,Pinellas County,4,961739,465057,496682,Female
+Florida,Polk County,4,787404,389036,398368,Female
+Florida,Putnam County,4,74731,37103,37628,Female
+Florida,St. Johns County,4,306841,150825,156016,Female
+Florida,St. Lucie County,4,358704,176604,182100,Female
+Florida,Santa Rosa County,4,198268,101602,96666,Male
+Florida,Sarasota County,4,462286,221670,240616,Female
+Florida,Seminole County,4,478772,233603,245169,Female
+Florida,Sumter County,4,144970,72144,72826,Female
+Florida,Suwannee County,4,45411,23483,21928,Male
+Florida,Taylor County,4,21283,11292,9991,Male
+Florida,Union County,4,15460,9464,5996,Male
+Florida,Volusia County,4,579192,284024,295168,Female
+Florida,Wakulla County,4,35178,18839,16339,Male
+Florida,Walton County,4,83304,42208,41096,Male
+Florida,Washington County,4,25414,13537,11877,Male
+Georgia,Appling County,4,18428,9232,9196,Male
+Georgia,Atkinson County,4,8183,4163,4020,Male
+Georgia,Bacon County,4,11191,5504,5687,Female
+Georgia,Baker County,4,2788,1384,1404,Female
+Georgia,Baldwin County,4,43635,22104,21531,Male
+Georgia,Banks County,4,19328,9896,9432,Male
+Georgia,Barrow County,4,89299,44289,45010,Female
+Georgia,Bartow County,4,112816,55991,56825,Female
+Georgia,Ben Hill County,4,17069,8030,9039,Female
+Georgia,Berrien County,4,18214,9019,9195,Female
+Georgia,Bibb County,4,156197,73770,82427,Female
+Georgia,Bleckley County,4,12257,5882,6375,Female
+Georgia,Brantley County,4,18183,9034,9149,Female
+Georgia,Brooks County,4,16253,7977,8276,Female
+Georgia,Bryan County,4,48225,23974,24251,Female
+Georgia,Bulloch County,4,83059,40664,42395,Female
+Georgia,Burke County,4,24388,11649,12739,Female
+Georgia,Butts County,4,26649,14374,12275,Male
+Georgia,Calhoun County,4,5469,3442,2027,Male
+Georgia,Camden County,4,57013,29464,27549,Male
+Georgia,Candler County,4,11000,5342,5658,Female
+Georgia,Carroll County,4,124592,60971,63621,Female
+Georgia,Catoosa County,4,68826,33639,35187,Female
+Georgia,Charlton County,4,12781,7642,5139,Male
+Georgia,Chatham County,4,301107,144836,156271,Female
+Georgia,Chattahoochee County,4,8819,5643,3176,Male
+Georgia,Chattooga County,4,24936,12812,12124,Male
+Georgia,Cherokee County,4,281278,139554,141724,Female
+Georgia,Clarke County,4,129875,61916,67959,Female
+Georgia,Clay County,4,2845,1349,1496,Female
+Georgia,Clayton County,4,296564,138864,157700,Female
+Georgia,Clinch County,4,6662,3225,3437,Female
+Georgia,Cobb County,4,771952,376750,395202,Female
+Georgia,Coffee County,4,43172,22264,20908,Male
+Georgia,Colquitt County,4,45762,22782,22980,Female
+Georgia,Columbia County,4,162419,79601,82818,Female
+Georgia,Cook County,4,17404,8332,9072,Female
+Georgia,Coweta County,4,152882,74569,78313,Female
+Georgia,Crawford County,4,12140,6053,6087,Female
+Georgia,Crisp County,4,19708,9399,10309,Female
+Georgia,Dade County,4,16081,7990,8091,Female
+Georgia,Dawson County,4,30138,15101,15037,Male
+Georgia,Decatur County,4,28982,14092,14890,Female
+Georgia,DeKalb County,4,762820,361534,401286,Female
+Georgia,Dodge County,4,19802,10436,9366,Male
+Georgia,Dooly County,4,10572,5751,4821,Male
+Georgia,Dougherty County,4,82966,37989,44977,Female
+Georgia,Douglas County,4,147316,70393,76923,Female
+Georgia,Early County,4,10574,4950,5624,Female
+Georgia,Echols County,4,3686,1892,1794,Male
+Georgia,Effingham County,4,69041,34364,34677,Female
+Georgia,Elbert County,4,19814,9491,10323,Female
+Georgia,Emanuel County,4,22929,11598,11331,Male
+Georgia,Evans County,4,10695,5246,5449,Female
+Georgia,Fannin County,4,25737,12705,13032,Female
+Georgia,Fayette County,4,122030,59469,62561,Female
+Georgia,Floyd County,4,99443,48699,50744,Female
+Georgia,Forsyth County,4,267237,134094,133143,Male
+Georgia,Franklin County,4,24128,11896,12232,Female
+Georgia,Fulton County,4,1074634,523341,551293,Female
+Georgia,Gilmer County,4,32407,16400,16007,Male
+Georgia,Glascock County,4,2939,1475,1464,Male
+Georgia,Glynn County,4,85079,39956,45123,Female
+Georgia,Gordon County,4,58954,29247,29707,Female
+Georgia,Grady County,4,26008,12654,13354,Female
+Georgia,Greene County,4,20139,9971,10168,Female
+Georgia,Gwinnett County,4,975353,478904,496449,Female
+Georgia,Habersham County,4,47475,22907,24568,Female
+Georgia,Hall County,4,212692,106493,106199,Male
+Georgia,Hancock County,4,8387,4663,3724,Male
+Georgia,Haralson County,4,31337,15423,15914,Female
+Georgia,Harris County,4,36276,18372,17904,Male
+Georgia,Hart County,4,26909,13420,13489,Female
+Georgia,Heard County,4,11725,5876,5849,Male
+Georgia,Henry County,4,248364,118163,130201,Female
+Georgia,Houston County,4,169631,82306,87325,Female
+Georgia,Irwin County,4,9126,4508,4618,Female
+Georgia,Jackson County,4,83936,41833,42103,Female
+Georgia,Jasper County,4,15951,7862,8089,Female
+Georgia,Jeff Davis County,4,14889,7367,7522,Female
+Georgia,Jefferson County,4,15314,7473,7841,Female
+Georgia,Jenkins County,4,8689,4623,4066,Male
+Georgia,Johnson County,4,9242,5320,3922,Male
+Georgia,Jones County,4,28472,13857,14615,Female
+Georgia,Lamar County,4,19467,9414,10053,Female
+Georgia,Lanier County,4,10171,5130,5041,Male
+Georgia,Laurens County,4,49660,23628,26032,Female
+Georgia,Lee County,4,33642,16897,16745,Male
+Georgia,Liberty County,4,68030,35360,32670,Male
+Georgia,Lincoln County,4,7841,3763,4078,Female
+Georgia,Long County,4,18348,9282,9066,Male
+Georgia,Lowndes County,4,119739,57766,61973,Female
+Georgia,Lumpkin County,4,34796,17348,17448,Female
+Georgia,McDuffie County,4,21713,10252,11461,Female
+Georgia,McIntosh County,4,11180,5410,5770,Female
+Georgia,Macon County,4,11765,6567,5198,Male
+Georgia,Madison County,4,31473,15518,15955,Female
+Georgia,Marion County,4,7449,3695,3754,Female
+Georgia,Meriwether County,4,20845,10021,10824,Female
+Georgia,Miller County,4,5807,2759,3048,Female
+Georgia,Mitchell County,4,21116,10617,10499,Male
+Georgia,Monroe County,4,29427,14877,14550,Male
+Georgia,Montgomery County,4,8655,4428,4227,Male
+Georgia,Morgan County,4,21031,10239,10792,Female
+Georgia,Murray County,4,40472,20073,20399,Female
+Georgia,Muscogee County,4,202616,97638,104978,Female
+Georgia,Newton County,4,117621,55644,61977,Female
+Georgia,Oconee County,4,43588,21486,22102,Female
+Georgia,Oglethorpe County,4,15469,7671,7798,Female
+Georgia,Paulding County,4,178421,87531,90890,Female
+Georgia,Peach County,4,28562,13725,14837,Female
+Georgia,Pickens County,4,34826,17411,17415,Female
+Georgia,Pierce County,4,20168,10028,10140,Female
+Georgia,Pike County,4,19990,9824,10166,Female
+Georgia,Polk County,4,43709,21549,22160,Female
+Georgia,Pulaski County,4,9984,4217,5767,Female
+Georgia,Putnam County,4,22984,11101,11883,Female
+Georgia,Quitman County,4,2249,1080,1169,Female
+Georgia,Rabun County,4,17206,8514,8692,Female
+Georgia,Randolph County,4,6116,2836,3280,Female
+Georgia,Richmond County,4,206640,100149,106491,Female
+Georgia,Rockdale County,4,94984,44528,50456,Female
+Georgia,Schley County,4,4496,2162,2334,Female
+Georgia,Screven County,4,13977,6869,7108,Female
+Georgia,Seminole County,4,9127,4396,4731,Female
+Georgia,Spalding County,4,68919,32873,36046,Female
+Georgia,Stephens County,4,26767,12935,13832,Female
+Georgia,Stewart County,4,4648,3102,1546,Male
+Georgia,Sumter County,4,28877,13620,15257,Female
+Georgia,Talbot County,4,5747,2777,2970,Female
+Georgia,Taliaferro County,4,1600,818,782,Male
+Georgia,Tattnall County,4,24064,13726,10338,Male
+Georgia,Taylor County,4,7737,3665,4072,Female
+Georgia,Telfair County,4,12354,7652,4702,Male
+Georgia,Terrell County,4,8754,4252,4502,Female
+Georgia,Thomas County,4,45561,21766,23795,Female
+Georgia,Tift County,4,41412,20085,21327,Female
+Georgia,Toombs County,4,26837,12880,13957,Female
+Georgia,Towns County,4,12972,6179,6793,Female
+Georgia,Treutlen County,4,6365,3235,3130,Male
+Georgia,Troup County,4,70191,33595,36596,Female
+Georgia,Turner County,4,8842,4242,4600,Female
+Georgia,Twiggs County,4,7680,3763,3917,Female
+Georgia,Union County,4,26388,13008,13380,Female
+Georgia,Upson County,4,28086,13321,14765,Female
+Georgia,Walker County,4,68915,34293,34622,Female
+Georgia,Walton County,4,103065,50376,52689,Female
+Georgia,Ware County,4,35614,17658,17956,Female
+Georgia,Warren County,4,5155,2466,2689,Female
+Georgia,Washington County,4,19738,10170,9568,Male
+Georgia,Wayne County,4,30896,15761,15135,Male
+Georgia,Webster County,4,2328,1139,1189,Female
+Georgia,Wheeler County,4,7314,4688,2626,Male
+Georgia,White County,4,28806,14200,14606,Female
+Georgia,Whitfield County,4,103132,51633,51499,Male
+Georgia,Wilcox County,4,8761,5245,3516,Male
+Georgia,Wilkes County,4,9599,4655,4944,Female
+Georgia,Wilkinson County,4,8681,4183,4498,Female
+Georgia,Worth County,4,20424,9799,10625,Female
+Hawaii,Hawaii County,4,206315,102656,103659,Female
+Hawaii,Honolulu County,4,995638,503299,492339,Male
+Hawaii,Kalawao County,4,82,46,36,Male
+Hawaii,Kauai County,4,73810,36709,37101,Female
+Hawaii,Maui County,4,164351,82001,82350,Female
+Idaho,Ada County,4,518907,262344,256563,Male
+Idaho,Adams County,4,4817,2499,2318,Male
+Idaho,Bannock County,4,89517,44918,44599,Male
+Idaho,Bear Lake County,4,6722,3388,3334,Male
+Idaho,Benewah County,4,10370,5372,4998,Male
+Idaho,Bingham County,4,49923,25166,24757,Male
+Idaho,Blaine County,4,24866,12427,12439,Female
+Idaho,Boise County,4,8333,4258,4075,Male
+Idaho,Bonner County,4,51414,26055,25359,Male
+Idaho,Bonneville County,4,129496,65052,64444,Male
+Idaho,Boundary County,4,13345,6770,6575,Male
+Idaho,Butte County,4,2684,1358,1326,Male
+Idaho,Camas County,4,1153,606,547,Male
+Idaho,Canyon County,4,251065,125555,125510,Male
+Idaho,Caribou County,4,7190,3647,3543,Male
+Idaho,Cassia County,4,25655,13233,12422,Male
+Idaho,Clark County,4,806,423,383,Male
+Idaho,Clearwater County,4,9015,4985,4030,Male
+Idaho,Custer County,4,4506,2400,2106,Male
+Idaho,Elmore County,4,29403,15594,13809,Male
+Idaho,Franklin County,4,15189,7897,7292,Male
+Idaho,Fremont County,4,13978,7392,6586,Male
+Idaho,Gem County,4,20418,10362,10056,Male
+Idaho,Gooding County,4,15715,8048,7667,Male
+Idaho,Idaho County,4,17593,9290,8303,Male
+Idaho,Jefferson County,4,33428,17168,16260,Male
+Idaho,Jerome County,4,25311,13087,12224,Male
+Idaho,Kootenai County,4,183578,91791,91787,Male
+Idaho,Latah County,4,40978,20929,20049,Male
+Idaho,Lemhi County,4,8240,4207,4033,Male
+Idaho,Lewis County,4,3763,1935,1828,Male
+Idaho,Lincoln County,4,5329,2758,2571,Male
+Idaho,Madison County,4,54976,24898,30078,Female
+Idaho,Minidoka County,4,22194,11246,10948,Male
+Idaho,Nez Perce County,4,43004,21382,21622,Female
+Idaho,Oneida County,4,4712,2385,2327,Male
+Idaho,Owyhee County,4,12613,6482,6131,Male
+Idaho,Payette County,4,26956,13595,13361,Male
+Idaho,Power County,4,8068,4093,3975,Male
+Idaho,Shoshone County,4,14012,7121,6891,Male
+Idaho,Teton County,4,12544,6578,5966,Male
+Idaho,Twin Falls County,4,93696,46444,47252,Female
+Idaho,Valley County,4,12464,6446,6018,Male
+Idaho,Washington County,4,11087,5555,5532,Male
+Illinois,Adams County,4,64725,32141,32584,Female
+Illinois,Alexander County,4,4858,2353,2505,Female
+Illinois,Bond County,4,16566,8771,7795,Male
+Illinois,Boone County,4,53154,26842,26312,Male
+Illinois,Brown County,4,6330,4035,2295,Male
+Illinois,Bureau County,4,32828,16348,16480,Female
+Illinois,Calhoun County,4,4360,2198,2162,Male
+Illinois,Carroll County,4,15529,8364,7165,Male
+Illinois,Cass County,4,12657,6462,6195,Male
+Illinois,Champaign County,4,206542,102912,103630,Female
+Illinois,Christian County,4,33436,17878,15558,Male
+Illinois,Clark County,4,15229,7668,7561,Male
+Illinois,Clay County,4,13047,6528,6519,Male
+Illinois,Clinton County,4,36909,19271,17638,Male
+Illinois,Coles County,4,46334,22825,23509,Female
+Illinois,Cook County,4,5109292,2496744,2612548,Female
+Illinois,Crawford County,4,18536,9732,8804,Male
+Illinois,Cumberland County,4,10324,5200,5124,Male
+Illinois,DeKalb County,4,100232,49808,50424,Female
+Illinois,De Witt County,4,15310,7660,7650,Male
+Illinois,Douglas County,4,19755,9850,9905,Female
+Illinois,DuPage County,4,920901,456428,464473,Female
+Illinois,Edgar County,4,16433,8087,8346,Female
+Illinois,Edwards County,4,6071,2958,3113,Female
+Illinois,Effingham County,4,34325,17290,17035,Male
+Illinois,Fayette County,4,21305,11763,9542,Male
+Illinois,Ford County,4,13249,6613,6636,Female
+Illinois,Franklin County,4,37242,18602,18640,Female
+Illinois,Fulton County,4,33021,17254,15767,Male
+Illinois,Gallatin County,4,4855,2376,2479,Female
+Illinois,Greene County,4,11651,5840,5811,Male
+Illinois,Grundy County,4,53041,26709,26332,Male
+Illinois,Hamilton County,4,7984,3974,4010,Female
+Illinois,Hancock County,4,17244,8656,8588,Male
+Illinois,Hardin County,4,3597,1852,1745,Male
+Illinois,Henderson County,4,6151,3078,3073,Male
+Illinois,Henry County,4,48419,24266,24153,Male
+Illinois,Iroquois County,4,26473,13136,13337,Female
+Illinois,Jackson County,4,52617,26279,26338,Female
+Illinois,Jasper County,4,9212,4655,4557,Male
+Illinois,Jefferson County,4,36400,18711,17689,Male
+Illinois,Jersey County,4,21246,10499,10747,Female
+Illinois,Jo Daviess County,4,21758,10972,10786,Male
+Illinois,Johnson County,4,13381,7965,5416,Male
+Illinois,Kane County,4,514182,258173,256009,Male
+Illinois,Kankakee County,4,106074,52541,53533,Female
+Illinois,Kendall County,4,137254,68759,68495,Male
+Illinois,Knox County,4,48640,24827,23813,Male
+Illinois,Lake County,4,709150,357318,351832,Male
+Illinois,LaSalle County,4,108078,54882,53196,Male
+Illinois,Lawrence County,4,14914,8393,6521,Male
+Illinois,Lee County,4,33848,18031,15817,Male
+Illinois,Livingston County,4,35521,18023,17498,Male
+Illinois,Logan County,4,27591,14109,13482,Male
+Illinois,McDonough County,4,26861,13346,13515,Female
+Illinois,McHenry County,4,311747,156533,155214,Male
+Illinois,McLean County,4,171141,83934,87207,Female
+Illinois,Macon County,4,101483,48917,52566,Female
+Illinois,Macoupin County,4,44245,22049,22196,Female
+Illinois,Madison County,4,263864,129336,134528,Female
+Illinois,Marion County,4,36914,18287,18627,Female
+Illinois,Marshall County,4,11678,5866,5812,Male
+Illinois,Mason County,4,12748,6362,6386,Female
+Illinois,Massac County,4,13896,6764,7132,Female
+Illinois,Menard County,4,12121,5957,6164,Female
+Illinois,Mercer County,4,15504,7852,7652,Male
+Illinois,Monroe County,4,35033,17590,17443,Male
+Illinois,Montgomery County,4,28020,14818,13202,Male
+Illinois,Morgan County,4,32209,16322,15887,Male
+Illinois,Moultrie County,4,14323,7100,7223,Female
+Illinois,Ogle County,4,51351,25771,25580,Male
+Illinois,Peoria County,4,178383,87047,91336,Female
+Illinois,Perry County,4,20588,11344,9244,Male
+Illinois,Piatt County,4,16723,8348,8375,Female
+Illinois,Pike County,4,14484,7265,7219,Male
+Illinois,Pope County,4,3770,1931,1839,Male
+Illinois,Pulaski County,4,4991,2500,2491,Male
+Illinois,Putnam County,4,5572,2840,2732,Male
+Illinois,Randolph County,4,30068,16015,14053,Male
+Illinois,Richland County,4,15435,7685,7750,Female
+Illinois,Rock Island County,4,141527,70028,71499,Female
+Illinois,St. Clair County,4,252671,122860,129811,Female
+Illinois,Saline County,4,23087,11433,11654,Female
+Illinois,Sangamon County,4,194534,94036,100498,Female
+Illinois,Schuyler County,4,6746,3649,3097,Male
+Illinois,Scott County,4,4790,2378,2412,Female
+Illinois,Shelby County,4,20761,10382,10379,Male
+Illinois,Stark County,4,5345,2706,2639,Male
+Illinois,Stephenson County,4,43627,21267,22360,Female
+Illinois,Tazewell County,4,129911,64522,65389,Female
+Illinois,Union County,4,16767,8435,8332,Male
+Illinois,Vermilion County,4,72337,36361,35976,Male
+Illinois,Wabash County,4,11087,5505,5582,Female
+Illinois,Warren County,4,16354,8163,8191,Female
+Illinois,Washington County,4,13643,6913,6730,Male
+Illinois,Wayne County,4,15872,7907,7965,Female
+Illinois,White County,4,13614,6743,6871,Female
+Illinois,Whiteside County,4,54658,27300,27358,Female
+Illinois,Will County,4,696757,348620,348137,Male
+Illinois,Williamson County,4,66695,33584,33111,Male
+Illinois,Winnebago County,4,282188,138377,143811,Female
+Illinois,Woodford County,4,38128,19177,18951,Male
+Indiana,Adams County,4,36068,18092,17976,Male
+Indiana,Allen County,4,391449,193149,198300,Female
+Indiana,Bartholomew County,4,83540,42220,41320,Male
+Indiana,Benton County,4,8719,4422,4297,Male
+Indiana,Blackford County,4,11919,5866,6053,Female
+Indiana,Boone County,4,74164,37213,36951,Male
+Indiana,Brown County,4,15570,7829,7741,Male
+Indiana,Carroll County,4,20555,10520,10035,Male
+Indiana,Cass County,4,37540,18943,18597,Male
+Indiana,Clark County,4,124237,61000,63237,Female
+Indiana,Clay County,4,26379,13182,13197,Female
+Indiana,Clinton County,4,32843,16417,16426,Female
+Indiana,Crawford County,4,10536,5406,5130,Male
+Indiana,Daviess County,4,33418,16830,16588,Male
+Indiana,Dearborn County,4,51138,25709,25429,Male
+Indiana,Decatur County,4,26416,13286,13130,Male
+Indiana,DeKalb County,4,43731,21874,21857,Male
+Indiana,Delaware County,4,112031,54209,57822,Female
+Indiana,Dubois County,4,43632,22018,21614,Male
+Indiana,Elkhart County,4,206890,102911,103979,Female
+Indiana,Fayette County,4,23349,11589,11760,Female
+Indiana,Floyd County,4,80714,39459,41255,Female
+Indiana,Fountain County,4,16574,8304,8270,Male
+Indiana,Franklin County,4,23028,11581,11447,Male
+Indiana,Fulton County,4,20327,10289,10038,Male
+Indiana,Gibson County,4,32993,16798,16195,Male
+Indiana,Grant County,4,66022,31888,34134,Female
+Indiana,Greene County,4,31006,15703,15303,Male
+Indiana,Hamilton County,4,364921,180145,184776,Female
+Indiana,Hancock County,4,83070,41205,41865,Female
+Indiana,Harrison County,4,39851,20109,19742,Male
+Indiana,Hendricks County,4,182534,91772,90762,Male
+Indiana,Henry County,4,48915,25797,23118,Male
+Indiana,Howard County,4,83574,40710,42864,Female
+Indiana,Huntington County,4,36834,18397,18437,Female
+Indiana,Jackson County,4,46300,23454,22846,Male
+Indiana,Jasper County,4,33281,16684,16597,Male
+Indiana,Jay County,4,20198,10167,10031,Male
+Indiana,Jefferson County,4,32946,16017,16929,Female
+Indiana,Jennings County,4,27536,13974,13562,Male
+Indiana,Johnson County,4,165782,82504,83278,Female
+Indiana,Knox County,4,35789,18341,17448,Male
+Indiana,Kosciusko County,4,80826,40604,40222,Male
+Indiana,LaGrange County,4,40866,20966,19900,Male
+Indiana,Lake County,4,499689,243676,256013,Female
+Indiana,LaPorte County,4,111675,58087,53588,Male
+Indiana,Lawrence County,4,45222,22692,22530,Male
+Indiana,Madison County,4,131744,66576,65168,Male
+Indiana,Marion County,4,969466,469961,499505,Female
+Indiana,Marshall County,4,46332,23377,22955,Male
+Indiana,Martin County,4,9803,5043,4760,Male
+Indiana,Miami County,4,35674,19371,16303,Male
+Indiana,Monroe County,4,139745,69753,69992,Female
+Indiana,Montgomery County,4,38273,19491,18782,Male
+Indiana,Morgan County,4,72236,36121,36115,Male
+Indiana,Newton County,4,13823,7091,6732,Male
+Indiana,Noble County,4,47367,23964,23403,Male
+Indiana,Ohio County,4,6114,3072,3042,Male
+Indiana,Orange County,4,19623,9901,9722,Male
+Indiana,Owen County,4,21482,10874,10608,Male
+Indiana,Parke County,4,16369,7868,8501,Female
+Indiana,Perry County,4,19183,10497,8686,Male
+Indiana,Pike County,4,12168,6178,5990,Male
+Indiana,Porter County,4,174791,86655,88136,Female
+Indiana,Posey County,4,25063,12617,12446,Male
+Indiana,Pulaski County,4,12485,6300,6185,Male
+Indiana,Putnam County,4,37301,19692,17609,Male
+Indiana,Randolph County,4,24437,12235,12202,Male
+Indiana,Ripley County,4,29087,14581,14506,Male
+Indiana,Rush County,4,16673,8264,8409,Female
+Indiana,St. Joseph County,4,272234,133242,138992,Female
+Indiana,Scott County,4,24588,12105,12483,Female
+Indiana,Shelby County,4,44991,22620,22371,Male
+Indiana,Spencer County,4,19967,10152,9815,Male
+Indiana,Starke County,4,23258,11753,11505,Male
+Indiana,Steuben County,4,34725,17833,16892,Male
+Indiana,Sullivan County,4,20670,11354,9316,Male
+Indiana,Switzerland County,4,10006,5249,4757,Male
+Indiana,Tippecanoe County,4,188717,96954,91763,Male
+Indiana,Tipton County,4,15361,7782,7579,Male
+Indiana,Union County,4,6952,3441,3511,Female
+Indiana,Vanderburgh County,4,179744,88054,91690,Female
+Indiana,Vermillion County,4,15451,7763,7688,Male
+Indiana,Vigo County,4,106006,53565,52441,Male
+Indiana,Wabash County,4,30828,15090,15738,Female
+Indiana,Warren County,4,8461,4267,4194,Male
+Indiana,Warrick County,4,65185,32270,32915,Female
+Indiana,Washington County,4,28224,14184,14040,Male
+Indiana,Wayne County,4,66273,32330,33943,Female
+Indiana,Wells County,4,28335,14138,14197,Female
+Indiana,White County,4,24598,12385,12213,Male
+Indiana,Whitley County,4,34627,17467,17160,Male
+Iowa,Adair County,4,7494,3763,3731,Male
+Iowa,Adams County,4,3611,1824,1787,Male
+Iowa,Allamakee County,4,13960,7173,6787,Male
+Iowa,Appanoose County,4,12094,6041,6053,Female
+Iowa,Audubon County,4,5598,2762,2836,Female
+Iowa,Benton County,4,25711,12981,12730,Male
+Iowa,Black Hawk County,4,130274,64279,65995,Female
+Iowa,Boone County,4,26609,13582,13027,Male
+Iowa,Bremer County,4,25259,12665,12594,Male
+Iowa,Buchanan County,4,20714,10446,10268,Male
+Iowa,Buena Vista County,4,20600,10589,10011,Male
+Iowa,Butler County,4,14269,7180,7089,Male
+Iowa,Calhoun County,4,9725,5086,4639,Male
+Iowa,Carroll County,4,20567,10315,10252,Male
+Iowa,Cass County,4,13104,6465,6639,Female
+Iowa,Cedar County,4,18399,9231,9168,Male
+Iowa,Cerro Gordo County,4,42409,20815,21594,Female
+Iowa,Cherokee County,4,11491,5742,5749,Female
+Iowa,Chickasaw County,4,11716,5955,5761,Male
+Iowa,Clarke County,4,9692,4944,4748,Male
+Iowa,Clay County,4,16475,8188,8287,Female
+Iowa,Clayton County,4,17027,8672,8355,Male
+Iowa,Clinton County,4,46344,22953,23391,Female
+Iowa,Crawford County,4,16123,8350,7773,Male
+Iowa,Dallas County,4,108016,53906,54110,Female
+Iowa,Davis County,4,9130,4651,4479,Male
+Iowa,Decatur County,4,7683,3889,3794,Male
+Iowa,Delaware County,4,17568,8931,8637,Male
+Iowa,Des Moines County,4,38293,18868,19425,Female
+Iowa,Dickinson County,4,18028,8982,9046,Female
+Iowa,Dubuque County,4,98677,48969,49708,Female
+Iowa,Emmet County,4,9176,4693,4483,Male
+Iowa,Fayette County,4,19294,9806,9488,Male
+Iowa,Floyd County,4,15337,7655,7682,Female
+Iowa,Franklin County,4,9916,5095,4821,Male
+Iowa,Fremont County,4,6464,3260,3204,Male
+Iowa,Greene County,4,8741,4362,4379,Female
+Iowa,Grundy County,4,12356,6194,6162,Male
+Iowa,Guthrie County,4,10647,5339,5308,Male
+Iowa,Hamilton County,4,14820,7475,7345,Male
+Iowa,Hancock County,4,10685,5395,5290,Male
+Iowa,Hardin County,4,16567,8370,8197,Male
+Iowa,Harrison County,4,14658,7438,7220,Male
+Iowa,Henry County,4,20196,10540,9656,Male
+Iowa,Howard County,4,9533,4814,4719,Male
+Iowa,Humboldt County,4,9572,4760,4812,Female
+Iowa,Ida County,4,6888,3451,3437,Male
+Iowa,Iowa County,4,16475,8367,8108,Male
+Iowa,Jackson County,4,19324,9787,9537,Male
+Iowa,Jasper County,4,37938,19714,18224,Male
+Iowa,Jefferson County,4,15698,8199,7499,Male
+Iowa,Johnson County,4,156420,77730,78690,Female
+Iowa,Jones County,4,20848,10990,9858,Male
+Iowa,Keokuk County,4,9904,5046,4858,Male
+Iowa,Kossuth County,4,14475,7392,7083,Male
+Iowa,Lee County,4,32840,16559,16281,Male
+Iowa,Linn County,4,229033,113528,115505,Female
+Iowa,Louisa County,4,10677,5464,5213,Male
+Iowa,Lucas County,4,8689,4444,4245,Male
+Iowa,Lyon County,4,12179,6234,5945,Male
+Iowa,Madison County,4,17036,8511,8525,Female
+Iowa,Mahaska County,4,21946,11223,10723,Male
+Iowa,Marion County,4,33642,16973,16669,Male
+Iowa,Marshall County,4,39879,20287,19592,Male
+Iowa,Mills County,4,14553,7334,7219,Male
+Iowa,Mitchell County,4,10532,5314,5218,Male
+Iowa,Monona County,4,8486,4158,4328,Female
+Iowa,Monroe County,4,7550,3775,3775,Equal
+Iowa,Montgomery County,4,10205,5037,5168,Female
+Iowa,Muscatine County,4,42377,21288,21089,Male
+Iowa,O'Brien County,4,14060,7165,6895,Male
+Iowa,Osceola County,4,6036,3096,2940,Male
+Iowa,Page County,4,15143,8091,7052,Male
+Iowa,Palo Alto County,4,8764,4413,4351,Male
+Iowa,Plymouth County,4,25681,13041,12640,Male
+Iowa,Pocahontas County,4,7053,3525,3528,Female
+Iowa,Polk County,4,501089,249741,251348,Female
+Iowa,Pottawattamie County,4,93173,46323,46850,Female
+Iowa,Poweshiek County,4,18467,9098,9369,Female
+Iowa,Ringgold County,4,4670,2336,2334,Male
+Iowa,Sac County,4,9673,4827,4846,Female
+Iowa,Scott County,4,173924,86147,87777,Female
+Iowa,Shelby County,4,11645,5786,5859,Female
+Iowa,Sioux County,4,36050,18141,17909,Male
+Iowa,Story County,4,99673,52242,47431,Male
+Iowa,Tama County,4,16903,8625,8278,Male
+Iowa,Taylor County,4,5858,3030,2828,Male
+Iowa,Union County,4,11887,5887,6000,Female
+Iowa,Van Buren County,4,7256,3696,3560,Male
+Iowa,Wapello County,4,35043,17694,17349,Male
+Iowa,Warren County,4,54327,27064,27263,Female
+Iowa,Washington County,4,22571,11308,11263,Male
+Iowa,Wayne County,4,6467,3264,3203,Male
+Iowa,Webster County,4,36626,19209,17417,Male
+Iowa,Winnebago County,4,10617,5351,5266,Male
+Iowa,Winneshiek County,4,19974,10075,9899,Male
+Iowa,Woodbury County,4,105671,53154,52517,Male
+Iowa,Worth County,4,7319,3733,3586,Male
+Iowa,Wright County,4,12681,6477,6204,Male
+Kansas,Allen County,4,12579,6239,6340,Female
+Kansas,Anderson County,4,7776,3953,3823,Male
+Kansas,Atchison County,4,16108,7886,8222,Female
+Kansas,Barber County,4,4122,2092,2030,Male
+Kansas,Barton County,4,25080,12455,12625,Female
+Kansas,Bourbon County,4,14493,7223,7270,Female
+Kansas,Brown County,4,9364,4670,4694,Female
+Kansas,Butler County,4,68240,34894,33346,Male
+Kansas,Chase County,4,2548,1357,1191,Male
+Kansas,Chautauqua County,4,3415,1770,1645,Male
+Kansas,Cherokee County,4,19088,9529,9559,Female
+Kansas,Cheyenne County,4,2583,1326,1257,Male
+Kansas,Clark County,4,1933,954,979,Female
+Kansas,Clay County,4,8043,4038,4005,Male
+Kansas,Cloud County,4,8946,4536,4410,Male
+Kansas,Coffey County,4,8280,4108,4172,Female
+Kansas,Comanche County,4,1681,826,855,Female
+Kansas,Cowley County,4,34453,17317,17136,Male
+Kansas,Crawford County,4,39078,19586,19492,Male
+Kansas,Decatur County,4,2689,1370,1319,Male
+Kansas,Dickinson County,4,18430,9290,9140,Male
+Kansas,Doniphan County,4,7440,3779,3661,Male
+Kansas,Douglas County,4,119964,59846,60118,Female
+Kansas,Edwards County,4,2739,1400,1339,Male
+Kansas,Elk County,4,2441,1226,1215,Male
+Kansas,Ellis County,4,28941,14637,14304,Male
+Kansas,Ellsworth County,4,6355,3656,2699,Male
+Kansas,Finney County,4,37650,19384,18266,Male
+Kansas,Ford County,4,33848,17668,16180,Male
+Kansas,Franklin County,4,25992,13109,12883,Male
+Kansas,Geary County,4,35691,18760,16931,Male
+Kansas,Gove County,4,2717,1367,1350,Male
+Kansas,Graham County,4,2411,1208,1203,Male
+Kansas,Grant County,4,7197,3685,3512,Male
+Kansas,Gray County,4,5729,2952,2777,Male
+Kansas,Greeley County,4,1223,615,608,Male
+Kansas,Greenwood County,4,5939,3023,2916,Male
+Kansas,Hamilton County,4,2430,1295,1135,Male
+Kansas,Harper County,4,5323,2717,2606,Male
+Kansas,Harvey County,4,33801,16907,16894,Male
+Kansas,Haskell County,4,3576,1786,1790,Female
+Kansas,Hodgeman County,4,1755,911,844,Male
+Kansas,Jackson County,4,13286,6739,6547,Male
+Kansas,Jefferson County,4,18344,9381,8963,Male
+Kansas,Jewell County,4,2898,1500,1398,Male
+Kansas,Johnson County,4,619195,306748,312447,Female
+Kansas,Kearny County,4,3855,1980,1875,Male
+Kansas,Kingman County,4,7193,3675,3518,Male
+Kansas,Kiowa County,4,2404,1194,1210,Female
+Kansas,Labette County,4,19757,9998,9759,Male
+Kansas,Lane County,4,1556,782,774,Male
+Kansas,Leavenworth County,4,82892,44260,38632,Male
+Kansas,Lincoln County,4,2899,1476,1423,Male
+Kansas,Linn County,4,9796,4956,4840,Male
+Kansas,Logan County,4,2705,1409,1296,Male
+Kansas,Lyon County,4,31898,15631,16267,Female
+Kansas,McPherson County,4,30012,14895,15117,Female
+Kansas,Marion County,4,11868,5962,5906,Male
+Kansas,Marshall County,4,9982,5054,4928,Male
+Kansas,Meade County,4,3897,2026,1871,Male
+Kansas,Miami County,4,34867,17542,17325,Male
+Kansas,Mitchell County,4,5738,2936,2802,Male
+Kansas,Montgomery County,4,30996,15438,15558,Female
+Kansas,Morris County,4,5349,2699,2650,Male
+Kansas,Morton County,4,2599,1307,1292,Male
+Kansas,Nemaha County,4,10115,5208,4907,Male
+Kansas,Neosho County,4,15606,7880,7726,Male
+Kansas,Ness County,4,2645,1301,1344,Female
+Kansas,Norton County,4,5301,3038,2263,Male
+Kansas,Osage County,4,15654,7921,7733,Male
+Kansas,Osborne County,4,3490,1779,1711,Male
+Kansas,Ottawa County,4,5795,3045,2750,Male
+Kansas,Pawnee County,4,6179,3427,2752,Male
+Kansas,Phillips County,4,4809,2432,2377,Male
+Kansas,Pottawatomie County,4,26273,13280,12993,Male
+Kansas,Pratt County,4,9067,4593,4474,Male
+Kansas,Rawlins County,4,2528,1297,1231,Male
+Kansas,Reno County,4,61516,31196,30320,Male
+Kansas,Republic County,4,4642,2302,2340,Female
+Kansas,Rice County,4,9407,4766,4641,Male
+Kansas,Riley County,4,71108,37819,33289,Male
+Kansas,Rooks County,4,4813,2382,2431,Female
+Kansas,Rush County,4,2927,1491,1436,Male
+Kansas,Russell County,4,6639,3326,3313,Male
+Kansas,Saline County,4,53596,26837,26759,Male
+Kansas,Scott County,4,5014,2560,2454,Male
+Kansas,Sedgwick County,4,525525,261512,264013,Female
+Kansas,Seward County,4,21358,11026,10332,Male
+Kansas,Shawnee County,4,177480,86617,90863,Female
+Kansas,Sheridan County,4,2425,1217,1208,Male
+Kansas,Sherman County,4,5830,2982,2848,Male
+Kansas,Smith County,4,3533,1780,1753,Male
+Kansas,Stafford County,4,3993,2032,1961,Male
+Kansas,Stanton County,4,1963,973,990,Female
+Kansas,Stevens County,4,5175,2574,2601,Female
+Kansas,Sumner County,4,22473,11314,11159,Male
+Kansas,Thomas County,4,7893,3870,4023,Female
+Kansas,Trego County,4,2752,1405,1347,Male
+Kansas,Wabaunsee County,4,7019,3605,3414,Male
+Kansas,Wallace County,4,1488,754,734,Male
+Kansas,Washington County,4,5501,2830,2671,Male
+Kansas,Wichita County,4,2064,1108,956,Male
+Kansas,Wilson County,4,8622,4309,4313,Female
+Kansas,Woodson County,4,3109,1571,1538,Male
+Kansas,Wyandotte County,4,165746,83158,82588,Male
+Kentucky,Adair County,4,19067,9540,9527,Male
+Kentucky,Allen County,4,21275,10613,10662,Female
+Kentucky,Anderson County,4,24224,12050,12174,Female
+Kentucky,Ballard County,4,7650,3833,3817,Male
+Kentucky,Barren County,4,44854,21885,22969,Female
+Kentucky,Bath County,4,12829,6415,6414,Male
+Kentucky,Bell County,4,23568,11786,11782,Male
+Kentucky,Boone County,4,139093,69458,69635,Female
+Kentucky,Bourbon County,4,20093,9963,10130,Female
+Kentucky,Boyd County,4,48110,24219,23891,Male
+Kentucky,Boyle County,4,30904,15550,15354,Male
+Kentucky,Bracken County,4,8452,4274,4178,Male
+Kentucky,Breathitt County,4,13351,6721,6630,Male
+Kentucky,Breckinridge County,4,20943,10664,10279,Male
+Kentucky,Bullitt County,4,83836,41875,41961,Female
+Kentucky,Butler County,4,12295,6243,6052,Male
+Kentucky,Caldwell County,4,12570,6201,6369,Female
+Kentucky,Calloway County,4,37685,18513,19172,Female
+Kentucky,Campbell County,4,93300,46372,46928,Female
+Kentucky,Carlisle County,4,4720,2382,2338,Male
+Kentucky,Carroll County,4,10938,5533,5405,Male
+Kentucky,Carter County,4,26395,13047,13348,Female
+Kentucky,Casey County,4,15920,7836,8084,Female
+Kentucky,Christian County,4,73037,38722,34315,Male
+Kentucky,Clark County,4,37061,18177,18884,Female
+Kentucky,Clay County,4,19913,10487,9426,Male
+Kentucky,Clinton County,4,9123,4502,4621,Female
+Kentucky,Crittenden County,4,8981,4569,4412,Male
+Kentucky,Cumberland County,4,5946,2949,2997,Female
+Kentucky,Daviess County,4,103222,50698,52524,Female
+Kentucky,Edmonson County,4,12269,6079,6190,Female
+Kentucky,Elliott County,4,7293,4259,3034,Male
+Kentucky,Estill County,4,14044,7020,7024,Female
+Kentucky,Fayette County,4,320347,157637,162710,Female
+Kentucky,Fleming County,4,15288,7595,7693,Female
+Kentucky,Floyd County,4,34978,17050,17928,Female
+Kentucky,Franklin County,4,51607,25042,26565,Female
+Kentucky,Fulton County,4,6382,3233,3149,Male
+Kentucky,Gallatin County,4,8763,4475,4288,Male
+Kentucky,Garrard County,4,17589,8783,8806,Female
+Kentucky,Grant County,4,25502,12902,12600,Male
+Kentucky,Graves County,4,36412,18023,18389,Female
+Kentucky,Grayson County,4,26631,13488,13143,Male
+Kentucky,Green County,4,11365,5681,5684,Female
+Kentucky,Greenup County,4,35403,17287,18116,Female
+Kentucky,Hancock County,4,9021,4616,4405,Male
+Kentucky,Hardin County,4,111862,55956,55906,Male
+Kentucky,Harlan County,4,25662,12373,13289,Female
+Kentucky,Harrison County,4,19103,9453,9650,Female
+Kentucky,Hart County,4,19600,9745,9855,Female
+Kentucky,Henderson County,4,44046,21641,22405,Female
+Kentucky,Henry County,4,15771,7917,7854,Male
+Kentucky,Hickman County,4,4422,2095,2327,Female
+Kentucky,Hopkins County,4,44812,22012,22800,Female
+Kentucky,Jackson County,4,12973,6509,6464,Male
+Kentucky,Jefferson County,4,773399,376602,396797,Female
+Kentucky,Jessamine County,4,54254,26533,27721,Female
+Kentucky,Johnson County,4,22244,11056,11188,Female
+Kentucky,Kenton County,4,170313,84866,85447,Female
+Kentucky,Knott County,4,13874,6852,7022,Female
+Kentucky,Knox County,4,29791,14592,15199,Female
+Kentucky,Larue County,4,15163,7585,7578,Male
+Kentucky,Laurel County,4,62885,31147,31738,Female
+Kentucky,Lawrence County,4,16109,8085,8024,Male
+Kentucky,Lee County,4,7261,4092,3169,Male
+Kentucky,Leslie County,4,10093,5061,5032,Male
+Kentucky,Letcher County,4,20893,10316,10577,Female
+Kentucky,Lewis County,4,12954,6521,6433,Male
+Kentucky,Lincoln County,4,24360,11983,12377,Female
+Kentucky,Livingston County,4,8963,4442,4521,Female
+Kentucky,Logan County,4,27877,13913,13964,Female
+Kentucky,Lyon County,4,9101,5425,3676,Male
+Kentucky,McCracken County,4,67490,32757,34733,Female
+Kentucky,McCreary County,4,16701,9140,7561,Male
+Kentucky,McLean County,4,9105,4554,4551,Male
+Kentucky,Madison County,4,95187,46608,48579,Female
+Kentucky,Magoffin County,4,11357,5709,5648,Male
+Kentucky,Marion County,4,19775,9891,9884,Male
+Kentucky,Marshall County,4,31777,15862,15915,Female
+Kentucky,Martin County,4,11095,6227,4868,Male
+Kentucky,Mason County,4,16930,8277,8653,Female
+Kentucky,Meade County,4,30001,15178,14823,Male
+Kentucky,Menifee County,4,6250,3156,3094,Male
+Kentucky,Mercer County,4,22902,11357,11545,Female
+Kentucky,Metcalfe County,4,10370,5243,5127,Male
+Kentucky,Monroe County,4,11355,5683,5672,Male
+Kentucky,Montgomery County,4,28367,13913,14454,Female
+Kentucky,Morgan County,4,14120,8209,5911,Male
+Kentucky,Muhlenberg County,4,30455,15595,14860,Male
+Kentucky,Nelson County,4,47392,23483,23909,Female
+Kentucky,Nicholas County,4,7805,3930,3875,Male
+Kentucky,Ohio County,4,23527,11808,11719,Male
+Kentucky,Oldham County,4,69431,36485,32946,Male
+Kentucky,Owen County,4,11290,5661,5629,Male
+Kentucky,Owsley County,4,3929,1922,2007,Female
+Kentucky,Pendleton County,4,14676,7571,7105,Male
+Kentucky,Perry County,4,27361,13557,13804,Female
+Kentucky,Pike County,4,56286,27831,28455,Female
+Kentucky,Powell County,4,13083,6555,6528,Male
+Kentucky,Pulaski County,4,65795,32467,33328,Female
+Kentucky,Robertson County,4,2229,1127,1102,Male
+Kentucky,Rockcastle County,4,16242,8080,8162,Female
+Kentucky,Rowan County,4,24388,11944,12444,Female
+Kentucky,Russell County,4,18178,9000,9178,Female
+Kentucky,Scott County,4,59099,29321,29778,Female
+Kentucky,Shelby County,4,48886,23852,25034,Female
+Kentucky,Simpson County,4,19949,9916,10033,Female
+Kentucky,Spencer County,4,20204,10322,9882,Male
+Kentucky,Taylor County,4,26407,13016,13391,Female
+Kentucky,Todd County,4,12404,6303,6101,Male
+Kentucky,Trigg County,4,14332,7232,7100,Male
+Kentucky,Trimble County,4,8539,4312,4227,Male
+Kentucky,Union County,4,12961,6401,6560,Female
+Kentucky,Warren County,4,139843,69197,70646,Female
+Kentucky,Washington County,4,12061,5989,6072,Female
+Kentucky,Wayne County,4,19681,9828,9853,Female
+Kentucky,Webster County,4,12726,6429,6297,Male
+Kentucky,Whitley County,4,36873,18299,18574,Female
+Kentucky,Wolfe County,4,6400,3159,3241,Female
+Kentucky,Woodford County,4,27062,13134,13928,Female
+Louisiana,Acadia Parish,4,56744,27751,28993,Female
+Louisiana,Allen Parish,4,22320,12472,9848,Male
+Louisiana,Ascension Parish,4,130458,64462,65996,Female
+Louisiana,Assumption Parish,4,20604,10111,10493,Female
+Louisiana,Avoyelles Parish,4,38751,19591,19160,Male
+Louisiana,Beauregard Parish,4,36570,18760,17810,Male
+Louisiana,Bienville Parish,4,12641,6175,6466,Female
+Louisiana,Bossier Parish,4,129276,64079,65197,Female
+Louisiana,Caddo Parish,4,229025,108602,120423,Female
+Louisiana,Calcasieu Parish,4,202418,99692,102726,Female
+Louisiana,Caldwell Parish,4,9554,5016,4538,Male
+Louisiana,Cameron Parish,4,4902,2512,2390,Male
+Louisiana,Catahoula Parish,4,8566,4474,4092,Male
+Louisiana,Claiborne Parish,4,13744,7382,6362,Male
+Louisiana,Concordia Parish,4,18116,9101,9015,Male
+Louisiana,De Soto Parish,4,26853,13057,13796,Female
+Louisiana,East Baton Rouge Parish,4,450544,215129,235415,Female
+Louisiana,East Carroll Parish,4,6990,4124,2866,Male
+Louisiana,East Feliciana Parish,4,19135,10488,8647,Male
+Louisiana,Evangeline Parish,4,31986,16410,15576,Male
+Louisiana,Franklin Parish,4,19308,9262,10046,Female
+Louisiana,Grant Parish,4,22000,12448,9552,Male
+Louisiana,Iberia Parish,4,68327,33513,34814,Female
+Louisiana,Iberville Parish,4,29506,14876,14630,Male
+Louisiana,Jackson Parish,4,14839,7555,7284,Male
+Louisiana,Jefferson Parish,4,425884,206854,219030,Female
+Louisiana,Jefferson Davis Parish,4,32026,15851,16175,Female
+Louisiana,Lafayette Parish,4,247866,120978,126888,Female
+Louisiana,Lafourche Parish,4,95870,47498,48372,Female
+Louisiana,LaSalle Parish,4,14729,8065,6664,Male
+Louisiana,Lincoln Parish,4,48129,23590,24539,Female
+Louisiana,Livingston Parish,4,148425,73266,75159,Female
+Louisiana,Madison Parish,4,9478,4562,4916,Female
+Louisiana,Morehouse Parish,4,24446,12036,12410,Female
+Louisiana,Natchitoches Parish,4,36663,17848,18815,Female
+Louisiana,Orleans Parish,4,369749,174043,195706,Female
+Louisiana,Ouachita Parish,4,157702,75992,81710,Female
+Louisiana,Plaquemines Parish,4,22516,11559,10957,Male
+Louisiana,Pointe Coupee Parish,4,20151,9759,10392,Female
+Louisiana,Rapides Parish,4,127189,61699,65490,Female
+Louisiana,Red River Parish,4,7420,3644,3776,Female
+Louisiana,Richland Parish,4,19826,9743,10083,Female
+Louisiana,Sabine Parish,4,21985,10881,11104,Female
+Louisiana,St. Bernard Parish,4,44479,21930,22549,Female
+Louisiana,St. Charles Parish,4,50998,25150,25848,Female
+Louisiana,St. Helena Parish,4,10822,5229,5593,Female
+Louisiana,St. James Parish,4,19423,9469,9954,Female
+Louisiana,St. John the Baptist Parish,4,39864,19538,20326,Female
+Louisiana,St. Landry Parish,4,81773,39851,41922,Female
+Louisiana,St. Martin Parish,4,51236,25203,26033,Female
+Louisiana,St. Mary Parish,4,47789,23489,24300,Female
+Louisiana,St. Tammany Parish,4,273263,133823,139440,Female
+Louisiana,Tangipahoa Parish,4,137048,66951,70097,Female
+Louisiana,Tensas Parish,4,3846,1898,1948,Female
+Louisiana,Terrebonne Parish,4,104786,51962,52824,Female
+Louisiana,Union Parish,4,20721,10255,10466,Female
+Louisiana,Vermilion Parish,4,56952,27716,29236,Female
+Louisiana,Vernon Parish,4,47247,24622,22625,Male
+Louisiana,Washington Parish,4,45025,22488,22537,Female
+Louisiana,Webster Parish,4,35643,17247,18396,Female
+Louisiana,West Baton Rouge Parish,4,28034,13704,14330,Female
+Louisiana,West Carroll Parish,4,9475,4662,4813,Female
+Louisiana,West Feliciana Parish,4,15381,10161,5220,Male
+Louisiana,Winn Parish,4,13205,7112,6093,Male
+Maine,Androscoggin County,4,113023,55693,57330,Female
+Maine,Aroostook County,4,67255,33548,33707,Female
+Maine,Cumberland County,4,307451,149949,157502,Female
+Maine,Franklin County,4,30474,14902,15572,Female
+Maine,Hancock County,4,56701,27755,28946,Female
+Maine,Kennebec County,4,125540,61655,63885,Female
+Maine,Knox County,4,41164,20528,20636,Female
+Maine,Lincoln County,4,36215,17849,18366,Female
+Maine,Oxford County,4,59495,29777,29718,Male
+Maine,Penobscot County,4,153704,76467,77237,Female
+Maine,Piscataquis County,4,17417,8764,8653,Male
+Maine,Sagadahoc County,4,37393,18402,18991,Female
+Maine,Somerset County,4,51098,25667,25431,Male
+Maine,Waldo County,4,40241,19960,20281,Female
+Maine,Washington County,4,31437,15483,15954,Female
+Maine,York County,4,216732,106833,109899,Female
+Maryland,Allegany County,4,67267,35317,31950,Male
+Maryland,Anne Arundel County,4,593286,294149,299137,Female
+Maryland,Baltimore County,4,846161,402480,443681,Female
+Maryland,Calvert County,4,94573,47073,47500,Female
+Maryland,Caroline County,4,33433,16363,17070,Female
+Maryland,Carroll County,4,175305,87546,87759,Female
+Maryland,Cecil County,4,104942,52328,52614,Female
+Maryland,Charles County,4,170102,82395,87707,Female
+Maryland,Dorchester County,4,32726,15469,17257,Female
+Maryland,Frederick County,4,287079,142368,144711,Female
+Maryland,Garrett County,4,28579,14263,14316,Female
+Maryland,Harford County,4,263867,130118,133749,Female
+Maryland,Howard County,4,335411,165671,169740,Female
+Maryland,Kent County,4,19320,9346,9974,Female
+Maryland,Montgomery County,4,1052521,513460,539061,Female
+Maryland,Prince George's County,4,946971,457803,489168,Female
+Maryland,Queen Anne's County,4,51711,25800,25911,Female
+Maryland,St. Mary's County,4,114877,57939,56938,Male
+Maryland,Somerset County,4,24546,13407,11139,Male
+Maryland,Talbot County,4,37932,18091,19841,Female
+Maryland,Washington County,4,155590,79287,76303,Male
+Maryland,Wicomico County,4,104664,49796,54868,Female
+Maryland,Worcester County,4,53866,26439,27427,Female
+Maryland,Baltimore city,4,569931,265001,304930,Female
+Massachusetts,Barnstable County,4,232457,112019,120438,Female
+Massachusetts,Berkshire County,4,127859,62361,65498,Female
+Massachusetts,Bristol County,4,580068,283983,296085,Female
+Massachusetts,Dukes County,4,20868,10307,10561,Female
+Massachusetts,Essex County,4,806765,392908,413857,Female
+Massachusetts,Franklin County,4,70894,34964,35930,Female
+Massachusetts,Hampden County,4,461041,224729,236312,Female
+Massachusetts,Hampshire County,4,162588,76089,86499,Female
+Massachusetts,Middlesex County,4,1617105,799386,817719,Female
+Massachusetts,Nantucket County,4,14421,7514,6907,Male
+Massachusetts,Norfolk County,4,725531,352656,372875,Female
+Massachusetts,Plymouth County,4,533069,261254,271815,Female
+Massachusetts,Suffolk County,4,766381,370584,395797,Female
+Massachusetts,Worcester County,4,862927,429196,433731,Female
+Michigan,Alcona County,4,10417,5282,5135,Male
+Michigan,Alger County,4,8807,4942,3865,Male
+Michigan,Allegan County,4,121210,61086,60124,Male
+Michigan,Alpena County,4,28847,14364,14483,Female
+Michigan,Antrim County,4,24249,12152,12097,Male
+Michigan,Arenac County,4,15089,7744,7345,Male
+Michigan,Baraga County,4,8277,4577,3700,Male
+Michigan,Barry County,4,63554,32195,31359,Male
+Michigan,Bay County,4,102821,50944,51877,Female
+Michigan,Benzie County,4,18297,9237,9060,Male
+Michigan,Berrien County,4,152900,75315,77585,Female
+Michigan,Branch County,4,44531,22934,21597,Male
+Michigan,Calhoun County,4,133289,65849,67440,Female
+Michigan,Cass County,4,51403,25858,25545,Male
+Michigan,Charlevoix County,4,26293,13190,13103,Male
+Michigan,Cheboygan County,4,25940,13159,12781,Male
+Michigan,Chippewa County,4,36293,19948,16345,Male
+Michigan,Clare County,4,31352,15808,15544,Male
+Michigan,Clinton County,4,79748,39612,40136,Female
+Michigan,Crawford County,4,13491,6969,6522,Male
+Michigan,Delta County,4,36741,18447,18294,Male
+Michigan,Dickinson County,4,25874,13197,12677,Male
+Michigan,Eaton County,4,108992,53929,55063,Female
+Michigan,Emmet County,4,34163,17058,17105,Female
+Michigan,Genesee County,4,401983,195092,206891,Female
+Michigan,Gladwin County,4,25728,13059,12669,Male
+Michigan,Gogebic County,4,14319,7357,6962,Male
+Michigan,Grand Traverse County,4,96464,47846,48618,Female
+Michigan,Gratiot County,4,41100,22165,18935,Male
+Michigan,Hillsdale County,4,45762,22940,22822,Male
+Michigan,Houghton County,4,37035,20228,16807,Male
+Michigan,Huron County,4,31248,15725,15523,Male
+Michigan,Ingham County,4,284108,139186,144922,Female
+Michigan,Ionia County,4,66809,36970,29839,Male
+Michigan,Iosco County,4,25521,12846,12675,Male
+Michigan,Iron County,4,11622,5839,5783,Male
+Michigan,Isabella County,4,64447,31615,32832,Female
+Michigan,Jackson County,4,160066,82405,77661,Male
+Michigan,Kalamazoo County,4,261173,128206,132967,Female
+Michigan,Kalkaska County,4,18182,9317,8865,Male
+Michigan,Kent County,4,659083,327706,331377,Female
+Michigan,Keweenaw County,4,2180,1105,1075,Male
+Michigan,Lake County,4,12594,6968,5626,Male
+Michigan,Lapeer County,4,88780,45755,43025,Male
+Michigan,Leelanau County,4,22870,11409,11461,Female
+Michigan,Lenawee County,4,98567,50085,48482,Male
+Michigan,Livingston County,4,196161,99045,97116,Male
+Michigan,Luce County,4,5330,2776,2554,Male
+Michigan,Mackinac County,4,10941,5537,5404,Male
+Michigan,Macomb County,4,874195,428657,445538,Female
+Michigan,Manistee County,4,25287,13138,12149,Male
+Michigan,Marquette County,4,66661,33734,32927,Male
+Michigan,Mason County,4,29409,14676,14733,Female
+Michigan,Mecosta County,4,40720,20557,20163,Male
+Michigan,Menominee County,4,23266,12040,11226,Male
+Michigan,Midland County,4,83674,41580,42094,Female
+Michigan,Missaukee County,4,15213,7780,7433,Male
+Michigan,Monroe County,4,155609,77700,77909,Female
+Michigan,Montcalm County,4,67433,36183,31250,Male
+Michigan,Montmorency County,4,9569,4952,4617,Male
+Michigan,Muskegon County,4,176565,88859,87706,Male
+Michigan,Newaygo County,4,50886,25890,24996,Male
+Michigan,Oakland County,4,1269431,627955,641476,Female
+Michigan,Oceana County,4,26973,13819,13154,Male
+Michigan,Ogemaw County,4,20970,10536,10434,Male
+Michigan,Ontonagon County,4,5863,3023,2840,Male
+Michigan,Osceola County,4,23274,11870,11404,Male
+Michigan,Oscoda County,4,8404,4302,4102,Male
+Michigan,Otsego County,4,25644,12941,12703,Male
+Michigan,Ottawa County,4,300873,149745,151128,Female
+Michigan,Presque Isle County,4,13361,6754,6607,Male
+Michigan,Roscommon County,4,23708,12008,11700,Male
+Michigan,Saginaw County,4,188330,91920,96410,Female
+Michigan,St. Clair County,4,160151,80328,79823,Male
+Michigan,St. Joseph County,4,60874,30740,30134,Male
+Michigan,Sanilac County,4,40657,20504,20153,Male
+Michigan,Schoolcraft County,4,8188,4111,4077,Male
+Michigan,Shiawassee County,4,68022,33875,34147,Female
+Michigan,Tuscola County,4,52945,26969,25976,Male
+Michigan,Van Buren County,4,75692,37861,37831,Male
+Michigan,Washtenaw County,4,366376,182845,183531,Female
+Michigan,Wayne County,4,1757043,852499,904544,Female
+Michigan,Wexford County,4,34196,17215,16981,Male
+Minnesota,Aitkin County,4,16126,8200,7926,Male
+Minnesota,Anoka County,4,368864,186118,182746,Male
+Minnesota,Becker County,4,35371,17802,17569,Male
+Minnesota,Beltrami County,4,46799,23652,23147,Male
+Minnesota,Benton County,4,41463,20999,20464,Male
+Minnesota,Big Stone County,4,5144,2626,2518,Male
+Minnesota,Blue Earth County,4,69631,35178,34453,Male
+Minnesota,Brown County,4,25723,12990,12733,Male
+Minnesota,Carlton County,4,36708,19501,17207,Male
+Minnesota,Carver County,4,110034,55308,54726,Male
+Minnesota,Cass County,4,31274,16107,15167,Male
+Minnesota,Chippewa County,4,12284,6173,6111,Male
+Minnesota,Chisago County,4,57988,30221,27767,Male
+Minnesota,Clay County,4,65929,32915,33014,Female
+Minnesota,Clearwater County,4,8649,4429,4220,Male
+Minnesota,Cook County,4,5708,2859,2849,Male
+Minnesota,Cottonwood County,4,11356,5722,5634,Male
+Minnesota,Crow Wing County,4,67948,34041,33907,Male
+Minnesota,Dakota County,4,443341,220624,222717,Female
+Minnesota,Dodge County,4,20981,10651,10330,Male
+Minnesota,Douglas County,4,39668,20023,19645,Male
+Minnesota,Faribault County,4,13926,7047,6879,Male
+Minnesota,Fillmore County,4,21414,10859,10555,Male
+Minnesota,Freeborn County,4,30718,15440,15278,Male
+Minnesota,Goodhue County,4,48013,24141,23872,Male
+Minnesota,Grant County,4,6136,3116,3020,Male
+Minnesota,Hennepin County,4,1260121,627886,632235,Female
+Minnesota,Houston County,4,18800,9528,9272,Male
+Minnesota,Hubbard County,4,21960,11199,10761,Male
+Minnesota,Isanti County,4,42727,21797,20930,Male
+Minnesota,Itasca County,4,45205,22923,22282,Male
+Minnesota,Jackson County,4,9893,5116,4777,Male
+Minnesota,Kanabec County,4,16463,8326,8137,Male
+Minnesota,Kandiyohi County,4,43839,22187,21652,Male
+Minnesota,Kittson County,4,4059,2047,2012,Male
+Minnesota,Koochiching County,4,11844,6019,5825,Male
+Minnesota,Lac qui Parle County,4,6689,3429,3260,Male
+Minnesota,Lake County,4,10939,5634,5305,Male
+Minnesota,Lake of the Woods County,4,3871,2026,1845,Male
+Minnesota,Le Sueur County,4,29153,14940,14213,Male
+Minnesota,Lincoln County,4,5580,2852,2728,Male
+Minnesota,Lyon County,4,25262,12673,12589,Male
+Minnesota,McLeod County,4,36714,18482,18232,Male
+Minnesota,Mahnomen County,4,5328,2735,2593,Male
+Minnesota,Marshall County,4,8861,4524,4337,Male
+Minnesota,Martin County,4,19650,9830,9820,Male
+Minnesota,Meeker County,4,23496,12150,11346,Male
+Minnesota,Mille Lacs County,4,27280,13896,13384,Male
+Minnesota,Morrison County,4,34246,17423,16823,Male
+Minnesota,Mower County,4,40140,20394,19746,Male
+Minnesota,Murray County,4,8060,4067,3993,Male
+Minnesota,Nicollet County,4,34441,17419,17022,Male
+Minnesota,Nobles County,4,21947,11415,10532,Male
+Minnesota,Norman County,4,6377,3250,3127,Male
+Minnesota,Olmsted County,4,164020,80405,83615,Female
+Minnesota,Otter Tail County,4,60519,30680,29839,Male
+Minnesota,Pennington County,4,13845,6953,6892,Male
+Minnesota,Pine County,4,29446,15668,13778,Male
+Minnesota,Pipestone County,4,9355,4666,4689,Female
+Minnesota,Polk County,4,30731,15506,15225,Male
+Minnesota,Pope County,4,11431,5863,5568,Male
+Minnesota,Ramsey County,4,536413,263743,272670,Female
+Minnesota,Red Lake County,4,3874,1992,1882,Male
+Minnesota,Redwood County,4,15361,7726,7635,Male
+Minnesota,Renville County,4,14525,7486,7039,Male
+Minnesota,Rice County,4,67693,35006,32687,Male
+Minnesota,Rock County,4,9537,4741,4796,Female
+Minnesota,Roseau County,4,15292,7996,7296,Male
+Minnesota,St. Louis County,4,199532,100572,98960,Male
+Minnesota,Scott County,4,154520,77690,76830,Male
+Minnesota,Sherburne County,4,100824,52162,48662,Male
+Minnesota,Sibley County,4,14955,7661,7294,Male
+Minnesota,Stearns County,4,160405,81415,78990,Male
+Minnesota,Steele County,4,37398,18725,18673,Male
+Minnesota,Stevens County,4,9637,4895,4742,Male
+Minnesota,Swift County,4,9755,4969,4786,Male
+Minnesota,Todd County,4,25538,13306,12232,Male
+Minnesota,Traverse County,4,3275,1677,1598,Male
+Minnesota,Wabasha County,4,21658,10881,10777,Male
+Minnesota,Wadena County,4,14307,7172,7135,Male
+Minnesota,Waseca County,4,18893,9257,9636,Female
+Minnesota,Washington County,4,275912,137479,138433,Female
+Minnesota,Watonwan County,4,11075,5558,5517,Male
+Minnesota,Wilkin County,4,6350,3365,2985,Male
+Minnesota,Winona County,4,49478,24742,24736,Male
+Minnesota,Wright County,4,148003,75519,72484,Male
+Minnesota,Yellow Medicine County,4,9486,4831,4655,Male
+Mississippi,Adams County,4,28408,14378,14030,Male
+Mississippi,Alcorn County,4,34204,16796,17408,Female
+Mississippi,Amite County,4,12619,6137,6482,Female
+Mississippi,Attala County,4,17509,8408,9101,Female
+Mississippi,Benton County,4,7550,3751,3799,Female
+Mississippi,Bolivar County,4,29370,13744,15626,Female
+Mississippi,Calhoun County,4,12781,6209,6572,Female
+Mississippi,Carroll County,4,9731,5080,4651,Male
+Mississippi,Chickasaw County,4,16812,8292,8520,Female
+Mississippi,Choctaw County,4,8037,3947,4090,Female
+Mississippi,Claiborne County,4,8805,4159,4646,Female
+Mississippi,Clarke County,4,15271,7287,7984,Female
+Mississippi,Clay County,4,18380,8628,9752,Female
+Mississippi,Coahoma County,4,20197,9480,10717,Female
+Mississippi,Copiah County,4,27719,13407,14312,Female
+Mississippi,Covington County,4,18098,8878,9220,Female
+Mississippi,DeSoto County,4,191723,92502,99221,Female
+Mississippi,Forrest County,4,78110,36737,41373,Female
+Mississippi,Franklin County,4,7642,3798,3844,Female
+Mississippi,George County,4,25206,12771,12435,Male
+Mississippi,Greene County,4,13552,7972,5580,Male
+Mississippi,Grenada County,4,21088,10106,10982,Female
+Mississippi,Hancock County,4,46094,22575,23519,Female
+Mississippi,Harrison County,4,211044,103186,107858,Female
+Mississippi,Hinds County,4,217730,101663,116067,Female
+Mississippi,Holmes County,4,16121,7771,8350,Female
+Mississippi,Humphreys County,4,7333,3446,3887,Female
+Mississippi,Issaquena County,4,1273,867,406,Male
+Mississippi,Itawamba County,4,23903,11882,12021,Female
+Mississippi,Jackson County,4,144975,71211,73764,Female
+Mississippi,Jasper County,4,16167,7956,8211,Female
+Mississippi,Jefferson County,4,7087,3503,3584,Female
+Mississippi,Jefferson Davis County,4,11088,5276,5812,Female
+Mississippi,Jones County,4,66569,32391,34178,Female
+Mississippi,Kemper County,4,8654,4357,4297,Male
+Mississippi,Lafayette County,4,57615,27877,29738,Female
+Mississippi,Lamar County,4,65783,31587,34196,Female
+Mississippi,Lauderdale County,4,70904,34436,36468,Female
+Mississippi,Lawrence County,4,11713,5742,5971,Female
+Mississippi,Leake County,4,21135,10440,10695,Female
+Mississippi,Lee County,4,82959,39709,43250,Female
+Mississippi,Leflore County,4,26570,12386,14184,Female
+Mississippi,Lincoln County,4,34717,16789,17928,Female
+Mississippi,Lowndes County,4,57603,27635,29968,Female
+Mississippi,Madison County,4,111113,53290,57823,Female
+Mississippi,Marion County,4,24050,11684,12366,Female
+Mississippi,Marshall County,4,34110,17043,17067,Female
+Mississippi,Monroe County,4,33577,16164,17413,Female
+Mississippi,Montgomery County,4,9530,4578,4952,Female
+Mississippi,Neshoba County,4,28673,13654,15019,Female
+Mississippi,Newton County,4,21029,10129,10900,Female
+Mississippi,Noxubee County,4,9990,4754,5236,Female
+Mississippi,Oktibbeha County,4,51427,25850,25577,Male
+Mississippi,Panola County,4,32661,15719,16942,Female
+Mississippi,Pearl River County,4,57261,28235,29026,Female
+Mississippi,Perry County,4,11368,5575,5793,Female
+Mississippi,Pike County,4,39644,18880,20764,Female
+Mississippi,Pontotoc County,4,31389,15436,15953,Female
+Mississippi,Prentiss County,4,24792,12257,12535,Female
+Mississippi,Quitman County,4,5701,2711,2990,Female
+Mississippi,Rankin County,4,158979,76946,82033,Female
+Mississippi,Scott County,4,27707,13464,14243,Female
+Mississippi,Sharkey County,4,3488,1665,1823,Female
+Mississippi,Simpson County,4,25587,12427,13160,Female
+Mississippi,Smith County,4,14092,6823,7269,Female
+Mississippi,Stone County,4,18669,9433,9236,Male
+Mississippi,Sunflower County,4,24811,13190,11621,Male
+Mississippi,Tallahatchie County,4,12035,6453,5582,Male
+Mississippi,Tate County,4,28296,13783,14513,Female
+Mississippi,Tippah County,4,21431,10460,10971,Female
+Mississippi,Tishomingo County,4,18619,9139,9480,Female
+Mississippi,Tunica County,4,9458,4471,4987,Female
+Mississippi,Union County,4,28125,13878,14247,Female
+Mississippi,Walthall County,4,13761,6698,7063,Female
+Mississippi,Warren County,4,42649,20455,22194,Female
+Mississippi,Washington County,4,42514,19834,22680,Female
+Mississippi,Wayne County,4,19681,9579,10102,Female
+Mississippi,Webster County,4,9993,4862,5131,Female
+Mississippi,Wilkinson County,4,8143,4370,3773,Male
+Mississippi,Winston County,4,17543,8643,8900,Female
+Mississippi,Yalobusha County,4,12364,6063,6301,Female
+Mississippi,Yazoo County,4,25948,15029,10919,Male
+Missouri,Adair County,4,25165,12161,13004,Female
+Missouri,Andrew County,4,18003,9040,8963,Male
+Missouri,Atchison County,4,5182,2607,2575,Male
+Missouri,Audrain County,4,24434,11725,12709,Female
+Missouri,Barry County,4,34926,17674,17252,Male
+Missouri,Barton County,4,11694,5846,5848,Female
+Missouri,Bates County,4,16177,8125,8052,Male
+Missouri,Benton County,4,20224,10259,9965,Male
+Missouri,Bollinger County,4,10518,5304,5214,Male
+Missouri,Boone County,4,187690,91079,96611,Female
+Missouri,Buchanan County,4,82911,42002,40909,Male
+Missouri,Butler County,4,42179,20531,21648,Female
+Missouri,Caldwell County,4,8933,4570,4363,Male
+Missouri,Callaway County,4,44762,23261,21501,Male
+Missouri,Camden County,4,43768,21831,21937,Female
+Missouri,Cape Girardeau County,4,82899,40497,42402,Female
+Missouri,Carroll County,4,8423,4212,4211,Male
+Missouri,Carter County,4,5268,2568,2700,Female
+Missouri,Cass County,4,110394,54393,56001,Female
+Missouri,Cedar County,4,14601,7363,7238,Male
+Missouri,Chariton County,4,7386,3737,3649,Male
+Missouri,Christian County,4,93114,45884,47230,Female
+Missouri,Clark County,4,6723,3494,3229,Male
+Missouri,Clay County,4,257033,127393,129640,Female
+Missouri,Clinton County,4,21328,10792,10536,Male
+Missouri,Cole County,4,76969,39099,37870,Male
+Missouri,Cooper County,4,16772,8465,8307,Male
+Missouri,Crawford County,4,22659,11367,11292,Male
+Missouri,Dade County,4,7660,3875,3785,Male
+Missouri,Dallas County,4,17626,8784,8842,Female
+Missouri,Daviess County,4,8435,4208,4227,Female
+Missouri,DeKalb County,4,11336,6595,4741,Male
+Missouri,Dent County,4,14467,7247,7220,Male
+Missouri,Douglas County,4,11975,6078,5897,Male
+Missouri,Dunklin County,4,27406,13214,14192,Female
+Missouri,Franklin County,4,105879,53182,52697,Male
+Missouri,Gasconade County,4,14768,7462,7306,Male
+Missouri,Gentry County,4,6253,3037,3216,Female
+Missouri,Greene County,4,303293,148702,154591,Female
+Missouri,Grundy County,4,9838,4852,4986,Female
+Missouri,Harrison County,4,8199,4124,4075,Male
+Missouri,Henry County,4,22438,11143,11295,Female
+Missouri,Hickory County,4,8630,4252,4378,Female
+Missouri,Holt County,4,4262,2100,2162,Female
+Missouri,Howard County,4,10168,5139,5029,Male
+Missouri,Howell County,4,40631,19955,20676,Female
+Missouri,Iron County,4,9414,4755,4659,Male
+Missouri,Jackson County,4,716531,348587,367944,Female
+Missouri,Jasper County,4,124075,61151,62924,Female
+Missouri,Jefferson County,4,229336,115013,114323,Male
+Missouri,Johnson County,4,54368,27985,26383,Male
+Missouri,Knox County,4,3776,1893,1883,Male
+Missouri,Laclede County,4,36313,18141,18172,Female
+Missouri,Lafayette County,4,32961,16508,16453,Male
+Missouri,Lawrence County,4,38683,19471,19212,Male
+Missouri,Lewis County,4,9891,5000,4891,Male
+Missouri,Lincoln County,4,63155,32066,31089,Male
+Missouri,Linn County,4,11820,5809,6011,Female
+Missouri,Livingston County,4,14402,6561,7841,Female
+Missouri,McDonald County,4,23588,12025,11563,Male
+Missouri,Macon County,4,15049,7570,7479,Male
+Missouri,Madison County,4,12753,6455,6298,Male
+Missouri,Maries County,4,8431,4271,4160,Male
+Missouri,Marion County,4,28438,13958,14480,Female
+Missouri,Mercer County,4,3437,1711,1726,Female
+Missouri,Miller County,4,25403,12759,12644,Male
+Missouri,Mississippi County,4,11688,5960,5728,Male
+Missouri,Moniteau County,4,15220,7930,7290,Male
+Missouri,Monroe County,4,8652,4404,4248,Male
+Missouri,Montgomery County,4,11470,5796,5674,Male
+Missouri,Morgan County,4,21785,11061,10724,Male
+Missouri,New Madrid County,4,15695,7481,8214,Female
+Missouri,Newton County,4,60011,30174,29837,Male
+Missouri,Nodaway County,4,20670,10327,10343,Female
+Missouri,Oregon County,4,8732,4373,4359,Male
+Missouri,Osage County,4,13399,6877,6522,Male
+Missouri,Ozark County,4,8940,4535,4405,Male
+Missouri,Pemiscot County,4,14841,7119,7722,Female
+Missouri,Perry County,4,18858,9569,9289,Male
+Missouri,Pettis County,4,43353,21785,21568,Male
+Missouri,Phelps County,4,45313,23836,21477,Male
+Missouri,Pike County,4,17664,9484,8180,Male
+Missouri,Platte County,4,110534,54813,55721,Female
+Missouri,Polk County,4,32693,16260,16433,Female
+Missouri,Pulaski County,4,53941,30766,23175,Male
+Missouri,Putnam County,4,4666,2384,2282,Male
+Missouri,Ralls County,4,10420,5232,5188,Male
+Missouri,Randolph County,4,24622,12952,11670,Male
+Missouri,Ray County,4,23107,11568,11539,Male
+Missouri,Reynolds County,4,6006,3109,2897,Male
+Missouri,Ripley County,4,10703,5266,5437,Female
+Missouri,St. Charles County,4,413803,204957,208846,Female
+Missouri,St. Clair County,4,9576,4923,4653,Male
+Missouri,Ste. Genevieve County,4,18644,9727,8917,Male
+Missouri,St. Francois County,4,66969,35225,31744,Male
+Missouri,St. Louis County,4,990414,474728,515686,Female
+Missouri,Saline County,4,23007,11722,11285,Male
+Missouri,Schuyler County,4,4002,2007,1995,Male
+Missouri,Scotland County,4,4643,2318,2325,Female
+Missouri,Scott County,4,37840,18454,19386,Female
+Missouri,Shannon County,4,7193,3617,3576,Male
+Missouri,Shelby County,4,5982,3007,2975,Male
+Missouri,Stoddard County,4,28377,14091,14286,Female
+Missouri,Stone County,4,32136,15997,16139,Female
+Missouri,Sullivan County,4,5840,2999,2841,Male
+Missouri,Taney County,4,56821,27726,29095,Female
+Missouri,Texas County,4,25336,13439,11897,Male
+Missouri,Vernon County,4,19651,9662,9989,Female
+Missouri,Warren County,4,37260,18769,18491,Male
+Missouri,Washington County,4,23441,12138,11303,Male
+Missouri,Wayne County,4,10792,5372,5420,Female
+Missouri,Webster County,4,40335,20385,19950,Male
+Missouri,Worth County,4,1955,973,982,Female
+Missouri,Wright County,4,19156,9538,9618,Female
+Missouri,St. Louis city,4,286578,139069,147509,Female
+Montana,Beaverhead County,4,9719,5020,4699,Male
+Montana,Big Horn County,4,12851,6390,6461,Female
+Montana,Blaine County,4,6936,3557,3379,Male
+Montana,Broadwater County,4,7793,4075,3718,Male
+Montana,Carbon County,4,11179,5769,5410,Male
+Montana,Carter County,4,1382,710,672,Male
+Montana,Cascade County,4,84864,43210,41654,Male
+Montana,Chouteau County,4,5898,2986,2912,Male
+Montana,Custer County,4,12032,6019,6013,Male
+Montana,Daniels County,4,1628,851,777,Male
+Montana,Dawson County,4,8830,4596,4234,Male
+Montana,Deer Lodge County,4,9510,5020,4490,Male
+Montana,Fallon County,4,3011,1539,1472,Male
+Montana,Fergus County,4,11663,5934,5729,Male
+Montana,Flathead County,4,111814,55982,55832,Male
+Montana,Gallatin County,4,124857,65262,59595,Male
+Montana,Garfield County,4,1218,617,601,Male
+Montana,Glacier County,4,13681,6705,6976,Female
+Montana,Golden Valley County,4,835,394,441,Female
+Montana,Granite County,4,3502,1819,1683,Male
+Montana,Hill County,4,16068,8174,7894,Male
+Montana,Jefferson County,4,12826,6541,6285,Male
+Montana,Judith Basin County,4,2105,1094,1011,Male
+Montana,Lake County,4,32853,16234,16619,Female
+Montana,Lewis and Clark County,4,73832,36851,36981,Female
+Montana,Liberty County,4,1972,972,1000,Female
+Montana,Lincoln County,4,21525,10811,10714,Male
+Montana,McCone County,4,1709,884,825,Male
+Montana,Madison County,4,9265,4807,4458,Male
+Montana,Meagher County,4,2013,1053,960,Male
+Montana,Mineral County,4,5058,2607,2451,Male
+Montana,Missoula County,4,121041,61075,59966,Male
+Montana,Musselshell County,4,5197,2678,2519,Male
+Montana,Park County,4,17790,9016,8774,Male
+Montana,Petroleum County,4,524,278,246,Male
+Montana,Phillips County,4,4240,2143,2097,Male
+Montana,Pondera County,4,6078,3072,3006,Male
+Montana,Powder River County,4,1725,881,844,Male
+Montana,Powell County,4,7051,4463,2588,Male
+Montana,Prairie County,4,1107,571,536,Male
+Montana,Ravalli County,4,47298,23889,23409,Male
+Montana,Richland County,4,11237,5842,5395,Male
+Montana,Roosevelt County,4,10572,5377,5195,Male
+Montana,Rosebud County,4,8088,4101,3987,Male
+Montana,Sanders County,4,13442,6882,6560,Male
+Montana,Sheridan County,4,3564,1897,1667,Male
+Montana,Silver Bow County,4,36068,18453,17615,Male
+Montana,Stillwater County,4,9177,4709,4468,Male
+Montana,Sweet Grass County,4,3715,1896,1819,Male
+Montana,Teton County,4,6368,3164,3204,Female
+Montana,Toole County,4,5082,3006,2076,Male
+Montana,Treasure County,4,758,385,373,Male
+Montana,Valley County,4,7513,3796,3717,Male
+Montana,Wheatland County,4,2032,1044,988,Male
+Montana,Wibaux County,4,919,471,448,Male
+Montana,Yellowstone County,4,169852,84274,85578,Female
+Nebraska,Adams County,4,30970,15471,15499,Female
+Nebraska,Antelope County,4,6293,3161,3132,Male
+Nebraska,Arthur County,4,433,216,217,Female
+Nebraska,Banner County,4,660,332,328,Male
+Nebraska,Blaine County,4,453,232,221,Male
+Nebraska,Boone County,4,5385,2749,2636,Male
+Nebraska,Box Butte County,4,10672,5367,5305,Male
+Nebraska,Boyd County,4,1741,881,860,Male
+Nebraska,Brown County,4,2872,1430,1442,Female
+Nebraska,Buffalo County,4,50586,25424,25162,Male
+Nebraska,Burt County,4,6755,3406,3349,Male
+Nebraska,Butler County,4,8427,4256,4171,Male
+Nebraska,Cass County,4,27122,13847,13275,Male
+Nebraska,Cedar County,4,8371,4293,4078,Male
+Nebraska,Chase County,4,3772,1888,1884,Male
+Nebraska,Cherry County,4,5464,2802,2662,Male
+Nebraska,Cheyenne County,4,9511,4832,4679,Male
+Nebraska,Clay County,4,6049,3114,2935,Male
+Nebraska,Colfax County,4,10444,5622,4822,Male
+Nebraska,Cuming County,4,8929,4504,4425,Male
+Nebraska,Custer County,4,10476,5307,5169,Male
+Nebraska,Dakota County,4,21042,10658,10384,Male
+Nebraska,Dawes County,4,8241,4008,4233,Female
+Nebraska,Dawson County,4,23884,12568,11316,Male
+Nebraska,Deuel County,4,1902,977,925,Male
+Nebraska,Dixon County,4,5464,2812,2652,Male
+Nebraska,Dodge County,4,36997,18548,18449,Male
+Nebraska,Douglas County,4,586327,291743,294584,Female
+Nebraska,Dundy County,4,1590,792,798,Female
+Nebraska,Fillmore County,4,5553,2785,2768,Male
+Nebraska,Franklin County,4,2873,1468,1405,Male
+Nebraska,Frontier County,4,2633,1352,1281,Male
+Nebraska,Furnas County,4,4575,2318,2257,Male
+Nebraska,Gage County,4,21583,10863,10720,Male
+Nebraska,Garden County,4,1837,950,887,Male
+Nebraska,Garfield County,4,1801,899,902,Female
+Nebraska,Gosper County,4,1808,965,843,Male
+Nebraska,Grant County,4,576,302,274,Male
+Nebraska,Greeley County,4,2227,1134,1093,Male
+Nebraska,Hall County,4,62097,31714,30383,Male
+Nebraska,Hamilton County,4,9429,4790,4639,Male
+Nebraska,Harlan County,4,3054,1567,1487,Male
+Nebraska,Hayes County,4,849,430,419,Male
+Nebraska,Hitchcock County,4,2598,1326,1272,Male
+Nebraska,Holt County,4,10043,5096,4947,Male
+Nebraska,Hooker County,4,686,332,354,Female
+Nebraska,Howard County,4,6515,3313,3202,Male
+Nebraska,Jefferson County,4,7154,3561,3593,Female
+Nebraska,Johnson County,4,5287,3190,2097,Male
+Nebraska,Kearney County,4,6690,3358,3332,Male
+Nebraska,Keith County,4,8269,4197,4072,Male
+Nebraska,Keya Paha County,4,787,410,377,Male
+Nebraska,Kimball County,4,3315,1678,1637,Male
+Nebraska,Knox County,4,8336,4136,4200,Female
+Nebraska,Lancaster County,4,324756,163625,161131,Male
+Nebraska,Lincoln County,4,33685,16828,16857,Female
+Nebraska,Logan County,4,675,352,323,Male
+Nebraska,Loup County,4,599,303,296,Male
+Nebraska,McPherson County,4,372,187,185,Male
+Nebraska,Madison County,4,35368,17739,17629,Male
+Nebraska,Merrick County,4,7721,3925,3796,Male
+Nebraska,Morrill County,4,4527,2344,2183,Male
+Nebraska,Nance County,4,3326,1687,1639,Male
+Nebraska,Nemaha County,4,7035,3550,3485,Male
+Nebraska,Nuckolls County,4,4041,2024,2017,Male
+Nebraska,Otoe County,4,16198,8192,8006,Male
+Nebraska,Pawnee County,4,2528,1234,1294,Female
+Nebraska,Perkins County,4,2829,1435,1394,Male
+Nebraska,Phelps County,4,8988,4547,4441,Male
+Nebraska,Pierce County,4,7332,3720,3612,Male
+Nebraska,Platte County,4,34296,17495,16801,Male
+Nebraska,Polk County,4,5166,2626,2540,Male
+Nebraska,Red Willow County,4,10573,5317,5256,Male
+Nebraska,Richardson County,4,7705,3871,3834,Male
+Nebraska,Rock County,4,1245,615,630,Female
+Nebraska,Saline County,4,14116,7297,6819,Male
+Nebraska,Sarpy County,4,196553,99328,97225,Male
+Nebraska,Saunders County,4,23118,11880,11238,Male
+Nebraska,Scotts Bluff County,4,35603,17425,18178,Female
+Nebraska,Seward County,4,17692,9149,8543,Male
+Nebraska,Sheridan County,4,4996,2541,2455,Male
+Nebraska,Sherman County,4,2980,1516,1464,Male
+Nebraska,Sioux County,4,1127,601,526,Male
+Nebraska,Stanton County,4,5717,2903,2814,Male
+Nebraska,Thayer County,4,4885,2441,2444,Female
+Nebraska,Thomas County,4,671,335,336,Female
+Nebraska,Thurston County,4,6507,3245,3262,Female
+Nebraska,Valley County,4,4073,2058,2015,Male
+Nebraska,Washington County,4,21167,10700,10467,Male
+Nebraska,Wayne County,4,9871,5000,4871,Male
+Nebraska,Webster County,4,3336,1698,1638,Male
+Nebraska,Wheeler County,4,785,399,386,Male
+Nebraska,York County,4,14354,7166,7188,Female
+Nevada,Churchill County,4,25843,13284,12559,Male
+Nevada,Clark County,4,2322985,1165197,1157788,Male
+Nevada,Douglas County,4,49628,25151,24477,Male
+Nevada,Elko County,4,54046,28135,25911,Male
+Nevada,Esmeralda County,4,744,414,330,Male
+Nevada,Eureka County,4,1863,1031,832,Male
+Nevada,Humboldt County,4,17272,8965,8307,Male
+Nevada,Lander County,4,5766,2968,2798,Male
+Nevada,Lincoln County,4,4482,2390,2092,Male
+Nevada,Lyon County,4,61585,31918,29667,Male
+Nevada,Mineral County,4,4525,2289,2236,Male
+Nevada,Nye County,4,54738,28168,26570,Male
+Nevada,Pershing County,4,6462,4087,2375,Male
+Nevada,Storey County,4,4170,2146,2024,Male
+Nevada,Washoe County,4,496745,252779,243966,Male
+Nevada,White Pine County,4,8788,4936,3852,Male
+Nevada,Carson City,4,58130,29994,28136,Male
+New Hampshire,Belknap County,4,64781,32308,32473,Female
+New Hampshire,Carroll County,4,52199,26101,26098,Male
+New Hampshire,Cheshire County,4,77350,38246,39104,Female
+New Hampshire,Coos County,4,31504,16322,15182,Male
+New Hampshire,Grafton County,4,91126,45354,45772,Female
+New Hampshire,Hillsborough County,4,426594,214590,212004,Male
+New Hampshire,Merrimack County,4,156020,77729,78291,Female
+New Hampshire,Rockingham County,4,319424,159484,159940,Female
+New Hampshire,Strafford County,4,132275,65620,66655,Female
+New Hampshire,Sullivan County,4,43958,22055,21903,Male
+New Jersey,Atlantic County,4,275638,134678,140960,Female
+New Jersey,Bergen County,4,952997,467984,485013,Female
+New Jersey,Burlington County,4,466103,230556,235547,Female
+New Jersey,Camden County,4,524907,254565,270342,Female
+New Jersey,Cape May County,4,95634,46604,49030,Female
+New Jersey,Cumberland County,4,151356,76827,74529,Male
+New Jersey,Essex County,4,849477,413711,435766,Female
+New Jersey,Gloucester County,4,306601,150787,155814,Female
+New Jersey,Hudson County,4,703366,351882,351484,Male
+New Jersey,Hunterdon County,4,129777,64096,65681,Female
+New Jersey,Mercer County,4,380688,187959,192729,Female
+New Jersey,Middlesex County,4,861418,428786,432632,Female
+New Jersey,Monmouth County,4,644098,316115,327983,Female
+New Jersey,Morris County,4,511151,254048,257103,Female
+New Jersey,Ocean County,4,655735,319582,336153,Female
+New Jersey,Passaic County,4,513936,252822,261114,Female
+New Jersey,Salem County,4,65117,32127,32990,Female
+New Jersey,Somerset County,4,346875,171250,175625,Female
+New Jersey,Sussex County,4,146084,73626,72458,Male
+New Jersey,Union County,4,569815,281882,287933,Female
+New Jersey,Warren County,4,110926,55127,55799,Female
+New Mexico,Bernalillo County,4,672508,331411,341097,Female
+New Mexico,Catron County,4,3827,1997,1830,Male
+New Mexico,Chaves County,4,63894,32174,31720,Male
+New Mexico,Cibola County,4,26950,13837,13113,Male
+New Mexico,Colfax County,4,12246,6333,5913,Male
+New Mexico,Curry County,4,47532,24532,23000,Male
+New Mexico,De Baca County,4,1693,859,834,Male
+New Mexico,Do��a Ana County,4,223337,110363,112974,Female
+New Mexico,Eddy County,4,60400,30895,29505,Male
+New Mexico,Grant County,4,27686,13824,13862,Female
+New Mexico,Guadalupe County,4,4310,2492,1818,Male
+New Mexico,Harding County,4,628,334,294,Male
+New Mexico,Hidalgo County,4,4003,2044,1959,Male
+New Mexico,Lea County,4,72452,37590,34862,Male
+New Mexico,Lincoln County,4,20411,10013,10398,Female
+New Mexico,Los Alamos County,4,19187,10027,9160,Male
+New Mexico,Luna County,4,25749,12921,12828,Male
+New Mexico,McKinley County,4,69830,33829,36001,Female
+New Mexico,Mora County,4,4169,2150,2019,Male
+New Mexico,Otero County,4,68823,36468,32355,Male
+New Mexico,Quay County,4,8546,4243,4303,Female
+New Mexico,Rio Arriba County,4,40048,19811,20237,Female
+New Mexico,Roosevelt County,4,18934,9402,9532,Female
+New Mexico,Sandoval County,4,153501,75932,77569,Female
+New Mexico,San Juan County,4,120418,59615,60803,Female
+New Mexico,San Miguel County,4,26953,13476,13477,Female
+New Mexico,Santa Fe County,4,155664,76036,79628,Female
+New Mexico,Sierra County,4,11436,5673,5763,Female
+New Mexico,Socorro County,4,16115,8286,7829,Male
+New Mexico,Taos County,4,34580,17007,17573,Female
+New Mexico,Torrance County,4,15454,8012,7442,Male
+New Mexico,Union County,4,3980,2178,1802,Male
+New Mexico,Valencia County,4,78080,39387,38693,Male
+New York,Albany County,4,315811,153675,162136,Female
+New York,Allegany County,4,46694,23851,22843,Male
+New York,Bronx County,4,1379946,652885,727061,Female
+New York,Broome County,4,197117,97484,99633,Female
+New York,Cattaraugus County,4,76439,38424,38015,Male
+New York,Cayuga County,4,74998,38361,36637,Male
+New York,Chautauqua County,4,126027,62720,63307,Female
+New York,Chemung County,4,81426,40434,40992,Female
+New York,Chenango County,4,46458,23469,22989,Male
+New York,Clinton County,4,78753,40275,38478,Male
+New York,Columbia County,4,61286,30948,30338,Male
+New York,Cortland County,4,46126,22769,23357,Female
+New York,Delaware County,4,44740,22830,21910,Male
+New York,Dutchess County,4,297545,148557,148988,Female
+New York,Erie County,4,950312,463655,486657,Female
+New York,Essex County,4,36910,18984,17926,Male
+New York,Franklin County,4,46373,24246,22127,Male
+New York,Fulton County,4,52669,26348,26321,Male
+New York,Genesee County,4,57535,28723,28812,Female
+New York,Greene County,4,48061,24880,23181,Male
+New York,Hamilton County,4,5118,2579,2539,Male
+New York,Herkimer County,4,59822,29980,29842,Male
+New York,Jefferson County,4,116637,61936,54701,Male
+New York,Kings County,4,2590516,1235912,1354604,Female
+New York,Lewis County,4,26699,13651,13048,Male
+New York,Livingston County,4,61516,30750,30766,Female
+New York,Madison County,4,67097,33414,33683,Female
+New York,Monroe County,4,752035,365705,386330,Female
+New York,Montgomery County,4,49623,24704,24919,Female
+New York,Nassau County,4,1383726,682215,701511,Female
+New York,New York County,4,1596273,762837,833436,Female
+New York,Niagara County,4,210880,103792,107088,Female
+New York,Oneida County,4,228846,114621,114225,Male
+New York,Onondaga County,4,468249,227701,240548,Female
+New York,Ontario County,4,112707,55461,57246,Female
+New York,Orange County,4,405941,203097,202844,Male
+New York,Orleans County,4,39318,19937,19381,Male
+New York,Oswego County,4,118287,59819,58468,Male
+New York,Otsego County,4,60636,29515,31121,Female
+New York,Putnam County,4,98045,49304,48741,Male
+New York,Queens County,4,2278029,1114389,1163640,Female
+New York,Rensselaer County,4,159853,79883,79970,Female
+New York,Richmond County,4,491133,241085,250048,Female
+New York,Rockland County,4,339022,168111,170911,Female
+New York,St. Lawrence County,4,107733,55087,52646,Male
+New York,Saratoga County,4,238797,118711,120086,Female
+New York,Schenectady County,4,160093,78794,81299,Female
+New York,Schoharie County,4,30063,15157,14906,Male
+New York,Schuyler County,4,17650,8889,8761,Male
+New York,Seneca County,4,32882,16962,15920,Male
+New York,Steuben County,4,92599,46427,46172,Male
+New York,Suffolk County,4,1525465,757576,767889,Female
+New York,Sullivan County,4,79658,41563,38095,Male
+New York,Tioga County,4,47772,24005,23767,Male
+New York,Tompkins County,4,104777,51567,53210,Female
+New York,Ulster County,4,182319,90924,91395,Female
+New York,Warren County,4,65599,32593,33006,Female
+New York,Washington County,4,60841,31466,29375,Male
+New York,Wayne County,4,91125,45773,45352,Male
+New York,Westchester County,4,990427,483379,507048,Female
+New York,Wyoming County,4,39666,21345,18321,Male
+New York,Yates County,4,24451,12076,12375,Female
+North Carolina,Alamance County,4,176353,84526,91827,Female
+North Carolina,Alexander County,4,36512,18807,17705,Male
+North Carolina,Alleghany County,4,11185,5524,5661,Female
+North Carolina,Anson County,4,22202,11476,10726,Male
+North Carolina,Ashe County,4,27110,13498,13612,Female
+North Carolina,Avery County,4,17571,9530,8041,Male
+North Carolina,Beaufort County,4,44272,21427,22845,Female
+North Carolina,Bertie County,4,17240,8860,8380,Male
+North Carolina,Bladen County,4,29446,14093,15353,Female
+North Carolina,Brunswick County,4,153064,73613,79451,Female
+North Carolina,Buncombe County,4,273589,132057,141532,Female
+North Carolina,Burke County,4,87881,44083,43798,Male
+North Carolina,Cabarrus County,4,235797,115848,119949,Female
+North Carolina,Caldwell County,4,80492,40066,40426,Female
+North Carolina,Camden County,4,11088,5633,5455,Male
+North Carolina,Carteret County,4,69380,34148,35232,Female
+North Carolina,Caswell County,4,22614,11793,10821,Male
+North Carolina,Catawba County,4,163462,80507,82955,Female
+North Carolina,Chatham County,4,79864,38646,41218,Female
+North Carolina,Cherokee County,4,29512,14626,14886,Female
+North Carolina,Chowan County,4,13940,6688,7252,Female
+North Carolina,Clay County,4,11614,5675,5939,Female
+North Carolina,Cleveland County,4,100670,48690,51980,Female
+North Carolina,Columbus County,4,49885,24969,24916,Male
+North Carolina,Craven County,4,100874,50308,50566,Female
+North Carolina,Cumberland County,4,336699,167195,169504,Female
+North Carolina,Currituck County,4,31015,15657,15358,Male
+North Carolina,Dare County,4,37956,18680,19276,Female
+North Carolina,Davidson County,4,172586,85137,87449,Female
+North Carolina,Davie County,4,44090,21677,22413,Female
+North Carolina,Duplin County,4,48990,24205,24785,Female
+North Carolina,Durham County,4,332680,159252,173428,Female
+North Carolina,Edgecombe County,4,48301,22543,25758,Female
+North Carolina,Forsyth County,4,389157,185593,203564,Female
+North Carolina,Franklin County,4,74539,37232,37307,Female
+North Carolina,Gaston County,4,234215,113685,120530,Female
+North Carolina,Gates County,4,10383,5132,5251,Female
+North Carolina,Graham County,4,7980,4093,3887,Male
+North Carolina,Granville County,4,61903,31889,30014,Male
+North Carolina,Greene County,4,20211,11510,8701,Male
+North Carolina,Guilford County,4,546101,258987,287114,Female
+North Carolina,Halifax County,4,47848,23250,24598,Female
+North Carolina,Harnett County,4,138832,68980,69852,Female
+North Carolina,Haywood County,4,62609,30597,32012,Female
+North Carolina,Henderson County,4,118106,57210,60896,Female
+North Carolina,Hertford County,4,20875,10632,10243,Male
+North Carolina,Hoke County,4,53787,26383,27404,Female
+North Carolina,Hyde County,4,4576,2574,2002,Male
+North Carolina,Iredell County,4,195897,97379,98518,Female
+North Carolina,Jackson County,4,42955,21107,21848,Female
+North Carolina,Johnston County,4,234778,115865,118913,Female
+North Carolina,Jones County,4,9233,4537,4696,Female
+North Carolina,Lee County,4,65476,32279,33197,Female
+North Carolina,Lenoir County,4,54633,26035,28598,Female
+North Carolina,Lincoln County,4,93095,46463,46632,Female
+North Carolina,McDowell County,4,44753,22653,22100,Male
+North Carolina,Macon County,4,38065,18586,19479,Female
+North Carolina,Madison County,4,21768,10780,10988,Female
+North Carolina,Martin County,4,21508,10191,11317,Female
+North Carolina,Mecklenburg County,4,1145392,554510,590882,Female
+North Carolina,Mitchell County,4,15094,7490,7604,Female
+North Carolina,Montgomery County,4,25894,12837,13057,Female
+North Carolina,Moore County,4,105531,51619,53912,Female
+North Carolina,Nash County,4,95789,46231,49558,Female
+North Carolina,New Hanover County,4,234921,112254,122667,Female
+North Carolina,Northampton County,4,16779,8104,8675,Female
+North Carolina,Onslow County,4,207298,114268,93030,Male
+North Carolina,Orange County,4,150477,71830,78647,Female
+North Carolina,Pamlico County,4,12381,6365,6016,Male
+North Carolina,Pasquotank County,4,40938,20223,20715,Female
+North Carolina,Pender County,4,65737,33199,32538,Male
+North Carolina,Perquimans County,4,13210,6328,6882,Female
+North Carolina,Person County,4,39386,19095,20291,Female
+North Carolina,Pitt County,4,173542,81645,91897,Female
+North Carolina,Polk County,4,19986,9527,10459,Female
+North Carolina,Randolph County,4,146043,72479,73564,Female
+North Carolina,Richmond County,4,42778,21168,21610,Female
+North Carolina,Robeson County,4,116663,56269,60394,Female
+North Carolina,Rockingham County,4,91957,44835,47122,Female
+North Carolina,Rowan County,4,149645,74274,75371,Female
+North Carolina,Rutherford County,4,64963,31685,33278,Female
+North Carolina,Sampson County,4,59120,29559,29561,Female
+North Carolina,Scotland County,4,34162,17578,16584,Male
+North Carolina,Stanly County,4,64153,32176,31977,Male
+North Carolina,Stokes County,4,45175,22270,22905,Female
+North Carolina,Surry County,4,71403,35147,36256,Female
+North Carolina,Swain County,4,13967,6763,7204,Female
+North Carolina,Transylvania County,4,33355,16214,17141,Female
+North Carolina,Tyrrell County,4,3365,1752,1613,Male
+North Carolina,Union County,4,249070,124127,124943,Female
+North Carolina,Vance County,4,42138,19834,22304,Female
+North Carolina,Wake County,4,1175021,576978,598043,Female
+North Carolina,Warren County,4,18713,9376,9337,Male
+North Carolina,Washington County,4,10828,5158,5670,Female
+North Carolina,Watauga County,4,55089,27442,27647,Female
+North Carolina,Wayne County,4,117286,58233,59053,Female
+North Carolina,Wilkes County,4,65784,32465,33319,Female
+North Carolina,Wilson County,4,78449,37412,41037,Female
+North Carolina,Yadkin County,4,37463,18778,18685,Male
+North Carolina,Yancey County,4,18811,9273,9538,Female
+North Dakota,Adams County,4,2115,1048,1067,Female
+North Dakota,Barnes County,4,10758,5504,5254,Male
+North Dakota,Benson County,4,5770,2982,2788,Male
+North Dakota,Billings County,4,1018,542,476,Male
+North Dakota,Bottineau County,4,6376,3325,3051,Male
+North Dakota,Bowman County,4,2894,1462,1432,Male
+North Dakota,Burke County,4,2155,1129,1026,Male
+North Dakota,Burleigh County,4,99280,50011,49269,Male
+North Dakota,Cass County,4,192734,98271,94463,Male
+North Dakota,Cavalier County,4,3597,1893,1704,Male
+North Dakota,Dickey County,4,4923,2513,2410,Male
+North Dakota,Divide County,4,2187,1161,1026,Male
+North Dakota,Dunn County,4,4015,2129,1886,Male
+North Dakota,Eddy County,4,2314,1181,1133,Male
+North Dakota,Emmons County,4,3250,1686,1564,Male
+North Dakota,Foster County,4,3378,1689,1689,Equal
+North Dakota,Golden Valley County,4,1744,882,862,Male
+North Dakota,Grand Forks County,4,72413,37409,35004,Male
+North Dakota,Grant County,4,2243,1113,1130,Female
+North Dakota,Griggs County,4,2252,1127,1125,Male
+North Dakota,Hettinger County,4,2406,1185,1221,Female
+North Dakota,Kidder County,4,2393,1254,1139,Male
+North Dakota,LaMoure County,4,4098,2099,1999,Male
+North Dakota,Logan County,4,1855,940,915,Male
+North Dakota,McHenry County,4,5189,2718,2471,Male
+North Dakota,McIntosh County,4,2475,1230,1245,Female
+North Dakota,McKenzie County,4,13908,7384,6524,Male
+North Dakota,McLean County,4,9824,5053,4771,Male
+North Dakota,Mercer County,4,8333,4255,4078,Male
+North Dakota,Morton County,4,33710,17091,16619,Male
+North Dakota,Mountrail County,4,9290,4873,4417,Male
+North Dakota,Nelson County,4,2995,1551,1444,Male
+North Dakota,Oliver County,4,1856,982,874,Male
+North Dakota,Pembina County,4,6763,3600,3163,Male
+North Dakota,Pierce County,4,3942,1989,1953,Male
+North Dakota,Ramsey County,4,11515,5887,5628,Male
+North Dakota,Ransom County,4,5640,2952,2688,Male
+North Dakota,Renville County,4,2220,1167,1053,Male
+North Dakota,Richland County,4,16580,8545,8035,Male
+North Dakota,Rolette County,4,11933,5932,6001,Female
+North Dakota,Sargent County,4,3795,2049,1746,Male
+North Dakota,Sheridan County,4,1295,661,634,Male
+North Dakota,Sioux County,4,3711,1832,1879,Female
+North Dakota,Slope County,4,672,354,318,Male
+North Dakota,Stark County,4,32803,17008,15795,Male
+North Dakota,Steele County,4,1788,951,837,Male
+North Dakota,Stutsman County,4,21487,11051,10436,Male
+North Dakota,Towner County,4,2064,1078,986,Male
+North Dakota,Traill County,4,7958,4102,3856,Male
+North Dakota,Walsh County,4,10438,5406,5032,Male
+North Dakota,Ward County,4,68870,35957,32913,Male
+North Dakota,Wells County,4,3930,1981,1949,Male
+North Dakota,Williams County,4,38109,20289,17820,Male
+Ohio,Adams County,4,27420,13712,13708,Male
+Ohio,Allen County,4,101115,50659,50456,Male
+Ohio,Ashland County,4,52181,25904,26277,Female
+Ohio,Ashtabula County,4,97014,49750,47264,Male
+Ohio,Athens County,4,58979,29533,29446,Male
+Ohio,Auglaize County,4,45948,23119,22829,Male
+Ohio,Belmont County,4,65509,33957,31552,Male
+Ohio,Brown County,4,43680,21757,21923,Female
+Ohio,Butler County,4,388420,192223,196197,Female
+Ohio,Carroll County,4,26659,13550,13109,Male
+Ohio,Champaign County,4,38709,19304,19405,Female
+Ohio,Clark County,4,134831,66135,68696,Female
+Ohio,Clermont County,4,210805,104794,106011,Female
+Ohio,Clinton County,4,41964,20844,21120,Female
+Ohio,Columbiana County,4,100511,51249,49262,Male
+Ohio,Coshocton County,4,36571,18312,18259,Male
+Ohio,Crawford County,4,41522,20531,20991,Female
+Ohio,Cuyahoga County,4,1236041,594492,641549,Female
+Ohio,Darke County,4,51529,25766,25763,Male
+Ohio,Defiance County,4,38187,19223,18964,Male
+Ohio,Delaware County,4,226296,113340,112956,Male
+Ohio,Erie County,4,74501,36758,37743,Female
+Ohio,Fairfield County,4,162898,81558,81340,Male
+Ohio,Fayette County,4,28839,14203,14636,Female
+Ohio,Franklin County,4,1321820,650589,671231,Female
+Ohio,Fulton County,4,42171,21148,21023,Male
+Ohio,Gallia County,4,29068,14580,14488,Male
+Ohio,Geauga County,4,95469,47980,47489,Male
+Ohio,Greene County,4,168456,83851,84605,Female
+Ohio,Guernsey County,4,38098,19068,19030,Male
+Ohio,Hamilton County,4,825037,401323,423714,Female
+Ohio,Hancock County,4,74861,37227,37634,Female
+Ohio,Hardin County,4,30416,15296,15120,Male
+Ohio,Harrison County,4,14378,7179,7199,Female
+Ohio,Henry County,4,27512,13735,13777,Female
+Ohio,Highland County,4,43391,21530,21861,Female
+Ohio,Hocking County,4,27858,13958,13900,Male
+Ohio,Holmes County,4,44390,22384,22006,Male
+Ohio,Huron County,4,58218,29143,29075,Male
+Ohio,Jackson County,4,32586,16256,16330,Female
+Ohio,Jefferson County,4,64330,31571,32759,Female
+Ohio,Knox County,4,63183,31365,31818,Female
+Ohio,Lake County,4,231842,114007,117835,Female
+Ohio,Lawrence County,4,56653,27817,28836,Female
+Ohio,Licking County,4,181359,90072,91287,Female
+Ohio,Logan County,4,46040,23027,23013,Male
+Ohio,Lorain County,4,316268,157004,159264,Female
+Ohio,Lucas County,4,426643,207623,219020,Female
+Ohio,Madison County,4,43540,23588,19952,Male
+Ohio,Mahoning County,4,225636,110949,114687,Female
+Ohio,Marion County,4,64642,34433,30209,Male
+Ohio,Medina County,4,183512,91385,92127,Female
+Ohio,Meigs County,4,21969,11048,10921,Male
+Ohio,Mercer County,4,42348,21551,20797,Male
+Ohio,Miami County,4,110247,54850,55397,Female
+Ohio,Monroe County,4,13234,6718,6516,Male
+Ohio,Montgomery County,4,533892,258788,275104,Female
+Ohio,Morgan County,4,13668,6854,6814,Male
+Ohio,Morrow County,4,35339,17873,17466,Male
+Ohio,Muskingum County,4,86113,42365,43748,Female
+Ohio,Noble County,4,14335,8578,5757,Male
+Ohio,Ottawa County,4,39978,20065,19913,Male
+Ohio,Paulding County,4,18757,9447,9310,Male
+Ohio,Perry County,4,35480,17907,17573,Male
+Ohio,Pickaway County,4,60023,31436,28587,Male
+Ohio,Pike County,4,27005,13538,13467,Male
+Ohio,Portage County,4,161745,79968,81777,Female
+Ohio,Preble County,4,40596,20343,20253,Male
+Ohio,Putnam County,4,34334,17334,17000,Male
+Ohio,Richland County,4,125319,64438,60881,Male
+Ohio,Ross County,4,76606,40159,36447,Male
+Ohio,Sandusky County,4,58667,29433,29234,Male
+Ohio,Scioto County,4,72194,35899,36295,Female
+Ohio,Seneca County,4,54632,27539,27093,Male
+Ohio,Shelby County,4,47671,24075,23596,Male
+Ohio,Stark County,4,372657,182655,190002,Female
+Ohio,Summit County,4,535882,261402,274480,Female
+Ohio,Trumbull County,4,200643,99099,101544,Female
+Ohio,Tuscarawas County,4,91937,45934,46003,Female
+Ohio,Union County,4,66898,32616,34282,Female
+Ohio,Van Wert County,4,28769,14266,14503,Female
+Ohio,Vinton County,4,12565,6351,6214,Male
+Ohio,Warren County,4,249778,126501,123277,Male
+Ohio,Washington County,4,58901,29103,29798,Female
+Ohio,Wayne County,4,116559,58373,58186,Male
+Ohio,Williams County,4,36652,18369,18283,Male
+Ohio,Wood County,4,131592,65321,66271,Female
+Ohio,Wyandot County,4,21567,10727,10840,Female
+Oklahoma,Adair County,4,19576,9848,9728,Male
+Oklahoma,Alfalfa County,4,5637,3518,2119,Male
+Oklahoma,Atoka County,4,14262,7828,6434,Male
+Oklahoma,Beaver County,4,5016,2555,2461,Male
+Oklahoma,Beckham County,4,22009,12024,9985,Male
+Oklahoma,Blaine County,4,8409,4294,4115,Male
+Oklahoma,Bryan County,4,48182,23617,24565,Female
+Oklahoma,Caddo County,4,26198,14777,11421,Male
+Oklahoma,Canadian County,4,169149,84044,85105,Female
+Oklahoma,Carter County,4,48510,23675,24835,Female
+Oklahoma,Cherokee County,4,48098,23546,24552,Female
+Oklahoma,Choctaw County,4,14358,6950,7408,Female
+Oklahoma,Cimarron County,4,2252,1162,1090,Male
+Oklahoma,Cleveland County,4,299587,149599,149988,Female
+Oklahoma,Coal County,4,5313,2660,2653,Male
+Oklahoma,Comanche County,4,123046,64075,58971,Male
+Oklahoma,Cotton County,4,5477,2745,2732,Male
+Oklahoma,Craig County,4,14123,7220,6903,Male
+Oklahoma,Creek County,4,72699,36090,36609,Female
+Oklahoma,Custer County,4,27886,13947,13939,Male
+Oklahoma,Delaware County,4,41413,20605,20808,Female
+Oklahoma,Dewey County,4,4401,2173,2228,Female
+Oklahoma,Ellis County,4,3657,1793,1864,Female
+Oklahoma,Garfield County,4,61920,31299,30621,Male
+Oklahoma,Garvin County,4,25713,12798,12915,Female
+Oklahoma,Grady County,4,56658,28516,28142,Male
+Oklahoma,Grant County,4,4124,2088,2036,Male
+Oklahoma,Greer County,4,5547,3170,2377,Male
+Oklahoma,Harmon County,4,2428,1183,1245,Female
+Oklahoma,Harper County,4,3129,1620,1509,Male
+Oklahoma,Haskell County,4,11641,5837,5804,Male
+Oklahoma,Hughes County,4,13407,7433,5974,Male
+Oklahoma,Jackson County,4,24556,12304,12252,Male
+Oklahoma,Jefferson County,4,5389,2704,2685,Male
+Oklahoma,Johnston County,4,10406,5247,5159,Male
+Oklahoma,Kay County,4,43668,21845,21823,Male
+Oklahoma,Kingfisher County,4,15293,7742,7551,Male
+Oklahoma,Kiowa County,4,8345,4166,4179,Female
+Oklahoma,Latimer County,4,9630,4888,4742,Male
+Oklahoma,Le Flore County,4,48907,24844,24063,Male
+Oklahoma,Lincoln County,4,34188,17164,17024,Male
+Oklahoma,Logan County,4,51933,26080,25853,Male
+Oklahoma,Love County,4,10218,5173,5045,Male
+Oklahoma,McClain County,4,45306,22776,22530,Male
+Oklahoma,McCurtain County,4,30931,15365,15566,Female
+Oklahoma,McIntosh County,4,19451,9644,9807,Female
+Oklahoma,Major County,4,7502,3719,3783,Female
+Oklahoma,Marshall County,4,15882,7989,7893,Male
+Oklahoma,Mayes County,4,39589,19897,19692,Male
+Oklahoma,Murray County,4,13672,6938,6734,Male
+Oklahoma,Muskogee County,4,66354,32598,33756,Female
+Oklahoma,Noble County,4,10896,5370,5526,Female
+Oklahoma,Nowata County,4,9483,4730,4753,Female
+Oklahoma,Okfuskee County,4,11134,5980,5154,Male
+Oklahoma,Oklahoma County,4,802559,394701,407858,Female
+Oklahoma,Okmulgee County,4,36990,18416,18574,Female
+Oklahoma,Osage County,4,45839,23182,22657,Male
+Oklahoma,Ottawa County,4,30338,14997,15341,Female
+Oklahoma,Pawnee County,4,15757,7964,7793,Male
+Oklahoma,Payne County,4,82794,42476,40318,Male
+Oklahoma,Pittsburg County,4,43613,22228,21385,Male
+Oklahoma,Pontotoc County,4,38141,18649,19492,Female
+Oklahoma,Pottawatomie County,4,73533,35339,38194,Female
+Oklahoma,Pushmataha County,4,10769,5309,5460,Female
+Oklahoma,Roger Mills County,4,3320,1662,1658,Male
+Oklahoma,Rogers County,4,98836,49629,49207,Male
+Oklahoma,Seminole County,4,23351,11533,11818,Female
+Oklahoma,Sequoyah County,4,39667,19748,19919,Female
+Oklahoma,Stephens County,4,43710,21437,22273,Female
+Oklahoma,Texas County,4,20495,10838,9657,Male
+Oklahoma,Tillman County,4,6977,3442,3535,Female
+Oklahoma,Tulsa County,4,677358,332988,344370,Female
+Oklahoma,Wagoner County,4,86644,43337,43307,Male
+Oklahoma,Washington County,4,53242,26124,27118,Female
+Oklahoma,Washita County,4,10732,5383,5349,Male
+Oklahoma,Woods County,4,8587,4634,3953,Male
+Oklahoma,Woodward County,4,19990,10614,9376,Male
+Oregon,Baker County,4,16938,8703,8235,Male
+Oregon,Benton County,4,97630,49071,48559,Male
+Oregon,Clackamas County,4,423177,210523,212654,Female
+Oregon,Clatsop County,4,41695,20676,21019,Female
+Oregon,Columbia County,4,53588,27083,26505,Male
+Oregon,Coos County,4,64990,32262,32728,Female
+Oregon,Crook County,4,26375,13256,13119,Male
+Oregon,Curry County,4,23598,11704,11894,Female
+Oregon,Deschutes County,4,206549,103043,103506,Female
+Oregon,Douglas County,4,112297,55913,56384,Female
+Oregon,Gilliam County,4,2018,1017,1001,Male
+Oregon,Grant County,4,7218,3644,3574,Male
+Oregon,Harney County,4,7515,3770,3745,Male
+Oregon,Hood River County,4,24048,12103,11945,Male
+Oregon,Jackson County,4,221644,108909,112735,Female
+Oregon,Jefferson County,4,25330,13289,12041,Male
+Oregon,Josephine County,4,87730,42813,44917,Female
+Oregon,Klamath County,4,70212,35313,34899,Male
+Oregon,Lake County,4,8385,4521,3864,Male
+Oregon,Lane County,4,382353,189171,193182,Female
+Oregon,Lincoln County,4,50813,24599,26214,Female
+Oregon,Linn County,4,130467,64868,65599,Female
+Oregon,Malheur County,4,31879,17311,14568,Male
+Oregon,Marion County,4,346703,173906,172797,Male
+Oregon,Morrow County,4,12300,6281,6019,Male
+Oregon,Multnomah County,4,795083,396417,398666,Female
+Oregon,Polk County,4,89614,44040,45574,Female
+Oregon,Sherman County,4,1955,979,976,Male
+Oregon,Tillamook County,4,27574,13950,13624,Male
+Oregon,Umatilla County,4,80215,42313,37902,Male
+Oregon,Union County,4,26177,13161,13016,Male
+Oregon,Wallowa County,4,7659,3743,3916,Female
+Oregon,Wasco County,4,26561,13453,13108,Male
+Oregon,Washington County,4,600176,300167,300009,Male
+Oregon,Wheeler County,4,1445,709,736,Female
+Oregon,Yamhill County,4,108226,54491,53735,Male
+Pennsylvania,Adams County,4,106027,52723,53304,Female
+Pennsylvania,Allegheny County,4,1233253,602519,630734,Female
+Pennsylvania,Armstrong County,4,64747,32521,32226,Male
+Pennsylvania,Beaver County,4,165677,81286,84391,Female
+Pennsylvania,Bedford County,4,47418,23883,23535,Male
+Pennsylvania,Berks County,4,430449,214183,216266,Female
+Pennsylvania,Blair County,4,121032,59915,61117,Female
+Pennsylvania,Bradford County,4,59866,30000,29866,Male
+Pennsylvania,Bucks County,4,645054,319572,325482,Female
+Pennsylvania,Butler County,4,197300,98364,98936,Female
+Pennsylvania,Cambria County,4,131441,65626,65815,Female
+Pennsylvania,Cameron County,4,4418,2254,2164,Male
+Pennsylvania,Carbon County,4,65460,32929,32531,Male
+Pennsylvania,Centre County,4,158425,83602,74823,Male
+Pennsylvania,Chester County,4,545823,271148,274675,Female
+Pennsylvania,Clarion County,4,37346,18454,18892,Female
+Pennsylvania,Clearfield County,4,77904,40643,37261,Male
+Pennsylvania,Clinton County,4,37931,18790,19141,Female
+Pennsylvania,Columbia County,4,64926,31540,33386,Female
+Pennsylvania,Crawford County,4,82670,40926,41744,Female
+Pennsylvania,Cumberland County,4,268579,134168,134411,Female
+Pennsylvania,Dauphin County,4,288800,141385,147415,Female
+Pennsylvania,Delaware County,4,575182,279211,295971,Female
+Pennsylvania,Elk County,4,30477,15547,14930,Male
+Pennsylvania,Erie County,4,267689,133284,134405,Female
+Pennsylvania,Fayette County,4,125755,62903,62852,Male
+Pennsylvania,Forest County,4,6626,4721,1905,Male
+Pennsylvania,Franklin County,4,156902,77511,79391,Female
+Pennsylvania,Fulton County,4,14533,7459,7074,Male
+Pennsylvania,Greene County,4,34663,18129,16534,Male
+Pennsylvania,Huntingdon County,4,43281,22944,20337,Male
+Pennsylvania,Indiana County,4,82957,41593,41364,Male
+Pennsylvania,Jefferson County,4,43794,22145,21649,Male
+Pennsylvania,Juniata County,4,23339,11812,11527,Male
+Pennsylvania,Lackawanna County,4,215615,106081,109534,Female
+Pennsylvania,Lancaster County,4,556629,274155,282474,Female
+Pennsylvania,Lawrence County,4,84849,41439,43410,Female
+Pennsylvania,Lebanon County,4,144011,71110,72901,Female
+Pennsylvania,Lehigh County,4,376317,185894,190423,Female
+Pennsylvania,Luzerne County,4,326369,162897,163472,Female
+Pennsylvania,Lycoming County,4,113104,55822,57282,Female
+Pennsylvania,McKean County,4,39866,20655,19211,Male
+Pennsylvania,Mercer County,4,109220,54138,55082,Female
+Pennsylvania,Mifflin County,4,45988,22698,23290,Female
+Pennsylvania,Monroe County,4,167198,84003,83195,Male
+Pennsylvania,Montgomery County,4,864683,424244,440439,Female
+Pennsylvania,Montour County,4,18091,9003,9088,Female
+Pennsylvania,Northampton County,4,318526,158114,160412,Female
+Pennsylvania,Northumberland County,4,90133,45620,44513,Male
+Pennsylvania,Perry County,4,46114,23446,22668,Male
+Pennsylvania,Philadelphia County,4,1567258,743580,823678,Female
+Pennsylvania,Pike County,4,60558,30920,29638,Male
+Pennsylvania,Potter County,4,16220,8179,8041,Male
+Pennsylvania,Schuylkill County,4,143104,73774,69330,Male
+Pennsylvania,Snyder County,4,39652,19677,19975,Female
+Pennsylvania,Somerset County,4,72710,38050,34660,Male
+Pennsylvania,Sullivan County,4,5855,3002,2853,Male
+Pennsylvania,Susquehanna County,4,38074,19392,18682,Male
+Pennsylvania,Tioga County,4,41106,20699,20407,Male
+Pennsylvania,Union County,4,42744,22724,20020,Male
+Pennsylvania,Venango County,4,49777,24810,24967,Female
+Pennsylvania,Warren County,4,37808,19085,18723,Male
+Pennsylvania,Washington County,4,210383,104203,106180,Female
+Pennsylvania,Wayne County,4,51173,27115,24058,Male
+Pennsylvania,Westmoreland County,4,352057,174248,177809,Female
+Pennsylvania,Wyoming County,4,26014,13119,12895,Male
+Pennsylvania,York County,4,461058,229757,231301,Female
+Rhode Island,Bristol County,4,50360,24447,25913,Female
+Rhode Island,Kent County,4,171275,83800,87475,Female
+Rhode Island,Newport County,4,84481,41824,42657,Female
+Rhode Island,Providence County,4,657288,323401,333887,Female
+Rhode Island,Washington County,4,130330,63523,66807,Female
+South Carolina,Abbeville County,4,24356,11851,12505,Female
+South Carolina,Aiken County,4,174150,84286,89864,Female
+South Carolina,Allendale County,4,7579,4024,3555,Male
+South Carolina,Anderson County,4,209581,101626,107955,Female
+South Carolina,Bamberg County,4,12908,6152,6756,Female
+South Carolina,Barnwell County,4,20414,9898,10516,Female
+South Carolina,Beaufort County,4,196371,97019,99352,Female
+South Carolina,Berkeley County,4,245117,122070,123047,Female
+South Carolina,Calhoun County,4,14179,6842,7337,Female
+South Carolina,Charleston County,4,419279,203385,215894,Female
+South Carolina,Cherokee County,4,56121,27701,28420,Female
+South Carolina,Chester County,4,31931,15469,16462,Female
+South Carolina,Chesterfield County,4,43683,21454,22229,Female
+South Carolina,Clarendon County,4,30913,15226,15687,Female
+South Carolina,Colleton County,4,38599,18712,19887,Female
+South Carolina,Darlington County,4,62398,29652,32746,Female
+South Carolina,Dillon County,4,27738,13057,14681,Female
+South Carolina,Dorchester County,4,166133,81001,85132,Female
+South Carolina,Edgefield County,4,26932,14566,12366,Male
+South Carolina,Fairfield County,4,20455,9884,10571,Female
+South Carolina,Florence County,4,136721,64236,72485,Female
+South Carolina,Georgetown County,4,64722,30694,34028,Female
+South Carolina,Greenville County,4,547950,266677,281273,Female
+South Carolina,Greenwood County,4,69267,32514,36753,Female
+South Carolina,Hampton County,4,18113,9469,8644,Male
+South Carolina,Horry County,4,383101,185476,197625,Female
+South Carolina,Jasper County,4,32039,16127,15912,Male
+South Carolina,Kershaw County,4,67751,32904,34847,Female
+South Carolina,Lancaster County,4,104577,51352,53225,Female
+South Carolina,Laurens County,4,67965,33083,34882,Female
+South Carolina,Lee County,4,16153,8129,8024,Male
+South Carolina,Lexington County,4,304797,148704,156093,Female
+South Carolina,McCormick County,4,9764,5179,4585,Male
+South Carolina,Marion County,4,28450,13304,15146,Female
+South Carolina,Marlboro County,4,26039,13714,12325,Male
+South Carolina,Newberry County,4,38247,18838,19409,Female
+South Carolina,Oconee County,4,80180,39583,40597,Female
+South Carolina,Orangeburg County,4,83094,39106,43988,Female
+South Carolina,Pickens County,4,133462,66677,66785,Female
+South Carolina,Richland County,4,421566,202795,218771,Female
+South Carolina,Saluda County,4,18938,9693,9245,Male
+South Carolina,Spartanburg County,4,345831,168933,176898,Female
+South Carolina,Sumter County,4,104012,50214,53798,Female
+South Carolina,Union County,4,26752,12716,14036,Female
+South Carolina,Williamsburg County,4,30058,14690,15368,Female
+South Carolina,York County,4,294248,143437,150811,Female
+South Dakota,Aurora County,4,2755,1417,1338,Male
+South Dakota,Beadle County,4,19376,9605,9771,Female
+South Dakota,Bennett County,4,3336,1653,1683,Female
+South Dakota,Bon Homme County,4,7062,4183,2879,Male
+South Dakota,Brookings County,4,35484,18323,17161,Male
+South Dakota,Brown County,4,37972,18753,19219,Female
+South Dakota,Brule County,4,5321,2682,2639,Male
+South Dakota,Buffalo County,4,1861,924,937,Female
+South Dakota,Butte County,4,10774,5501,5273,Male
+South Dakota,Campbell County,4,1349,701,648,Male
+South Dakota,Charles Mix County,4,9213,4702,4511,Male
+South Dakota,Clark County,4,3912,2070,1842,Male
+South Dakota,Clay County,4,15280,7575,7705,Female
+South Dakota,Codington County,4,28721,14496,14225,Male
+South Dakota,Corson County,4,3826,1931,1895,Male
+South Dakota,Custer County,4,9006,4531,4475,Male
+South Dakota,Davison County,4,19973,9996,9977,Male
+South Dakota,Day County,4,5479,2819,2660,Male
+South Dakota,Deuel County,4,4352,2256,2096,Male
+South Dakota,Dewey County,4,5140,2558,2582,Female
+South Dakota,Douglas County,4,2776,1371,1405,Female
+South Dakota,Edmunds County,4,4065,2087,1978,Male
+South Dakota,Fall River County,4,7370,3716,3654,Male
+South Dakota,Faulk County,4,2126,1090,1036,Male
+South Dakota,Grant County,4,7463,3843,3620,Male
+South Dakota,Gregory County,4,3962,2029,1933,Male
+South Dakota,Haakon County,4,1826,893,933,Female
+South Dakota,Hamlin County,4,6352,3341,3011,Male
+South Dakota,Hand County,4,3140,1597,1543,Male
+South Dakota,Hanson County,4,3461,1792,1669,Male
+South Dakota,Harding County,4,1330,699,631,Male
+South Dakota,Hughes County,4,17692,8731,8961,Female
+South Dakota,Hutchinson County,4,7368,3686,3682,Male
+South Dakota,Hyde County,4,1184,599,585,Male
+South Dakota,Jackson County,4,2821,1408,1413,Female
+South Dakota,Jerauld County,4,1650,828,822,Male
+South Dakota,Jones County,4,884,463,421,Male
+South Dakota,Kingsbury County,4,5294,2728,2566,Male
+South Dakota,Lake County,4,10972,5756,5216,Male
+South Dakota,Lawrence County,4,27214,13731,13483,Male
+South Dakota,Lincoln County,4,70987,35466,35521,Female
+South Dakota,Lyman County,4,3692,1954,1738,Male
+South Dakota,McCook County,4,5778,2983,2795,Male
+South Dakota,McPherson County,4,2395,1204,1191,Male
+South Dakota,Marshall County,4,4374,2333,2041,Male
+South Dakota,Meade County,4,30698,16039,14659,Male
+South Dakota,Mellette County,4,1892,973,919,Male
+South Dakota,Miner County,4,2304,1193,1111,Male
+South Dakota,Minnehaha County,4,203971,104098,99873,Male
+South Dakota,Moody County,4,6349,3254,3095,Male
+South Dakota,Oglala Lakota County,4,13519,6662,6857,Female
+South Dakota,Pennington County,4,114461,58519,55942,Male
+South Dakota,Perkins County,4,2804,1411,1393,Male
+South Dakota,Potter County,4,2438,1202,1236,Female
+South Dakota,Roberts County,4,10163,5228,4935,Male
+South Dakota,Sanborn County,4,2415,1246,1169,Male
+South Dakota,Spink County,4,6235,3139,3096,Male
+South Dakota,Stanley County,4,2999,1538,1461,Male
+South Dakota,Sully County,4,1471,783,688,Male
+South Dakota,Todd County,4,9220,4527,4693,Female
+South Dakota,Tripp County,4,5565,2846,2719,Male
+South Dakota,Turner County,4,8856,4420,4436,Female
+South Dakota,Union County,4,17063,8642,8421,Male
+South Dakota,Walworth County,4,5265,2697,2568,Male
+South Dakota,Yankton County,4,23373,12089,11284,Male
+South Dakota,Ziebach County,4,2395,1213,1182,Male
+Tennessee,Anderson County,4,78913,38913,40000,Female
+Tennessee,Bedford County,4,51950,25952,25998,Female
+Tennessee,Benton County,4,16002,7905,8097,Female
+Tennessee,Bledsoe County,4,14798,8410,6388,Male
+Tennessee,Blount County,4,139958,68854,71104,Female
+Tennessee,Bradley County,4,110616,54019,56597,Female
+Tennessee,Campbell County,4,39584,19625,19959,Female
+Tennessee,Cannon County,4,14788,7454,7334,Male
+Tennessee,Carroll County,4,28458,14052,14406,Female
+Tennessee,Carter County,4,56410,27939,28471,Female
+Tennessee,Cheatham County,4,41830,21028,20802,Male
+Tennessee,Chester County,4,17609,8562,9047,Female
+Tennessee,Claiborne County,4,32431,15991,16440,Female
+Tennessee,Clay County,4,7620,3759,3861,Female
+Tennessee,Cocke County,4,36879,18061,18818,Female
+Tennessee,Coffee County,4,59728,29352,30376,Female
+Tennessee,Crockett County,4,13888,6716,7172,Female
+Tennessee,Cumberland County,4,63522,31212,32310,Female
+Tennessee,Davidson County,4,708144,342074,366070,Female
+Tennessee,Decatur County,4,11564,5802,5762,Male
+Tennessee,DeKalb County,4,21003,10561,10442,Male
+Tennessee,Dickson County,4,55761,27648,28113,Female
+Tennessee,Dyer County,4,36410,17771,18639,Female
+Tennessee,Fayette County,4,43630,21654,21976,Female
+Tennessee,Fentress County,4,19332,9535,9797,Female
+Tennessee,Franklin County,4,43942,21657,22285,Female
+Tennessee,Gibson County,4,50837,24739,26098,Female
+Tennessee,Giles County,4,30554,14820,15734,Female
+Tennessee,Grainger County,4,24277,12263,12014,Male
+Tennessee,Greene County,4,71405,35454,35951,Female
+Tennessee,Grundy County,4,13783,6861,6922,Female
+Tennessee,Hamblen County,4,65168,32169,32999,Female
+Tennessee,Hamilton County,4,374682,181928,192754,Female
+Tennessee,Hancock County,4,6845,3401,3444,Female
+Tennessee,Hardeman County,4,25529,14084,11445,Male
+Tennessee,Hardin County,4,27077,13218,13859,Female
+Tennessee,Hawkins County,4,58043,28726,29317,Female
+Tennessee,Haywood County,4,17550,8269,9281,Female
+Tennessee,Henderson County,4,27929,13777,14152,Female
+Tennessee,Henry County,4,32379,15873,16506,Female
+Tennessee,Hickman County,4,25455,13345,12110,Male
+Tennessee,Houston County,4,8219,4061,4158,Female
+Tennessee,Humphreys County,4,19106,9655,9451,Male
+Tennessee,Jackson County,4,11989,6089,5900,Male
+Tennessee,Jefferson County,4,56727,28065,28662,Female
+Tennessee,Johnson County,4,18086,9695,8391,Male
+Tennessee,Knox County,4,494574,242196,252378,Female
+Tennessee,Lake County,4,6507,3933,2574,Male
+Tennessee,Lauderdale County,4,24793,12818,11975,Male
+Tennessee,Lawrence County,4,45415,22519,22896,Female
+Tennessee,Lewis County,4,12957,6382,6575,Female
+Tennessee,Lincoln County,4,36004,17796,18208,Female
+Tennessee,Loudon County,4,58181,28787,29394,Female
+Tennessee,McMinn County,4,54719,26876,27843,Female
+Tennessee,McNairy County,4,25988,12835,13153,Female
+Tennessee,Macon County,4,26229,12934,13295,Female
+Tennessee,Madison County,4,99245,47733,51512,Female
+Tennessee,Marion County,4,29094,14428,14666,Female
+Tennessee,Marshall County,4,35878,17688,18190,Female
+Tennessee,Maury County,4,108159,52699,55460,Female
+Tennessee,Meigs County,4,13272,6674,6598,Male
+Tennessee,Monroe County,4,47740,23793,23947,Female
+Tennessee,Montgomery County,4,235201,117725,117476,Male
+Tennessee,Moore County,4,6742,3342,3400,Female
+Tennessee,Morgan County,4,21224,11567,9657,Male
+Tennessee,Obion County,4,30394,14806,15588,Female
+Tennessee,Overton County,4,23044,11596,11448,Male
+Tennessee,Perry County,4,8685,4387,4298,Male
+Tennessee,Pickett County,4,5107,2552,2555,Female
+Tennessee,Polk County,4,17863,8904,8959,Female
+Tennessee,Putnam County,4,82382,41345,41037,Male
+Tennessee,Rhea County,4,33730,16925,16805,Male
+Tennessee,Roane County,4,55082,27308,27774,Female
+Tennessee,Robertson County,4,75470,37606,37864,Female
+Tennessee,Rutherford County,4,360619,178002,182617,Female
+Tennessee,Scott County,4,22035,11003,11032,Female
+Tennessee,Sequatchie County,4,16909,8561,8348,Male
+Tennessee,Sevier County,4,98789,48914,49875,Female
+Tennessee,Shelby County,4,916371,435204,481167,Female
+Tennessee,Smith County,4,20489,10291,10198,Male
+Tennessee,Stewart County,4,14035,7081,6954,Male
+Tennessee,Sullivan County,4,160820,79030,81790,Female
+Tennessee,Sumner County,4,203858,100189,103669,Female
+Tennessee,Tipton County,4,61656,30465,31191,Female
+Tennessee,Trousdale County,4,12111,7095,5016,Male
+Tennessee,Unicoi County,4,17674,8831,8843,Female
+Tennessee,Union County,4,20452,10190,10262,Female
+Tennessee,Van Buren County,4,6429,3235,3194,Male
+Tennessee,Warren County,4,42026,21054,20972,Male
+Tennessee,Washington County,4,136172,67085,69087,Female
+Tennessee,Wayne County,4,16308,9154,7154,Male
+Tennessee,Weakley County,4,33063,16294,16769,Female
+Tennessee,White County,4,28064,13887,14177,Female
+Tennessee,Williamson County,4,260815,129198,131617,Female
+Tennessee,Wilson County,4,158555,78443,80112,Female
+Texas,Anderson County,4,58064,35405,22659,Male
+Texas,Andrews County,4,18334,9376,8958,Male
+Texas,Angelina County,4,87101,42757,44344,Female
+Texas,Aransas County,4,24944,12403,12541,Female
+Texas,Archer County,4,8835,4423,4412,Male
+Texas,Armstrong County,4,1850,928,922,Male
+Texas,Atascosa County,4,50864,25471,25393,Male
+Texas,Austin County,4,31097,15655,15442,Male
+Texas,Bailey County,4,6779,3448,3331,Male
+Texas,Bandera County,4,22115,11038,11077,Female
+Texas,Bastrop County,4,106188,54243,51945,Male
+Texas,Baylor County,4,3466,1716,1750,Female
+Texas,Bee County,4,30394,18662,11732,Male
+Texas,Bell County,4,388386,194048,194338,Female
+Texas,Bexar County,4,2059530,1024410,1035120,Female
+Texas,Blanco County,4,12418,6274,6144,Male
+Texas,Borden County,4,585,301,284,Male
+Texas,Bosque County,4,18697,9225,9472,Female
+Texas,Bowie County,4,92035,46294,45741,Male
+Texas,Brazoria County,4,388181,196062,192119,Male
+Texas,Brazos County,4,242014,122184,119830,Male
+Texas,Brewster County,4,9343,4765,4578,Male
+Texas,Briscoe County,4,1431,727,704,Male
+Texas,Brooks County,4,6906,3683,3223,Male
+Texas,Brown County,4,38373,19099,19274,Female
+Texas,Burleson County,4,18657,9229,9428,Female
+Texas,Burnet County,4,52502,25850,26652,Female
+Texas,Caldwell County,4,47848,24245,23603,Male
+Texas,Calhoun County,4,19706,10188,9518,Male
+Texas,Callahan County,4,14210,7082,7128,Female
+Texas,Cameron County,4,425208,210647,214561,Female
+Texas,Camp County,4,12716,6214,6502,Female
+Texas,Carson County,4,5784,2948,2836,Male
+Texas,Cass County,4,28539,13913,14626,Female
+Texas,Castro County,4,7298,3736,3562,Male
+Texas,Chambers County,4,51288,25975,25313,Male
+Texas,Cherokee County,4,51645,26565,25080,Male
+Texas,Childress County,4,6809,4000,2809,Male
+Texas,Clay County,4,10486,5242,5244,Female
+Texas,Cochran County,4,2526,1260,1266,Female
+Texas,Coke County,4,3333,1671,1662,Male
+Texas,Coleman County,4,7850,3973,3877,Male
+Texas,Collin County,4,1158696,577915,580781,Female
+Texas,Collingsworth County,4,2568,1262,1306,Female
+Texas,Colorado County,4,20754,10404,10350,Male
+Texas,Comal County,4,184642,92285,92357,Female
+Texas,Comanche County,4,13878,7000,6878,Male
+Texas,Concho County,4,3340,1763,1577,Male
+Texas,Cooke County,4,43050,21448,21602,Female
+Texas,Coryell County,4,85057,43111,41946,Male
+Texas,Cottle County,4,1307,629,678,Female
+Texas,Crane County,4,4546,2296,2250,Male
+Texas,Crockett County,4,2943,1486,1457,Male
+Texas,Crosby County,4,4998,2495,2503,Female
+Texas,Culberson County,4,2155,1059,1096,Female
+Texas,Dallam County,4,7241,3841,3400,Male
+Texas,Dallas County,4,2600840,1293549,1307291,Female
+Texas,Dawson County,4,12130,6869,5261,Male
+Texas,Deaf Smith County,4,18377,9253,9124,Male
+Texas,Delta County,4,5406,2654,2752,Female
+Texas,Denton County,4,977281,484368,492913,Female
+Texas,DeWitt County,4,19772,10435,9337,Male
+Texas,Dickens County,4,1726,861,865,Female
+Texas,Dimmit County,4,8387,4135,4252,Female
+Texas,Donley County,4,3339,1654,1685,Female
+Texas,Duval County,4,9888,5284,4604,Male
+Texas,Eastland County,4,17944,9018,8926,Male
+Texas,Ector County,4,160869,82772,78097,Male
+Texas,Edwards County,4,1422,746,676,Male
+Texas,Ellis County,4,212182,105385,106797,Female
+Texas,El Paso County,4,868763,433390,435373,Female
+Texas,Erath County,4,43895,21594,22301,Female
+Texas,Falls County,4,17049,8186,8863,Female
+Texas,Fannin County,4,37125,19848,17277,Male
+Texas,Fayette County,4,24913,12301,12612,Female
+Texas,Fisher County,4,3622,1825,1797,Male
+Texas,Floyd County,4,5235,2620,2615,Male
+Texas,Foard County,4,1057,499,558,Female
+Texas,Fort Bend County,4,889146,439337,449809,Female
+Texas,Franklin County,4,10618,5311,5307,Male
+Texas,Freestone County,4,19950,10417,9533,Male
+Texas,Frio County,4,17815,10241,7574,Male
+Texas,Gaines County,4,22181,11354,10827,Male
+Texas,Galveston County,4,357117,176568,180549,Female
+Texas,Garza County,4,6262,4318,1944,Male
+Texas,Gillespie County,4,27477,13446,14031,Female
+Texas,Glasscock County,4,1164,645,519,Male
+Texas,Goliad County,4,7131,3596,3535,Male
+Texas,Gonzales County,4,19832,9969,9863,Male
+Texas,Gray County,4,21015,11347,9668,Male
+Texas,Grayson County,4,143131,70291,72840,Female
+Texas,Gregg County,4,125443,61491,63952,Female
+Texas,Grimes County,4,30754,16610,14144,Male
+Texas,Guadalupe County,4,182760,91298,91462,Female
+Texas,Hale County,4,31827,16674,15153,Male
+Texas,Hall County,4,2810,1415,1395,Male
+Texas,Hamilton County,4,8298,4159,4139,Male
+Texas,Hansford County,4,5151,2629,2522,Male
+Texas,Hardeman County,4,3516,1768,1748,Male
+Texas,Hardin County,4,57811,28567,29244,Female
+Texas,Harris County,4,4780913,2382156,2398757,Female
+Texas,Harrison County,4,69955,34364,35591,Female
+Texas,Hartley County,4,5208,3053,2155,Male
+Texas,Haskell County,4,5403,2919,2484,Male
+Texas,Hays County,4,269225,134579,134646,Female
+Texas,Hemphill County,4,3217,1603,1614,Female
+Texas,Henderson County,4,84511,41730,42781,Female
+Texas,Hidalgo County,4,888367,440034,448333,Female
+Texas,Hill County,4,37329,18732,18597,Male
+Texas,Hockley County,4,21161,10615,10546,Male
+Texas,Hood County,4,66373,32714,33659,Female
+Texas,Hopkins County,4,37804,18671,19133,Female
+Texas,Houston County,4,21950,11824,10126,Male
+Texas,Howard County,4,33672,19366,14306,Male
+Texas,Hudspeth County,4,3432,2232,1200,Male
+Texas,Hunt County,4,108282,53658,54624,Female
+Texas,Hutchinson County,4,20215,10286,9929,Male
+Texas,Irion County,4,1530,762,768,Female
+Texas,Jack County,4,8922,5022,3900,Male
+Texas,Jackson County,4,15142,7586,7556,Male
+Texas,Jasper County,4,32484,16084,16400,Female
+Texas,Jeff Davis County,4,1903,939,964,Female
+Texas,Jefferson County,4,250830,129038,121792,Male
+Texas,Jim Hogg County,4,4763,2484,2279,Male
+Texas,Jim Wells County,4,38826,19381,19445,Female
+Texas,Johnson County,4,195506,98499,97007,Male
+Texas,Jones County,4,19935,12664,7271,Male
+Texas,Karnes County,4,14836,8880,5956,Male
+Texas,Kaufman County,4,172366,85332,87034,Female
+Texas,Kendall County,4,48973,24320,24653,Female
+Texas,Kenedy County,4,358,197,161,Male
+Texas,Kent County,4,740,384,356,Male
+Texas,Kerr County,4,53741,25956,27785,Female
+Texas,Kimble County,4,4422,2156,2266,Female
+Texas,King County,4,233,124,109,Male
+Texas,Kinney County,4,3128,1767,1361,Male
+Texas,Kleberg County,4,30362,15418,14944,Male
+Texas,Knox County,4,3273,1640,1633,Male
+Texas,Lamar County,4,50484,24507,25977,Female
+Texas,Lamb County,4,12724,6376,6348,Male
+Texas,Lampasas County,4,22785,11430,11355,Male
+Texas,La Salle County,4,6604,3937,2667,Male
+Texas,Lavaca County,4,20589,10157,10432,Female
+Texas,Lee County,4,17954,9138,8816,Male
+Texas,Leon County,4,16209,8103,8106,Female
+Texas,Liberty County,4,101992,50756,51236,Female
+Texas,Limestone County,4,22253,11255,10998,Male
+Texas,Lipscomb County,4,2854,1483,1371,Male
+Texas,Live Oak County,4,11428,6545,4883,Male
+Texas,Llano County,4,22540,11015,11525,Female
+Texas,Loving County,4,51,40,11,Male
+Texas,Lubbock County,4,317561,156794,160767,Female
+Texas,Lynn County,4,5724,2978,2746,Male
+Texas,McCulloch County,4,7497,3758,3739,Male
+Texas,McLennan County,4,266836,131062,135774,Female
+Texas,McMullen County,4,576,303,273,Male
+Texas,Madison County,4,13661,7735,5926,Male
+Texas,Marion County,4,9560,4694,4866,Female
+Texas,Martin County,4,5217,2642,2575,Male
+Texas,Mason County,4,3982,2041,1941,Male
+Texas,Matagorda County,4,36125,18178,17947,Male
+Texas,Maverick County,4,57843,28931,28912,Male
+Texas,Medina County,4,53723,28168,25555,Male
+Texas,Menard County,4,1968,994,974,Male
+Texas,Midland County,4,171999,87627,84372,Male
+Texas,Milam County,4,25628,12815,12813,Male
+Texas,Mills County,4,4500,2324,2176,Male
+Texas,Mitchell County,4,8943,5559,3384,Male
+Texas,Montague County,4,21063,10398,10665,Female
+Texas,Montgomery County,4,678490,337977,340513,Female
+Texas,Moore County,4,20996,10963,10033,Male
+Texas,Morris County,4,12083,5856,6227,Female
+Texas,Motley County,4,1032,523,509,Male
+Texas,Nacogdoches County,4,64862,31337,33525,Female
+Texas,Navarro County,4,54636,27371,27265,Male
+Texas,Newton County,4,12052,6056,5996,Male
+Texas,Nolan County,4,14473,7292,7181,Male
+Texas,Nueces County,4,351674,174761,176913,Female
+Texas,Ochiltree County,4,9606,4841,4765,Male
+Texas,Oldham County,4,1752,910,842,Male
+Texas,Orange County,4,84934,42233,42701,Female
+Texas,Palo Pinto County,4,29239,14385,14854,Female
+Texas,Panola County,4,22677,11379,11298,Male
+Texas,Parker County,4,165834,83406,82428,Male
+Texas,Parmer County,4,9620,5030,4590,Male
+Texas,Pecos County,4,14735,8390,6345,Male
+Texas,Polk County,4,53255,28652,24603,Male
+Texas,Potter County,4,115645,59732,55913,Male
+Texas,Presidio County,4,5939,3056,2883,Male
+Texas,Rains County,4,12823,6509,6314,Male
+Texas,Randall County,4,146140,72276,73864,Female
+Texas,Reagan County,4,3135,1713,1422,Male
+Texas,Real County,4,2840,1407,1433,Female
+Texas,Red River County,4,11542,5709,5833,Female
+Texas,Reeves County,4,12905,7440,5465,Male
+Texas,Refugio County,4,6632,3255,3377,Female
+Texas,Roberts County,4,803,400,403,Female
+Texas,Robertson County,4,17153,8455,8698,Female
+Texas,Rockwall County,4,123208,61622,61586,Male
+Texas,Runnels County,4,9859,5068,4791,Male
+Texas,Rusk County,4,53333,28410,24923,Male
+Texas,Sabine County,4,10048,5049,4999,Male
+Texas,San Augustine County,4,7857,3922,3935,Female
+Texas,San Jacinto County,4,28348,14221,14127,Male
+Texas,San Patricio County,4,69954,35502,34452,Male
+Texas,San Saba County,4,5824,3221,2603,Male
+Texas,Schleicher County,4,2357,1201,1156,Male
+Texas,Scurry County,4,16686,8943,7743,Male
+Texas,Shackelford County,4,3186,1612,1574,Male
+Texas,Shelby County,4,24008,11945,12063,Female
+Texas,Sherman County,4,2799,1476,1323,Male
+Texas,Smith County,4,241922,117439,124483,Female
+Texas,Somervell County,4,9757,4879,4878,Male
+Texas,Starr County,4,65728,32086,33642,Female
+Texas,Stephens County,4,9390,5156,4234,Male
+Texas,Sterling County,4,1417,712,705,Male
+Texas,Stonewall County,4,1182,594,588,Male
+Texas,Sutton County,4,3217,1632,1585,Male
+Texas,Swisher County,4,6881,3723,3158,Male
+Texas,Tarrant County,4,2154595,1060996,1093599,Female
+Texas,Taylor County,4,145163,71233,73930,Female
+Texas,Terrell County,4,693,362,331,Male
+Texas,Terry County,4,11567,6094,5473,Male
+Texas,Throckmorton County,4,1550,778,772,Male
+Texas,Titus County,4,31208,15396,15812,Female
+Texas,Tom Green County,4,118892,59507,59385,Male
+Texas,Travis County,4,1326436,679051,647385,Male
+Texas,Trinity County,4,13996,6853,7143,Female
+Texas,Tyler County,4,20030,10759,9271,Male
+Texas,Upshur County,4,42488,21102,21386,Female
+Texas,Upton County,4,3152,1585,1567,Male
+Texas,Uvalde County,4,24940,12367,12573,Female
+Texas,Val Verde County,4,47606,24690,22916,Male
+Texas,Van Zandt County,4,62859,31048,31811,Female
+Texas,Victoria County,4,91065,44961,46104,Female
+Texas,Walker County,4,78870,46082,32788,Male
+Texas,Waller County,4,61894,30778,31116,Female
+Texas,Ward County,4,10964,5610,5354,Male
+Texas,Washington County,4,36159,17638,18521,Female
+Texas,Webb County,4,267780,133256,134524,Female
+Texas,Wharton County,4,41824,20768,21056,Female
+Texas,Wheeler County,4,4807,2412,2395,Male
+Texas,Wichita County,4,129978,67337,62641,Male
+Texas,Wilbarger County,4,12491,6254,6237,Male
+Texas,Willacy County,4,20143,10996,9147,Male
+Texas,Williamson County,4,671418,335422,335996,Female
+Texas,Wilson County,4,52735,26699,26036,Male
+Texas,Winkler County,4,7306,3785,3521,Male
+Texas,Wise County,4,74895,37859,37036,Male
+Texas,Wood County,4,46857,23602,23255,Male
+Texas,Yoakum County,4,7451,3836,3615,Male
+Texas,Young County,4,17962,8988,8974,Male
+Texas,Zapata County,4,13849,6932,6917,Male
+Texas,Zavala County,4,9377,4749,4628,Male
+Utah,Beaver County,4,7327,3921,3406,Male
+Utah,Box Elder County,4,61498,31673,29825,Male
+Utah,Cache County,4,140173,70488,69685,Male
+Utah,Carbon County,4,20571,10271,10300,Female
+Utah,Daggett County,4,1014,581,433,Male
+Utah,Davis County,4,369948,188140,181808,Male
+Utah,Duchesne County,4,20161,10264,9897,Male
+Utah,Emery County,4,10099,5196,4903,Male
+Utah,Garfield County,4,5281,2741,2540,Male
+Utah,Grand County,4,9769,4843,4926,Female
+Utah,Iron County,4,62429,31366,31063,Male
+Utah,Juab County,4,12567,6517,6050,Male
+Utah,Kane County,4,8227,4182,4045,Male
+Utah,Millard County,4,13330,6901,6429,Male
+Utah,Morgan County,4,12832,6658,6174,Male
+Utah,Piute County,4,1487,739,748,Female
+Utah,Rich County,4,2628,1394,1234,Male
+Utah,Salt Lake County,4,1186257,601284,584973,Male
+Utah,San Juan County,4,14359,7170,7189,Female
+Utah,Sanpete County,4,29724,15825,13899,Male
+Utah,Sevier County,4,22069,11309,10760,Male
+Utah,Summit County,4,43036,22116,20920,Male
+Utah,Tooele County,4,79934,40849,39085,Male
+Utah,Uintah County,4,37141,18881,18260,Male
+Utah,Utah County,4,702434,357515,344919,Male
+Utah,Wasatch County,4,36619,18826,17793,Male
+Utah,Washington County,4,197680,98796,98884,Female
+Utah,Wayne County,4,2645,1370,1275,Male
+Utah,Weber County,4,269561,137015,132546,Male
+Vermont,Addison County,4,37578,18835,18743,Male
+Vermont,Bennington County,4,37392,18440,18952,Female
+Vermont,Caledonia County,4,30579,15329,15250,Male
+Vermont,Chittenden County,4,169301,83410,85891,Female
+Vermont,Essex County,4,5994,3034,2960,Male
+Vermont,Franklin County,4,50731,25420,25311,Male
+Vermont,Grand Isle County,4,7489,3852,3637,Male
+Vermont,Lamoille County,4,26090,13156,12934,Male
+Vermont,Orange County,4,29846,15022,14824,Male
+Vermont,Orleans County,4,27666,13990,13676,Male
+Vermont,Rutland County,4,60366,30165,30201,Female
+Vermont,Washington County,4,60048,29836,30212,Female
+Vermont,Windham County,4,45842,22833,23009,Female
+Vermont,Windsor County,4,58142,28703,29439,Female
+Virginia,Accomack County,4,33191,16341,16850,Female
+Virginia,Albemarle County,4,114534,55077,59457,Female
+Virginia,Alleghany County,4,14835,7291,7544,Female
+Virginia,Amelia County,4,13455,6702,6753,Female
+Virginia,Amherst County,4,31589,15140,16449,Female
+Virginia,Appomattox County,4,16748,8244,8504,Female
+Virginia,Arlington County,4,234000,117938,116062,Male
+Virginia,Augusta County,4,78064,39738,38326,Male
+Virginia,Bath County,4,4049,2080,1969,Male
+Virginia,Bedford County,4,80848,40205,40643,Female
+Virginia,Bland County,4,6148,3412,2736,Male
+Virginia,Botetourt County,4,34135,17035,17100,Female
+Virginia,Brunswick County,4,15921,8638,7283,Male
+Virginia,Buchanan County,4,19352,10058,9294,Male
+Virginia,Buckingham County,4,16982,9487,7495,Male
+Virginia,Campbell County,4,55141,26918,28223,Female
+Virginia,Caroline County,4,31957,15965,15992,Female
+Virginia,Carroll County,4,29147,14595,14552,Male
+Virginia,Charles City County,4,6605,3280,3325,Female
+Virginia,Charlotte County,4,11475,5724,5751,Female
+Virginia,Chesterfield County,4,378408,183166,195242,Female
+Virginia,Clarke County,4,15266,7561,7705,Female
+Virginia,Craig County,4,4847,2455,2392,Male
+Virginia,Culpeper County,4,54381,27261,27120,Male
+Virginia,Cumberland County,4,9746,4771,4975,Female
+Virginia,Dickenson County,4,13725,7093,6632,Male
+Virginia,Dinwiddie County,4,28161,13964,14197,Female
+Virginia,Essex County,4,10630,5065,5565,Female
+Virginia,Fairfax County,4,1138331,569472,568859,Male
+Virginia,Fauquier County,4,74664,37457,37207,Male
+Virginia,Floyd County,4,15619,7913,7706,Male
+Virginia,Fluvanna County,4,28159,13176,14983,Female
+Virginia,Franklin County,4,55074,27428,27646,Female
+Virginia,Frederick County,4,95051,47575,47476,Male
+Virginia,Giles County,4,16453,8229,8224,Male
+Virginia,Gloucester County,4,39493,19538,19955,Female
+Virginia,Goochland County,4,26109,12931,13178,Female
+Virginia,Grayson County,4,15343,8065,7278,Male
+Virginia,Greene County,4,21107,10459,10648,Female
+Virginia,Greensville County,4,11226,7044,4182,Male
+Virginia,Halifax County,4,33644,16180,17464,Female
+Virginia,Hanover County,4,112938,55962,56976,Female
+Virginia,Henrico County,4,333962,159343,174619,Female
+Virginia,Henry County,4,49906,24241,25665,Female
+Virginia,Highland County,4,2301,1150,1151,Female
+Virginia,Isle of Wight County,4,40151,19893,20258,Female
+Virginia,James City County,4,81199,39266,41933,Female
+Virginia,King and Queen County,4,6718,3434,3284,Male
+Virginia,King George County,4,27856,14175,13681,Male
+Virginia,King William County,4,18492,9161,9331,Female
+Virginia,Lancaster County,4,10750,5132,5618,Female
+Virginia,Lee County,4,21982,11633,10349,Male
+Virginia,Loudoun County,4,432085,216897,215188,Male
+Virginia,Louisa County,4,40116,20136,19980,Male
+Virginia,Lunenburg County,4,12031,6459,5572,Male
+Virginia,Madison County,4,14000,6826,7174,Female
+Virginia,Mathews County,4,8490,4176,4314,Female
+Virginia,Mecklenburg County,4,30508,14952,15556,Female
+Virginia,Middlesex County,4,10943,5435,5508,Female
+Virginia,Montgomery County,4,98915,51458,47457,Male
+Virginia,Nelson County,4,14652,7183,7469,Female
+Virginia,New Kent County,4,24986,12953,12033,Male
+Virginia,Northampton County,4,11900,5673,6227,Female
+Virginia,Northumberland County,4,12302,6100,6202,Female
+Virginia,Nottoway County,4,15559,8268,7291,Male
+Virginia,Orange County,4,37991,18587,19404,Female
+Virginia,Page County,4,23750,11835,11915,Female
+Virginia,Patrick County,4,17643,8909,8734,Male
+Virginia,Pittsylvania County,4,59952,29966,29986,Female
+Virginia,Powhatan County,4,31489,16401,15088,Male
+Virginia,Prince Edward County,4,21927,11259,10668,Male
+Virginia,Prince George County,4,43134,24308,18826,Male
+Virginia,Prince William County,4,486943,245131,241812,Male
+Virginia,Pulaski County,4,33706,17110,16596,Male
+Virginia,Rappahannock County,4,7502,3749,3753,Female
+Virginia,Richmond County,4,9080,5140,3940,Male
+Virginia,Roanoke County,4,96914,46949,49965,Female
+Virginia,Rockbridge County,4,22593,11190,11403,Female
+Virginia,Rockingham County,4,85397,42295,43102,Female
+Virginia,Russell County,4,25448,12513,12935,Female
+Virginia,Scott County,4,21476,10868,10608,Male
+Virginia,Shenandoah County,4,44968,22245,22723,Female
+Virginia,Smyth County,4,29449,14585,14864,Female
+Virginia,Southampton County,4,17932,9340,8592,Male
+Virginia,Spotsylvania County,4,146688,72959,73729,Female
+Virginia,Stafford County,4,163380,82967,80413,Male
+Virginia,Surry County,4,6527,3279,3248,Male
+Virginia,Sussex County,4,10680,6293,4387,Male
+Virginia,Tazewell County,4,39821,20007,19814,Male
+Virginia,Warren County,4,41440,20945,20495,Male
+Virginia,Washington County,4,53958,26840,27118,Female
+Virginia,Westmoreland County,4,18712,9294,9418,Female
+Virginia,Wise County,4,35421,18633,16788,Male
+Virginia,Wythe County,4,28111,13917,14194,Female
+Virginia,York County,4,71341,35563,35778,Female
+Virginia,Alexandria city,4,155525,75643,79882,Female
+Virginia,Bristol city,4,16975,8088,8887,Female
+Virginia,Buena Vista city,4,6591,3118,3473,Female
+Virginia,Charlottesville city,4,45373,21939,23434,Female
+Virginia,Chesapeake city,4,252488,123994,128494,Female
+Virginia,Colonial Heights city,4,18294,8560,9734,Female
+Virginia,Covington city,4,5679,2762,2917,Female
+Virginia,Danville city,4,42229,19476,22753,Female
+Virginia,Emporia city,4,5481,2539,2942,Female
+Virginia,Fairfax city,4,24835,12252,12583,Female
+Virginia,Falls Church city,4,14586,7223,7363,Female
+Virginia,Franklin city,4,8247,3740,4507,Female
+Virginia,Fredericksburg city,4,28757,13535,15222,Female
+Virginia,Galax city,4,6730,3193,3537,Female
+Virginia,Hampton city,4,138037,66356,71681,Female
+Virginia,Harrisonburg city,4,51158,24773,26385,Female
+Virginia,Hopewell city,4,22962,10772,12190,Female
+Virginia,Lexington city,4,7457,3645,3812,Female
+Virginia,Lynchburg city,4,79287,37268,42019,Female
+Virginia,Manassas city,4,42642,21695,20947,Male
+Virginia,Manassas Park city,4,16703,8594,8109,Male
+Virginia,Martinsville city,4,13725,6534,7191,Female
+Virginia,Newport News city,4,184306,89714,94592,Female
+Virginia,Norfolk city,4,232995,118216,114779,Male
+Virginia,Norton city,4,3609,1730,1879,Female
+Virginia,Petersburg city,4,33394,15072,18322,Female
+Virginia,Poquoson city,4,12582,6328,6254,Male
+Virginia,Portsmouth city,4,97029,46814,50215,Female
+Virginia,Radford city,4,16738,7833,8905,Female
+Virginia,Richmond city,4,229395,108829,120566,Female
+Virginia,Roanoke city,4,97847,46574,51273,Female
+Virginia,Salem city,4,25523,12271,13252,Female
+Virginia,Staunton city,4,25904,11904,14000,Female
+Virginia,Suffolk city,4,98537,48206,50331,Female
+Virginia,Virginia Beach city,4,455618,224085,231533,Female
+Virginia,Waynesboro city,4,22808,10987,11821,Female
+Virginia,Williamsburg city,4,15909,7379,8530,Female
+Virginia,Winchester city,4,27936,13819,14117,Female
+Washington,Adams County,4,20961,10635,10326,Male
+Washington,Asotin County,4,22508,10950,11558,Female
+Washington,Benton County,4,212791,107551,105240,Male
+Washington,Chelan County,4,79926,40366,39560,Male
+Washington,Clallam County,4,77805,38341,39464,Female
+Washington,Clark County,4,516779,257031,259748,Female
+Washington,Columbia County,4,4026,1998,2028,Female
+Washington,Cowlitz County,4,111956,56011,55945,Male
+Washington,Douglas County,4,44192,22870,21322,Male
+Washington,Ferry County,4,7448,3757,3691,Male
+Washington,Franklin County,4,98678,50658,48020,Male
+Washington,Garfield County,4,2363,1167,1196,Female
+Washington,Grant County,4,101311,51744,49567,Male
+Washington,Grays Harbor County,4,77038,39513,37525,Male
+Washington,Island County,4,86625,43696,42929,Male
+Washington,Jefferson County,4,33589,16386,17203,Female
+Washington,King County,4,2266789,1152134,1114655,Male
+Washington,Kitsap County,4,277673,142851,134822,Male
+Washington,Kittitas County,4,45189,22866,22323,Male
+Washington,Klickitat County,4,23271,12010,11261,Male
+Washington,Lewis County,4,85370,43212,42158,Male
+Washington,Lincoln County,4,11601,5966,5635,Male
+Washington,Mason County,4,68166,35264,32902,Male
+Washington,Okanogan County,4,43127,22093,21034,Male
+Washington,Pacific County,4,24113,12030,12083,Female
+Washington,Pend Oreille County,4,14179,7251,6928,Male
+Washington,Pierce County,4,927380,466826,460554,Male
+Washington,San Juan County,4,18662,9186,9476,Female
+Washington,Skagit County,4,131179,65517,65662,Female
+Washington,Skamania County,4,12460,6375,6085,Male
+Washington,Snohomish County,4,840079,424214,415865,Male
+Washington,Spokane County,4,549690,274793,274897,Female
+Washington,Stevens County,4,48229,24339,23890,Male
+Washington,Thurston County,4,298758,147095,151663,Female
+Washington,Wahkiakum County,4,4688,2380,2308,Male
+Washington,Walla Walla County,4,61890,31368,30522,Male
+Washington,Whatcom County,4,230677,114447,116230,Female
+Washington,Whitman County,4,47619,24268,23351,Male
+Washington,Yakima County,4,257001,129183,127818,Male
+West Virginia,Barbour County,4,15414,7621,7793,Female
+West Virginia,Berkeley County,4,129490,64889,64601,Male
+West Virginia,Boone County,4,20968,10524,10444,Male
+West Virginia,Braxton County,4,12185,6291,5894,Male
+West Virginia,Brooke County,4,21733,10790,10943,Female
+West Virginia,Cabell County,4,92730,45191,47539,Female
+West Virginia,Calhoun County,4,6068,3022,3046,Female
+West Virginia,Clay County,4,7814,3928,3886,Male
+West Virginia,Doddridge County,4,7698,4387,3311,Male
+West Virginia,Fayette County,4,39487,20095,19392,Male
+West Virginia,Gilmer County,4,7325,4478,2847,Male
+West Virginia,Grant County,4,10968,5571,5397,Male
+West Virginia,Greenbrier County,4,32435,15942,16493,Female
+West Virginia,Hampshire County,4,23468,12072,11396,Male
+West Virginia,Hancock County,4,28172,13830,14342,Female
+West Virginia,Hardy County,4,14192,7270,6922,Male
+West Virginia,Harrison County,4,64915,32126,32789,Female
+West Virginia,Jackson County,4,27716,13881,13835,Male
+West Virginia,Jefferson County,4,58979,29471,29508,Female
+West Virginia,Kanawha County,4,175515,85021,90494,Female
+West Virginia,Lewis County,4,16767,8420,8347,Male
+West Virginia,Lincoln County,4,19901,9953,9948,Male
+West Virginia,Logan County,4,31316,15401,15915,Female
+West Virginia,McDowell County,4,17850,8822,9028,Female
+West Virginia,Marion County,4,55952,27848,28104,Female
+West Virginia,Marshall County,4,29752,15078,14674,Male
+West Virginia,Mason County,4,25000,12053,12947,Female
+West Virginia,Mercer County,4,58700,28497,30203,Female
+West Virginia,Mineral County,4,26855,13405,13450,Female
+West Virginia,Mingo County,4,22573,11201,11372,Female
+West Virginia,Monongalia County,4,106869,55212,51657,Male
+West Virginia,Monroe County,4,12296,6204,6092,Male
+West Virginia,Morgan County,4,17430,8897,8533,Male
+West Virginia,Nicholas County,4,24335,12069,12266,Female
+West Virginia,Ohio County,4,41447,20191,21256,Female
+West Virginia,Pendleton County,4,6011,3072,2939,Male
+West Virginia,Pleasants County,4,7586,4176,3410,Male
+West Virginia,Pocahontas County,4,7819,4056,3763,Male
+West Virginia,Preston County,4,34172,18122,16050,Male
+West Virginia,Putnam County,4,57015,28349,28666,Female
+West Virginia,Raleigh County,4,72882,36673,36209,Male
+West Virginia,Randolph County,4,27600,14666,12934,Male
+West Virginia,Ritchie County,4,8207,4163,4044,Male
+West Virginia,Roane County,4,13834,6912,6922,Female
+West Virginia,Summers County,4,11762,5362,6400,Female
+West Virginia,Taylor County,4,16342,8322,8020,Male
+West Virginia,Tucker County,4,6568,3320,3248,Male
+West Virginia,Tyler County,4,8183,4108,4075,Male
+West Virginia,Upshur County,4,23712,11866,11846,Male
+West Virginia,Wayne County,4,37998,18691,19307,Female
+West Virginia,Webster County,4,8167,4109,4058,Male
+West Virginia,Wetzel County,4,14025,7024,7001,Male
+West Virginia,Wirt County,4,5091,2594,2497,Male
+West Virginia,Wood County,4,83340,40806,42534,Female
+West Virginia,Wyoming County,4,20527,10264,10263,Male
+Wisconsin,Adams County,4,21226,11465,9761,Male
+Wisconsin,Ashland County,4,16039,8120,7919,Male
+Wisconsin,Barron County,4,46843,23597,23246,Male
+Wisconsin,Bayfield County,4,16608,8464,8144,Male
+Wisconsin,Brown County,4,270036,135021,135015,Male
+Wisconsin,Buffalo County,4,13391,6819,6572,Male
+Wisconsin,Burnett County,4,17036,8754,8282,Male
+Wisconsin,Calumet County,4,52718,26809,25909,Male
+Wisconsin,Chippewa County,4,66807,34773,32034,Male
+Wisconsin,Clark County,4,34691,17708,16983,Male
+Wisconsin,Columbia County,4,58193,29831,28362,Male
+Wisconsin,Crawford County,4,16007,8386,7621,Male
+Wisconsin,Dane County,4,568203,284701,283502,Male
+Wisconsin,Dodge County,4,88282,46482,41800,Male
+Wisconsin,Door County,4,30526,15250,15276,Female
+Wisconsin,Douglas County,4,44144,22358,21786,Male
+Wisconsin,Dunn County,4,45651,23150,22501,Male
+Wisconsin,Eau Claire County,4,106837,53105,53732,Female
+Wisconsin,Florence County,4,4688,2432,2256,Male
+Wisconsin,Fond du Lac County,4,103836,51607,52229,Female
+Wisconsin,Forest County,4,9381,4739,4642,Male
+Wisconsin,Grant County,4,51276,26532,24744,Male
+Wisconsin,Green County,4,36816,18693,18123,Male
+Wisconsin,Green Lake County,4,19220,9715,9505,Male
+Wisconsin,Iowa County,4,23865,12147,11718,Male
+Wisconsin,Iron County,4,6224,3165,3059,Male
+Wisconsin,Jackson County,4,20836,11184,9652,Male
+Wisconsin,Jefferson County,4,85784,43218,42566,Male
+Wisconsin,Juneau County,4,26866,14395,12471,Male
+Wisconsin,Kenosha County,4,167817,83480,84337,Female
+Wisconsin,Kewaunee County,4,20623,10527,10096,Male
+Wisconsin,La Crosse County,4,120294,59196,61098,Female
+Wisconsin,Lafayette County,4,16877,8612,8265,Male
+Wisconsin,Langlade County,4,19559,9963,9596,Male
+Wisconsin,Lincoln County,4,28376,14470,13906,Male
+Wisconsin,Manitowoc County,4,81172,41079,40093,Male
+Wisconsin,Marathon County,4,137958,69856,68102,Male
+Wisconsin,Marinette County,4,41988,21443,20545,Male
+Wisconsin,Marquette County,4,15779,8162,7617,Male
+Wisconsin,Menominee County,4,4197,2050,2147,Female
+Wisconsin,Milwaukee County,4,918661,447118,471543,Female
+Wisconsin,Monroe County,4,46109,23510,22599,Male
+Wisconsin,Oconto County,4,39633,20519,19114,Male
+Wisconsin,Oneida County,4,38212,19449,18763,Male
+Wisconsin,Outagamie County,4,192127,96770,95357,Male
+Wisconsin,Ozaukee County,4,93009,46284,46725,Female
+Wisconsin,Pepin County,4,7410,3811,3599,Male
+Wisconsin,Pierce County,4,42532,21336,21196,Male
+Wisconsin,Polk County,4,45709,23350,22359,Male
+Wisconsin,Portage County,4,70718,35947,34771,Male
+Wisconsin,Price County,4,14179,7350,6829,Male
+Wisconsin,Racine County,4,195846,97298,98548,Female
+Wisconsin,Richland County,4,17090,8674,8416,Male
+Wisconsin,Rock County,4,164060,81681,82379,Female
+Wisconsin,Rusk County,4,14186,7288,6898,Male
+Wisconsin,St. Croix County,4,96017,48448,47569,Male
+Wisconsin,Sauk County,4,65777,32969,32808,Male
+Wisconsin,Sawyer County,4,18559,9496,9063,Male
+Wisconsin,Shawano County,4,40886,20742,20144,Male
+Wisconsin,Sheboygan County,4,117841,60051,57790,Male
+Wisconsin,Taylor County,4,19975,10231,9744,Male
+Wisconsin,Trempealeau County,4,30899,15779,15120,Male
+Wisconsin,Vernon County,4,31060,15739,15321,Male
+Wisconsin,Vilas County,4,23763,12282,11481,Male
+Wisconsin,Walworth County,4,105380,53080,52300,Male
+Wisconsin,Washburn County,4,16911,8515,8396,Male
+Wisconsin,Washington County,4,137688,68992,68696,Male
+Wisconsin,Waukesha County,4,410434,204074,206360,Female
+Wisconsin,Waupaca County,4,51488,26266,25222,Male
+Wisconsin,Waushara County,4,24999,13302,11697,Male
+Wisconsin,Winnebago County,4,170718,86664,84054,Male
+Wisconsin,Wood County,4,73993,36833,37160,Female
+Wyoming,Albany County,4,38031,19827,18204,Male
+Wyoming,Big Horn County,4,11855,6053,5802,Male
+Wyoming,Campbell County,4,47058,24160,22898,Male
+Wyoming,Carbon County,4,14542,7898,6644,Male
+Wyoming,Converse County,4,13786,7034,6752,Male
+Wyoming,Crook County,4,7448,3792,3656,Male
+Wyoming,Fremont County,4,39472,20026,19446,Male
+Wyoming,Goshen County,4,12562,6658,5904,Male
+Wyoming,Hot Springs County,4,4588,2303,2285,Male
+Wyoming,Johnson County,4,8730,4391,4339,Male
+Wyoming,Laramie County,4,100723,51334,49389,Male
+Wyoming,Lincoln County,4,20660,10653,10007,Male
+Wyoming,Natrona County,4,79601,40248,39353,Male
+Wyoming,Niobrara County,4,2380,1089,1291,Female
+Wyoming,Park County,4,30518,15270,15248,Male
+Wyoming,Platte County,4,8645,4385,4260,Male
+Wyoming,Sheridan County,4,32096,16134,15962,Male
+Wyoming,Sublette County,4,8763,4653,4110,Male
+Wyoming,Sweetwater County,4,41345,21469,19876,Male
+Wyoming,Teton County,4,23287,12206,11081,Male
+Wyoming,Uinta County,4,20712,10598,10114,Male
+Wyoming,Washakie County,4,7719,3973,3746,Male
+Wyoming,Weston County,4,6860,3800,3060,Male
