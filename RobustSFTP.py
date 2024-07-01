@@ -24,6 +24,7 @@ DATA_RETENTION_DAYS = 30
 LOG_FILE = '/path/to/logfile.log'
 MAX_RETRIES = 5
 RETRY_DELAY_BASE = 2  # Base delay in seconds for exponential backoff
+MIN_FILE_AGE = 300  # Minimum file age in seconds (5 minutes)
 
 # Setup logging
 logging.basicConfig(filename=LOG_FILE, level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -107,12 +108,18 @@ def manual_requeue(start_time, end_time):
     db_conn = get_db_connection()
     cursor = db_conn.cursor()
 
-    cursor.execute("SELECT filename FROM files WHERE last_modified BETWEEN ? AND ?", (start_time, end_time))
+    cursor.execute("SELECT filename, last_modified FROM files WHERE last_modified BETWEEN ? AND ?", (start_time, end_time))
     files = cursor.fetchall()
-    for (filename,) in files:
-        cursor.execute("UPDATE files SET status=? WHERE filename=?", ("pending", filename))
-        file_queue.put(filename)
-        logging.info(f"Re-queued file {filename} for re-upload.")
+    now = datetime.datetime.now()
+
+    for (filename, last_modified) in files:
+        file_age = (now - datetime.datetime.strptime(last_modified, '%Y-%m-%d %H:%M:%S.%f')).total_seconds()
+        if file_age >= MIN_FILE_AGE:
+            cursor.execute("UPDATE files SET status=? WHERE filename=?", ("pending", filename))
+            file_queue.put(filename)
+            logging.info(f"Re-queued file {filename} for re-upload.")
+        else:
+            logging.info(f"Skipped re-queueing {filename} because it was modified recently.")
 
     db_conn.commit()
     db_conn.close()
@@ -158,8 +165,13 @@ class Handler(FileSystemEventHandler):
 
     def on_created(self, event):
         if not event.is_directory:
-            self.queue.put(event.src_path)
-            logging.debug(f"New file detected: {event.src_path}")
+            now = datetime.datetime.now()
+            file_mtime = datetime.datetime.fromtimestamp(os.path.getmtime(event.src_path))
+            if (now - file_mtime).total_seconds() >= MIN_FILE_AGE:
+                self.queue.put(event.src_path)
+                logging.debug(f"New file detected and queued: {event.src_path}")
+            else:
+                logging.debug(f"New file detected but not queued due to recent modification: {event.src_path}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Manage file uploads to SFTP server.")
