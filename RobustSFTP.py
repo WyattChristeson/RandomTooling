@@ -7,7 +7,6 @@ import datetime
 import logging
 import time
 import argparse
-import re
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from concurrent.futures import ThreadPoolExecutor
@@ -21,10 +20,10 @@ PRIVATE_KEY_PATH = '/path/to/private/key'
 KNOWN_HOST_KEY_FINGERPRINT = 'xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx'
 SOURCE_FOLDER = '/path/to/source/folder'
 DB_PATH = '/path/to/database.db'
-DATA_RETENTION_DAYS = 90
+DATA_RETENTION_DAYS = 30
 LOG_FILE = '/path/to/logfile.log'
-MAX_RETRIES = 30
-RETRY_DELAY_BASE = 2
+MAX_RETRIES = 5
+RETRY_DELAY_BASE = 2  # Base delay in seconds for exponential backoff
 
 # Setup logging
 logging.basicConfig(filename=LOG_FILE, level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -44,8 +43,14 @@ def setup_sftp_client():
     client.set_missing_host_key_policy(paramiko.WarningPolicy())
     private_key = paramiko.RSAKey.from_private_key_file(PRIVATE_KEY_PATH)
     client.connect(SFTP_SERVER, port=SFTP_PORT, username=SFTP_USERNAME, pkey=private_key, timeout=20)
+
+    # Log the server's host key (SSL certificate equivalent)
+    server_key = client.get_transport().get_remote_server_key()
+    key_type = server_key.get_name()
+    key_fingerprint = server_key.get_fingerprint().hex()
+    logging.info(f"SFTP connection established. Server key type: {key_type}, Fingerprint: {key_fingerprint}")
+
     sftp = client.open_sftp()
-    logging.info("SFTP connection established.")
     return sftp, client
 
 # Create a pool of SFTP connections
@@ -98,19 +103,19 @@ def worker(file_queue):
         retry_upload(filename, 0)
         file_queue.task_done()
 
-def parse_delay(delay_str):
-    matches = re.match(r"(\d+)([dhm])", delay_str)
-    return int(matches.group(1)) * {'d': 86400, 'h': 3600, 'm': 60}.get(matches.group(2), 0) if matches else 0
-
-def manual_requeue(filename, delay):
+def manual_requeue(start_time, end_time):
     db_conn = get_db_connection()
     cursor = db_conn.cursor()
-    time.sleep(parse_delay(delay))
-    cursor.execute("UPDATE files SET status=? WHERE filename=?", ("pending", filename))
+
+    cursor.execute("SELECT filename FROM files WHERE last_modified BETWEEN ? AND ?", (start_time, end_time))
+    files = cursor.fetchall()
+    for (filename,) in files:
+        cursor.execute("UPDATE files SET status=? WHERE filename=?", ("pending", filename))
+        file_queue.put(filename)
+        logging.info(f"Re-queued file {filename} for re-upload.")
+
     db_conn.commit()
-    file_queue.put(filename)
     db_conn.close()
-    logging.info(f"Manually re-queued file {filename} with a delay of {delay}")
 
 def cleanup_old_files():
     conn = get_db_connection()
@@ -158,12 +163,17 @@ class Handler(FileSystemEventHandler):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Manage file uploads to SFTP server.")
-    parser.add_argument("--requeue", metavar="FILENAME", type=str, help="Re-queue a file for uploading.")
-    parser.add_argument("--delay", metavar="DELAY", type=str, default="0", help="Delay before re-queuing the file.")
+    parser.add_argument("--requeue-start", metavar="START", type=str, help="Re-queue files modified starting from this date and time (e.g., '2023-01-01 00:00:00').")
+    parser.add_argument("--requeue-end", metavar="END", type=str, help="Re-queue files modified up to this date and time (e.g., '2023-01-01 23:59:59').")
     args = parser.parse_args()
 
-    if args.requeue:
-        manual_requeue(args.requeue, args.delay)
+    if args.requeue_start and args.requeue_end:
+        try:
+            start_time = datetime.datetime.strptime(args.requeue_start, "%Y-%m-%d %H:%M:%S")
+            end_time = datetime.datetime.strptime(args.requeue_end, "%Y-%m-%d %H:%M:%S")
+            manual_requeue(start_time, end_time)
+        except ValueError as e:
+            logging.error(f"Failed to parse requeue date and time: {e}")
         sys.exit(0)
 
     watcher = Watcher(SOURCE_FOLDER, file_queue)
