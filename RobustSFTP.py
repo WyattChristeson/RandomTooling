@@ -21,10 +21,10 @@ PRIVATE_KEY_PATH = '/path/to/private/key'
 KNOWN_HOST_KEY_FINGERPRINT = 'xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx'
 SOURCE_FOLDER = '/path/to/source/folder'
 DB_PATH = '/path/to/database.db'
-DATA_RETENTION_DAYS = 30
+DATA_RETENTION_DAYS = 90
 LOG_FILE = '/path/to/logfile.log'
-MAX_RETRIES = 5
-RETRY_DELAY_BASE = 2  
+MAX_RETRIES = 30
+RETRY_DELAY_BASE = 2
 
 # Setup logging
 logging.basicConfig(filename=LOG_FILE, level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -74,23 +74,43 @@ def upload_file(filename, db_conn, sftp):
         db_conn.commit()
         return False
 
+def retry_upload(filename, retry_count):
+    db_conn = get_db_connection()
+    sftp, client = sftp_connection_pool.submit(setup_sftp_client).result()
+    try:
+        success = upload_file(filename, db_conn, sftp)
+        if not success:
+            if retry_count < MAX_RETRIES:
+                logging.info(f"Retrying upload for {filename}, attempt {retry_count + 1}")
+                time.sleep(RETRY_DELAY_BASE ** retry_count)
+                retry_upload(filename, retry_count + 1)
+            else:
+                logging.error(f"Failed to upload {filename} after {MAX_RETRIES} retries.")
+    finally:
+        db_conn.close()
+        client.close()
+
 def worker(file_queue):
     while True:
         filename = file_queue.get()
         if filename is None:
             break
-        db_conn = get_db_connection()
-        sftp, client = sftp_connection_pool.submit(setup_sftp_client).result()
-        try:
-            success = upload_file(filename, db_conn, sftp)
-            if not success:
-                logging.debug(f"Retrying upload for {filename}")
-                time.sleep(RETRY_DELAY_BASE)
-                file_queue.put(filename)  # Requeue for retry
-        finally:
-            db_conn.close()
-            client.close()
+        retry_upload(filename, 0)
         file_queue.task_done()
+
+def parse_delay(delay_str):
+    matches = re.match(r"(\d+)([dhm])", delay_str)
+    return int(matches.group(1)) * {'d': 86400, 'h': 3600, 'm': 60}.get(matches.group(2), 0) if matches else 0
+
+def manual_requeue(filename, delay):
+    db_conn = get_db_connection()
+    cursor = db_conn.cursor()
+    time.sleep(parse_delay(delay))
+    cursor.execute("UPDATE files SET status=? WHERE filename=?", ("pending", filename))
+    db_conn.commit()
+    file_queue.put(filename)
+    db_conn.close()
+    logging.info(f"Manually re-queued file {filename} with a delay of {delay}")
 
 def cleanup_old_files():
     conn = get_db_connection()
@@ -106,6 +126,8 @@ def run_cleanup_every_day():
         cleanup_old_files()
         time.sleep(86400)  # Sleep for a day
 
+setup_database()
+
 cleanup_thread = threading.Thread(target=run_cleanup_every_day)
 cleanup_thread.start()
 
@@ -117,21 +139,21 @@ for t in threads:
 class Watcher:
     def __init__(self, directory, queue):
         self.observer = Observer()
-        this.directory = directory
-        this.queue = queue
+        self.directory = directory
+        self.queue = queue
 
     def run(self):
-        event_handler = Handler(this.queue)
-        this.observer.schedule(event_handler, this.directory, recursive=True)
-        this.observer.start()
+        event_handler = Handler(self.queue)
+        self.observer.schedule(event_handler, self.directory, recursive=True)
+        self.observer.start()
 
 class Handler(FileSystemEventHandler):
     def __init__(self, queue):
-        this.queue = queue
+        self.queue = queue
 
     def on_created(self, event):
         if not event.is_directory:
-            this.queue.put(event.src_path)
+            self.queue.put(event.src_path)
             logging.debug(f"New file detected: {event.src_path}")
 
 if __name__ == "__main__":
