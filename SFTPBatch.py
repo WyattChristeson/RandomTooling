@@ -94,11 +94,12 @@ def retry_upload(filename, retry_count):
         db_conn.close()
         client.close()
 
-def worker(file_queue):
-    while True:
-        filename = file_queue.get()
-        if filename is None:
-            break
+def worker(file_queue, stop_event):
+    while not stop_event.is_set():
+        try:
+            filename = file_queue.get(timeout=1)
+        except queue.Empty:
+            continue
         retry_upload(filename, 0)
         file_queue.task_done()
 
@@ -148,24 +149,50 @@ def process_files():
 
     db_conn.close()
 
-def run_daily_batch():
-    while True:
+def run_daily_batch(stop_event):
+    while not stop_event.is_set():
         logging.info("Starting daily batch process.")
         process_files()
-        time.sleep(86400)  # Sleep for a day
+        for _ in range(86400):  # Sleep for a day, checking for stop_event every second
+            if stop_event.is_set():
+                break
+            time.sleep(1)
+
+def main():
+    setup_database()
+
+    file_queue = queue.Queue()
+    stop_event = threading.Event()
+
+    threads = [threading.Thread(target=worker, args=(file_queue, stop_event)) for _ in range(NUM_WORKERS)]
+    for t in threads:
+        t.start()
+
+    # Run the initial batch process
+    process_files()
+
+    # Start the daily batch process
+    batch_thread = threading.Thread(target=run_daily_batch, args=(stop_event,))
+    batch_thread.start()
+
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        logging.info("Batch process interrupted by user.")
+        stop_event.set()
+        batch_thread.join()
+        for _ in range(NUM_WORKERS):
+            file_queue.put(None)
+        for t in threads:
+            t.join()
+        logging.info("SFTP connections closed.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Manage file uploads to SFTP server.")
     parser.add_argument("--requeue-start", metavar="START", type=str, help="Re-queue files modified starting from this date and time (e.g., '2023-01-01 00:00:00').")
     parser.add_argument("--requeue-end", metavar="END", type=str, help="Re-queue files modified up to this date and time (e.g., '2023-01-01 23:59:59').")
     args = parser.parse_args()
-
-    setup_database()
-
-    file_queue = queue.Queue()
-    threads = [threading.Thread(target=worker, args=(file_queue,)) for _ in range(NUM_WORKERS)]
-    for t in threads:
-        t.start()
 
     if args.requeue_start and args.requeue_end:
         try:
@@ -175,22 +202,5 @@ if __name__ == "__main__":
         except ValueError as e:
             logging.error(f"Failed to parse requeue date and time: {e}")
         sys.exit(0)
-
-    # Run the initial batch process
-    process_files()
-
-    # Start the daily batch process
-    batch_thread = threading.Thread(target=run_daily_batch)
-    batch_thread.start()
-
-    try:
-        while True:
-            time.sleep(1)
-    except KeyboardInterrupt:
-        logging.info("Batch process interrupted by user.")
-    finally:
-        for _ in range(NUM_WORKERS):
-            file_queue.put(None)
-        for t in threads:
-            t.join()
-        logging.info("SFTP connections closed.")
+    else:
+        main()
