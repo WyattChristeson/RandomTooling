@@ -27,15 +27,25 @@ MIN_FILE_AGE = 300  # Minimum file age in seconds (5 minutes)
 # Setup logging
 logging.basicConfig(filename=LOG_FILE, level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
+# Register adapters and converters for SQLite
+def adapt_datetime(dt):
+    return dt.isoformat()
+
+def convert_datetime(s):
+    return datetime.datetime.fromisoformat(s)
+
+sqlite3.register_adapter(datetime.datetime, adapt_datetime)
+sqlite3.register_converter("timestamp", convert_datetime)
+
 def setup_database():
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(DB_PATH, detect_types=sqlite3.PARSE_DECLTYPES)
     c = conn.cursor()
     c.execute('CREATE TABLE IF NOT EXISTS files (filename TEXT PRIMARY KEY, status TEXT, last_modified TIMESTAMP)')
     conn.commit()
     conn.close()
 
 def get_db_connection():
-    return sqlite3.connect(DB_PATH, check_same_thread=False)
+    return sqlite3.connect(DB_PATH, detect_types=sqlite3.PARSE_DECLTYPES, check_same_thread=False)
 
 def setup_sftp_client():
     client = paramiko.SSHClient()
@@ -112,7 +122,7 @@ def manual_requeue(start_time, end_time):
     now = datetime.datetime.now()
 
     for (filename, last_modified) in files:
-        file_age = (now - datetime.datetime.strptime(last_modified, '%Y-%m-%d %H:%M:%S.%f')).total_seconds()
+        file_age = (now - last_modified).total_seconds()
         if file_age >= MIN_FILE_AGE:
             cursor.execute("UPDATE files SET status=? WHERE filename=?", ("pending", filename))
             file_queue.put(filename)
@@ -140,7 +150,7 @@ def process_files():
     files = cursor.fetchall()
 
     for filename, last_modified in files:
-        file_age = (now - datetime.datetime.strptime(last_modified, '%Y-%m-%d %H:%M:%S.%f')).total_seconds()
+        file_age = (now - last_modified).total_seconds()
         if file_age >= MIN_FILE_AGE:
             file_queue.put(filename)
             logging.info(f"Queued file {filename} for upload.")
@@ -158,9 +168,28 @@ def run_daily_batch(stop_event):
                 break
             time.sleep(1)
 
+def initial_file_scan():
+    db_conn = get_db_connection()
+    cursor = db_conn.cursor()
+
+    for root, dirs, files in os.walk(SOURCE_FOLDER):
+        for name in files:
+            filepath = os.path.join(root, name)
+            mtime = os.path.getmtime(filepath)
+            file_age = (datetime.datetime.now() - datetime.datetime.fromtimestamp(mtime)).total_seconds()
+            if file_age >= MIN_FILE_AGE:
+                cursor.execute('INSERT OR IGNORE INTO files (filename, status, last_modified) VALUES (?, ?, ?)',
+                               (name, 'pending', datetime.datetime.fromtimestamp(mtime)))
+                logging.info(f"File found and marked as pending: {name}")
+
+    db_conn.commit()
+    db_conn.close()
+
 def main():
     setup_database()
+    initial_file_scan()  # Initial file scan to detect existing files
 
+    global file_queue
     file_queue = queue.Queue()
     stop_event = threading.Event()
 
