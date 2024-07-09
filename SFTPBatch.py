@@ -65,41 +65,41 @@ def setup_sftp_client():
 # Create a pool of SFTP connections
 sftp_connection_pool = ThreadPoolExecutor(max_workers=NUM_WORKERS, initializer=setup_sftp_client)
 
-def upload_file(filename, db_conn, sftp):
+def upload_file(filepath, db_conn, sftp):
     cursor = db_conn.cursor()
     now = datetime.datetime.now()
-    cursor.execute('SELECT status FROM files WHERE filename=?', (filename,))
+    cursor.execute('SELECT status FROM files WHERE filename=?', (filepath,))
     result = cursor.fetchone()
     if result and result[0] == 'uploaded':
-        logging.debug(f"Skipping {filename}, already uploaded.")
+        logging.debug(f"Skipping {filepath}, already uploaded.")
         return True
 
-    cursor.execute('UPDATE files SET status=?, last_modified=? WHERE filename=?', ('uploading', now, filename))
+    cursor.execute('UPDATE files SET status=?, last_modified=? WHERE filename=?', ('uploading', now, filepath))
     db_conn.commit()
     try:
-        sftp.put(os.path.join(SOURCE_FOLDER, filename), filename)
-        cursor.execute('UPDATE files SET status=?, last_modified=? WHERE filename=?', ('uploaded', now, filename))
+        sftp.put(os.path.join(SOURCE_FOLDER, filepath), filepath)
+        cursor.execute('UPDATE files SET status=?, last_modified=? WHERE filename=?', ('uploaded', now, filepath))
         db_conn.commit()
-        logging.info(f"Uploaded {filename}")
+        logging.info(f"Uploaded {filepath}")
         return True
     except Exception as e:
-        logging.error(f"Failed to upload {filename}: {e}")
-        cursor.execute('UPDATE files SET status=?, last_modified=? WHERE filename=?', ('error', now, filename))
+        logging.error(f"Failed to upload {filepath}: {e}")
+        cursor.execute('UPDATE files SET status=?, last_modified=? WHERE filename=?', ('error', now, filepath))
         db_conn.commit()
         return False
 
-def retry_upload(filename, retry_count):
+def retry_upload(filepath, retry_count):
     db_conn = get_db_connection()
     sftp, client = sftp_connection_pool.submit(setup_sftp_client).result()
     try:
-        success = upload_file(filename, db_conn, sftp)
+        success = upload_file(filepath, db_conn, sftp)
         if not success:
             if retry_count < MAX_RETRIES:
-                logging.info(f"Retrying upload for {filename}, attempt {retry_count + 1}")
+                logging.info(f"Retrying upload for {filepath}, attempt {retry_count + 1}")
                 time.sleep(RETRY_DELAY_BASE ** retry_count)
-                retry_upload(filename, retry_count + 1)
+                retry_upload(filepath, retry_count + 1)
             else:
-                logging.error(f"Failed to upload {filename} after {MAX_RETRIES} retries.")
+                logging.error(f"Failed to upload {filepath} after {MAX_RETRIES} retries.")
     finally:
         db_conn.close()
         client.close()
@@ -107,10 +107,10 @@ def retry_upload(filename, retry_count):
 def worker(file_queue, stop_event):
     while not stop_event.is_set():
         try:
-            filename = file_queue.get(timeout=1)
+            filepath = file_queue.get(timeout=1)
         except queue.Empty:
             continue
-        retry_upload(filename, 0)
+        retry_upload(filepath, 0)
         file_queue.task_done()
 
 def manual_requeue(start_time, end_time):
@@ -121,14 +121,14 @@ def manual_requeue(start_time, end_time):
     files = cursor.fetchall()
     now = datetime.datetime.now()
 
-    for (filename, last_modified) in files:
+    for (filepath, last_modified) in files:
         file_age = (now - last_modified).total_seconds()
         if file_age >= MIN_FILE_AGE:
-            cursor.execute("UPDATE files SET status=? WHERE filename=?", ("pending", filename))
-            file_queue.put(filename)
-            logging.info(f"Re-queued file {filename} for re-upload.")
+            cursor.execute("UPDATE files SET status=? WHERE filename=?", ("pending", filepath))
+            file_queue.put(filepath)
+            logging.info(f"Re-queued file {filepath} for re-upload.")
         else:
-            logging.info(f"Skipped re-queueing {filename} because it was modified recently.")
+            logging.info(f"Skipped re-queueing {filepath} because it was modified recently.")
 
     db_conn.commit()
     db_conn.close()
@@ -149,13 +149,13 @@ def process_files():
     cursor.execute("SELECT filename, last_modified FROM files WHERE status IN ('pending', 'error')")
     files = cursor.fetchall()
 
-    for filename, last_modified in files:
+    for filepath, last_modified in files:
         file_age = (now - last_modified).total_seconds()
         if file_age >= MIN_FILE_AGE:
-            file_queue.put(filename)
-            logging.info(f"Queued file {filename} for upload.")
+            file_queue.put(filepath)
+            logging.info(f"Queued file {filepath} for upload.")
         else:
-            logging.info(f"Skipped file {filename} because it was modified recently.")
+            logging.info(f"Skipped file {filepath} because it was modified recently.")
 
     db_conn.close()
 
@@ -174,13 +174,13 @@ def initial_file_scan():
 
     for root, dirs, files in os.walk(SOURCE_FOLDER):
         for name in files:
-            filepath = os.path.join(root, name)
-            mtime = os.path.getmtime(filepath)
+            filepath = os.path.relpath(os.path.join(root, name), SOURCE_FOLDER)
+            mtime = os.path.getmtime(os.path.join(root, name))
             file_age = (datetime.datetime.now() - datetime.datetime.fromtimestamp(mtime)).total_seconds()
             if file_age >= MIN_FILE_AGE:
                 cursor.execute('INSERT OR IGNORE INTO files (filename, status, last_modified) VALUES (?, ?, ?)',
-                               (name, 'pending', datetime.datetime.fromtimestamp(mtime)))
-                logging.info(f"File found and marked as pending: {name}")
+                               (filepath, 'pending', datetime.datetime.fromtimestamp(mtime)))
+                logging.info(f"File found and marked as pending: {filepath}")
 
     db_conn.commit()
     db_conn.close()
