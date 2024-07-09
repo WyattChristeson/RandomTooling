@@ -158,9 +158,28 @@ def run_daily_batch(stop_event):
                 break
             time.sleep(1)
 
+def initial_file_scan():
+    db_conn = get_db_connection()
+    cursor = db_conn.cursor()
+
+    for root, dirs, files in os.walk(SOURCE_FOLDER):
+        for name in files:
+            filepath = os.path.join(root, name)
+            mtime = os.path.getmtime(filepath)
+            file_age = (datetime.datetime.now() - datetime.datetime.fromtimestamp(mtime)).total_seconds()
+            if file_age >= MIN_FILE_AGE:
+                cursor.execute('INSERT OR IGNORE INTO files (filename, status, last_modified) VALUES (?, ?, ?)',
+                               (name, 'pending', datetime.datetime.fromtimestamp(mtime)))
+                logging.info(f"File found and marked as pending: {name}")
+
+    db_conn.commit()
+    db_conn.close()
+
 def main():
     setup_database()
+    initial_file_scan()  # Initial file scan to detect existing files
 
+    global file_queue
     file_queue = queue.Queue()
     stop_event = threading.Event()
 
