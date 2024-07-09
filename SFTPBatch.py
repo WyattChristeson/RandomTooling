@@ -163,10 +163,8 @@ def run_daily_batch(stop_event):
     while not stop_event.is_set():
         logging.info("Starting daily batch process.")
         process_files()
-        for _ in range(86400):  # Sleep for a day, checking for stop_event every second
-            if stop_event.is_set():
-                break
-            time.sleep(1)
+        logging.info("File Processing completed.")
+        break
 
 def initial_file_scan():
     db_conn = get_db_connection()
