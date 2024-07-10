@@ -32,7 +32,7 @@ def adapt_datetime(dt):
     return dt.isoformat()
 
 def convert_datetime(s):
-    return datetime.datetime.fromisoformat(s.decode('utf-8'))
+    return datetime.datetime.strptime(s.decode('utf-8'), "%Y-%m-%d %H:%M:%S.%f")
 
 sqlite3.register_adapter(datetime.datetime, adapt_datetime)
 sqlite3.register_converter("timestamp", convert_datetime)
@@ -124,7 +124,7 @@ def retry_upload(filepath, retry_count):
         client.close()
 
 def worker(file_queue, stop_event):
-    while not stop_event.is_set():
+    while not stop_event.is_set() or not file_queue.empty():
         try:
             filepath = file_queue.get(timeout=1)
         except queue.Empty:
@@ -179,11 +179,9 @@ def process_files():
     db_conn.close()
 
 def run_daily_batch(stop_event):
-    while not stop_event.is_set():
-        logging.info("Starting daily batch process.")
-        process_files()
-        logging.info("File Processing completed.")
-        break
+    logging.info("Starting daily batch process.")
+    process_files()
+    logging.info("File Processing completed.")
 
 def initial_file_scan():
     db_conn = get_db_connection()
@@ -223,10 +221,15 @@ def main():
 
     try:
         while True:
+            if file_queue.empty():
+                logging.info("File queue is empty, stopping the script.")
+                stop_event.set()
+                break
             time.sleep(1)
     except KeyboardInterrupt:
         logging.info("Batch process interrupted by user.")
         stop_event.set()
+    finally:
         batch_thread.join()
         for _ in range(NUM_WORKERS):
             file_queue.put(None)
