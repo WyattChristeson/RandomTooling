@@ -52,7 +52,18 @@ def setup_sftp_client():
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.WarningPolicy())
     private_key = paramiko.RSAKey.from_private_key_file(PRIVATE_KEY_PATH)
-    client.connect(SFTP_SERVER, port=SFTP_PORT, username=SFTP_USERNAME, pkey=private_key, timeout=20)
+    retries = 0
+    while retries < CONNECTION_RETRIES:
+        try:
+            client.connect(SFTP_SERVER, port=SFTP_PORT, username=SFTP_USERNAME, pkey=private_key, timeout=20)
+            break
+        except paramiko.SSHException as e:
+            retries += 1
+            logging.error(f"SFTP connection attempt {retries} failed: {e}")
+            time.sleep(RETRY_DELAY_BASE ** retries)
+    else:
+        logging.error("Failed to establish SFTP connection after multiple attempts.")
+        raise ConnectionError("Failed to establish SFTP connection")
 
     # Log the server's host key (SSL certificate equivalent)
     server_key = client.get_transport().get_remote_server_key()
@@ -120,6 +131,8 @@ def retry_upload(filepath, retry_count):
                 retry_upload(filepath, retry_count + 1)
             else:
                 logging.error(f"Failed to upload {filepath} after {MAX_RETRIES} retries.")
+    except Exception as e:
+        logging.error(f"Error during upload attempt: {e}")
     finally:
         db_conn.close()
         client.close()
