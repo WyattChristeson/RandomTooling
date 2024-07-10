@@ -128,10 +128,13 @@ def worker(file_queue, stop_event):
     while not stop_event.is_set() or not file_queue.empty():
         try:
             filepath = file_queue.get(timeout=1)
+            if filepath is None:  # Stop signal
+                break
+            retry_upload(filepath, 0)
+            file_queue.task_done()
         except queue.Empty:
             continue
-        retry_upload(filepath, 0)
-        file_queue.task_done()
+            
 
 def manual_requeue(start_time, end_time):
     db_conn = get_db_connection()
@@ -232,9 +235,9 @@ def main():
         logging.info("Batch process interrupted by user.")
         stop_event.set()
     finally:
-        batch_thread.join()
         for _ in range(NUM_WORKERS):
-            file_queue.put(None)
+            file_queue.put(None)  # Signal the worker threads to exit
+        batch_thread.join()
         for t in threads:
             t.join()
         logging.info("SFTP connections closed.")
