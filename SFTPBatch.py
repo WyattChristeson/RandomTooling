@@ -65,6 +65,23 @@ def setup_sftp_client():
 # Create a pool of SFTP connections
 sftp_connection_pool = ThreadPoolExecutor(max_workers=NUM_WORKERS, initializer=setup_sftp_client)
 
+def ensure_sftp_path_exists(sftp, remote_path):
+    dirs = []
+    while remote_path:
+        remote_path, dir_name = os.path.split(remote_path)
+        if dir_name:
+            dirs.append(dir_name)
+        else:
+            if remote_path:
+                dirs.append(remote_path)
+            break
+    while dirs:
+        remote_path = os.path.join(remote_path, dirs.pop())
+        try:
+            sftp.stat(remote_path)
+        except FileNotFoundError:
+            sftp.mkdir(remote_path)
+
 def upload_file(filepath, db_conn, sftp):
     cursor = db_conn.cursor()
     now = datetime.datetime.now()
@@ -77,7 +94,9 @@ def upload_file(filepath, db_conn, sftp):
     cursor.execute('UPDATE files SET status=?, last_modified=? WHERE filename=?', ('uploading', now, filepath))
     db_conn.commit()
     try:
-        sftp.put(os.path.join(SOURCE_FOLDER, filepath), filepath)
+        remote_path = filepath
+        ensure_sftp_path_exists(sftp, os.path.dirname(remote_path))
+        sftp.put(os.path.join(SOURCE_FOLDER, filepath), remote_path)
         cursor.execute('UPDATE files SET status=?, last_modified=? WHERE filename=?', ('uploaded', now, filepath))
         db_conn.commit()
         logging.info(f"Uploaded {filepath}")
