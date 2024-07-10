@@ -10,7 +10,7 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor
 
 # Configuration
-NUM_WORKERS = 5
+NUM_WORKERS = 20
 SFTP_SERVER = 'sftp.server.com'
 SFTP_PORT = 2222
 SFTP_USERNAME = 'user'
@@ -25,7 +25,8 @@ RETRY_DELAY_BASE = 2  # Base delay in seconds for exponential backoff
 MIN_FILE_AGE = 300  # Minimum file age in seconds (5 minutes)
 
 # Setup logging
-logging.basicConfig(filename=LOG_FILE, level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename=LOG_FILE, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.getLogger("paramiko").setLevel(logging.WARNING)
 
 # Register adapters and converters for SQLite
 def adapt_datetime(dt):
@@ -57,13 +58,13 @@ def setup_sftp_client():
     server_key = client.get_transport().get_remote_server_key()
     key_type = server_key.get_name()
     key_fingerprint = server_key.get_fingerprint().hex()
-    logging.info(f"SFTP connection established. Server key type: {key_type}, Fingerprint: {key_fingerprint}")
+    logging.debug(f"SFTP connection established. Server key type: {key_type}, Fingerprint: {key_fingerprint}")
 
     sftp = client.open_sftp()
     return sftp, client
 
 # Create a pool of SFTP connections
-sftp_connection_pool = ThreadPoolExecutor(max_workers=NUM_WORKERS, initializer=setup_sftp_client)
+sftp_connection_pool = ThreadPoolExecutor(max_workers=(4*(int(NUM_WORKERS))), initializer=setup_sftp_client)
 
 def ensure_sftp_path_exists(sftp, remote_path):
     dirs = []
@@ -201,6 +202,7 @@ def initial_file_scan():
     db_conn.close()
 
 def main():
+    logging.info("Batch Upload process started.")
     setup_database()
     initial_file_scan()  # Initial file scan to detect existing files
 
