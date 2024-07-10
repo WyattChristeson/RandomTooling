@@ -32,7 +32,7 @@ def adapt_datetime(dt):
     return dt.isoformat()
 
 def convert_datetime(s):
-    return datetime.datetime.strptime(s.decode('utf-8'), "%Y-%m-%d %H:%M:%S.%f")
+    return datetime.datetime.fromisoformat(s.decode('utf-8'))
 
 sqlite3.register_adapter(datetime.datetime, adapt_datetime)
 sqlite3.register_converter("timestamp", convert_datetime)
