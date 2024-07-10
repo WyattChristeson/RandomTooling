@@ -221,6 +221,8 @@ def main():
     logging.info("Batch Upload process started.")
     setup_database()
     initial_file_scan()  # Initial file scan to detect existing files
+    logging.info("Local files scanned, cleaning up old files from the queue based on retention policy.")
+    cleanup_old_files()
 
     global file_queue
     file_queue = queue.Queue()
@@ -253,7 +255,7 @@ def main():
         batch_thread.join()
         for t in threads:
             t.join()
-        logging.info("SFTP connections closed.")
+        logging.debug("SFTP connections closed.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Manage file uploads to SFTP server.")
