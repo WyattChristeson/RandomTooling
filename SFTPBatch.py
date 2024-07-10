@@ -27,15 +27,25 @@ MIN_FILE_AGE = 300  # Minimum file age in seconds (5 minutes)
 # Setup logging
 logging.basicConfig(filename=LOG_FILE, level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
+# Register adapters and converters for SQLite
+def adapt_datetime(dt):
+    return dt.isoformat()
+
+def convert_datetime(s):
+    return datetime.datetime.strptime(s.decode('utf-8'), "%Y-%m-%d %H:%M:%S.%f")
+
+sqlite3.register_adapter(datetime.datetime, adapt_datetime)
+sqlite3.register_converter("timestamp", convert_datetime)
+
 def setup_database():
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(DB_PATH, detect_types=sqlite3.PARSE_DECLTYPES)
     c = conn.cursor()
     c.execute('CREATE TABLE IF NOT EXISTS files (filename TEXT PRIMARY KEY, status TEXT, last_modified TIMESTAMP)')
     conn.commit()
     conn.close()
 
 def get_db_connection():
-    return sqlite3.connect(DB_PATH, check_same_thread=False)
+    return sqlite3.connect(DB_PATH, detect_types=sqlite3.PARSE_DECLTYPES, check_same_thread=False)
 
 def setup_sftp_client():
     client = paramiko.SSHClient()
@@ -55,52 +65,71 @@ def setup_sftp_client():
 # Create a pool of SFTP connections
 sftp_connection_pool = ThreadPoolExecutor(max_workers=NUM_WORKERS, initializer=setup_sftp_client)
 
-def upload_file(filename, db_conn, sftp):
+def ensure_sftp_path_exists(sftp, remote_path):
+    dirs = []
+    while remote_path:
+        remote_path, dir_name = os.path.split(remote_path)
+        if dir_name:
+            dirs.append(dir_name)
+        else:
+            if remote_path:
+                dirs.append(remote_path)
+            break
+    while dirs:
+        remote_path = os.path.join(remote_path, dirs.pop())
+        try:
+            sftp.stat(remote_path)
+        except FileNotFoundError:
+            sftp.mkdir(remote_path)
+
+def upload_file(filepath, db_conn, sftp):
     cursor = db_conn.cursor()
     now = datetime.datetime.now()
-    cursor.execute('SELECT status FROM files WHERE filename=?', (filename,))
+    cursor.execute('SELECT status FROM files WHERE filename=?', (filepath,))
     result = cursor.fetchone()
     if result and result[0] == 'uploaded':
-        logging.debug(f"Skipping {filename}, already uploaded.")
+        logging.debug(f"Skipping {filepath}, already uploaded.")
         return True
 
-    cursor.execute('UPDATE files SET status=?, last_modified=? WHERE filename=?', ('uploading', now, filename))
+    cursor.execute('UPDATE files SET status=?, last_modified=? WHERE filename=?', ('uploading', now, filepath))
     db_conn.commit()
     try:
-        sftp.put(os.path.join(SOURCE_FOLDER, filename), filename)
-        cursor.execute('UPDATE files SET status=?, last_modified=? WHERE filename=?', ('uploaded', now, filename))
+        remote_path = filepath
+        ensure_sftp_path_exists(sftp, os.path.dirname(remote_path))
+        sftp.put(os.path.join(SOURCE_FOLDER, filepath), remote_path)
+        cursor.execute('UPDATE files SET status=?, last_modified=? WHERE filename=?', ('uploaded', now, filepath))
         db_conn.commit()
-        logging.info(f"Uploaded {filename}")
+        logging.info(f"Uploaded {filepath}")
         return True
     except Exception as e:
-        logging.error(f"Failed to upload {filename}: {e}")
-        cursor.execute('UPDATE files SET status=?, last_modified=? WHERE filename=?', ('error', now, filename))
+        logging.error(f"Failed to upload {filepath}: {e}")
+        cursor.execute('UPDATE files SET status=?, last_modified=? WHERE filename=?', ('error', now, filepath))
         db_conn.commit()
         return False
 
-def retry_upload(filename, retry_count):
+def retry_upload(filepath, retry_count):
     db_conn = get_db_connection()
     sftp, client = sftp_connection_pool.submit(setup_sftp_client).result()
     try:
-        success = upload_file(filename, db_conn, sftp)
+        success = upload_file(filepath, db_conn, sftp)
         if not success:
             if retry_count < MAX_RETRIES:
-                logging.info(f"Retrying upload for {filename}, attempt {retry_count + 1}")
+                logging.info(f"Retrying upload for {filepath}, attempt {retry_count + 1}")
                 time.sleep(RETRY_DELAY_BASE ** retry_count)
-                retry_upload(filename, retry_count + 1)
+                retry_upload(filepath, retry_count + 1)
             else:
-                logging.error(f"Failed to upload {filename} after {MAX_RETRIES} retries.")
+                logging.error(f"Failed to upload {filepath} after {MAX_RETRIES} retries.")
     finally:
         db_conn.close()
         client.close()
 
 def worker(file_queue, stop_event):
-    while not stop_event.is_set():
+    while not stop_event.is_set() or not file_queue.empty():
         try:
-            filename = file_queue.get(timeout=1)
+            filepath = file_queue.get(timeout=1)
         except queue.Empty:
             continue
-        retry_upload(filename, 0)
+        retry_upload(filepath, 0)
         file_queue.task_done()
 
 def manual_requeue(start_time, end_time):
@@ -111,14 +140,14 @@ def manual_requeue(start_time, end_time):
     files = cursor.fetchall()
     now = datetime.datetime.now()
 
-    for (filename, last_modified) in files:
-        file_age = (now - datetime.datetime.strptime(last_modified, '%Y-%m-%d %H:%M:%S.%f')).total_seconds()
+    for (filepath, last_modified) in files:
+        file_age = (now - last_modified).total_seconds()
         if file_age >= MIN_FILE_AGE:
-            cursor.execute("UPDATE files SET status=? WHERE filename=?", ("pending", filename))
-            file_queue.put(filename)
-            logging.info(f"Re-queued file {filename} for re-upload.")
+            cursor.execute("UPDATE files SET status=? WHERE filename=?", ("pending", filepath))
+            file_queue.put(filepath)
+            logging.info(f"Re-queued file {filepath} for re-upload.")
         else:
-            logging.info(f"Skipped re-queueing {filename} because it was modified recently.")
+            logging.info(f"Skipped re-queueing {filepath} because it was modified recently.")
 
     db_conn.commit()
     db_conn.close()
@@ -139,28 +168,43 @@ def process_files():
     cursor.execute("SELECT filename, last_modified FROM files WHERE status IN ('pending', 'error')")
     files = cursor.fetchall()
 
-    for filename, last_modified in files:
-        file_age = (now - datetime.datetime.strptime(last_modified, '%Y-%m-%d %H:%M:%S.%f')).total_seconds()
+    for filepath, last_modified in files:
+        file_age = (now - last_modified).total_seconds()
         if file_age >= MIN_FILE_AGE:
-            file_queue.put(filename)
-            logging.info(f"Queued file {filename} for upload.")
+            file_queue.put(filepath)
+            logging.info(f"Queued file {filepath} for upload.")
         else:
-            logging.info(f"Skipped file {filename} because it was modified recently.")
+            logging.info(f"Skipped file {filepath} because it was modified recently.")
 
     db_conn.close()
 
 def run_daily_batch(stop_event):
-    while not stop_event.is_set():
-        logging.info("Starting daily batch process.")
-        process_files()
-        for _ in range(86400):  # Sleep for a day, checking for stop_event every second
-            if stop_event.is_set():
-                break
-            time.sleep(1)
+    logging.info("Starting daily batch process.")
+    process_files()
+    logging.info("File Processing completed.")
+
+def initial_file_scan():
+    db_conn = get_db_connection()
+    cursor = db_conn.cursor()
+
+    for root, dirs, files in os.walk(SOURCE_FOLDER):
+        for name in files:
+            filepath = os.path.relpath(os.path.join(root, name), SOURCE_FOLDER)
+            mtime = os.path.getmtime(os.path.join(root, name))
+            file_age = (datetime.datetime.now() - datetime.datetime.fromtimestamp(mtime)).total_seconds()
+            if file_age >= MIN_FILE_AGE:
+                cursor.execute('INSERT OR IGNORE INTO files (filename, status, last_modified) VALUES (?, ?, ?)',
+                               (filepath, 'pending', datetime.datetime.fromtimestamp(mtime)))
+                logging.info(f"File found and marked as pending: {filepath}")
+
+    db_conn.commit()
+    db_conn.close()
 
 def main():
     setup_database()
+    initial_file_scan()  # Initial file scan to detect existing files
 
+    global file_queue
     file_queue = queue.Queue()
     stop_event = threading.Event()
 
@@ -177,10 +221,15 @@ def main():
 
     try:
         while True:
+            if file_queue.empty():
+                logging.info("File queue is empty, stopping the script.")
+                stop_event.set()
+                break
             time.sleep(1)
     except KeyboardInterrupt:
         logging.info("Batch process interrupted by user.")
         stop_event.set()
+    finally:
         batch_thread.join()
         for _ in range(NUM_WORKERS):
             file_queue.put(None)
