@@ -33,7 +33,6 @@ PRIVATE_KEY_PATH = config.get('sftpUploader', 'PRIVATE_KEY_PATH')
 KNOWN_HOST_KEY_FINGERPRINT = config.get('sftpUploader', 'KNOWN_HOST_KEY_FINGERPRINT')
 SOURCE_FOLDER = config.get('sftpUploader', 'SOURCE_FOLDER')
 DB_PATH = config.get('sftpUploader', 'DB_PATH')
-DATA_RETENTION_DAYS = config.getint('sftpUploader', 'DATA_RETENTION_DAYS')
 LOG_FILE = config.get('sftpUploader', 'LOG_FILE')
 MAX_RETRIES = config.getint('sftpUploader', 'MAX_RETRIES')
 RETRY_DELAY_BASE = config.getint('sftpUploader', 'RETRY_DELAY_BASE')
@@ -178,57 +177,6 @@ def worker(file_queue, stop_event):
         except queue.Empty:
             continue
 
-def manual_requeue(start_time, end_time):
-    db_conn = get_db_connection()
-    cursor = db_conn.cursor()
-
-    cursor.execute("SELECT filename_hash, last_modified FROM files WHERE last_modified BETWEEN ? AND ?", (start_time, end_time))
-    files = cursor.fetchall()
-    now = datetime.datetime.now()
-
-    for (filename_hash, last_modified) in files:
-        file_age = (now - last_modified).total_seconds()
-        if file_age >= MIN_FILE_AGE:
-            cursor.execute("UPDATE files SET status=? WHERE filename_hash=?", (get_status_value('pending'), filename_hash))
-            file_queue.put(filename_hash)
-            logging.info(f"Re-queued file {filename_hash} for re-upload.")
-        else:
-            logging.info(f"Skipped re-queueing {filename_hash} because it was modified recently.")
-
-    db_conn.commit()
-    db_conn.close()
-
-def cleanup_old_files():
-    conn = get_db_connection()
-    c = conn.cursor()
-    cutoff_date = datetime.datetime.now() - datetime.timedelta(days=DATA_RETENTION_DAYS)
-    c.execute('DELETE FROM files WHERE last_modified < ?', (cutoff_date,))
-    conn.commit()
-    conn.close()
-    logging.info("Cleaned up old files based on retention policy.")
-
-def process_files():
-    db_conn = get_db_connection()
-    cursor = db_conn.cursor()
-    now = datetime.datetime.now()
-    cursor.execute("SELECT filename_hash, last_modified FROM files WHERE status IN (?, ?)", (get_status_value('pending'), get_status_value('error')))
-    files = cursor.fetchall()
-
-    for filename_hash, last_modified in files:
-        file_age = (now - last_modified).total_seconds()
-        if file_age >= MIN_FILE_AGE:
-            file_queue.put(filename_hash)
-            logging.info(f"Queued file {filename_hash} for upload.")
-        else:
-            logging.info(f"Skipped file {filename_hash} because it was modified recently.")
-
-    db_conn.close()
-
-def run_daily_batch(stop_event):
-    logging.info("Starting daily batch process.")
-    process_files()
-    logging.info("File Processing completed.")
-
 def initial_file_scan():
     db_conn = get_db_connection()
     cursor = db_conn.cursor()
@@ -277,11 +225,9 @@ class FileEventHandler(FileSystemEventHandler):
             file_queue.put(filepath)
 
 def main():
-    logging.info("Batch Upload process started.")
+    logging.info("SFTP Uploader Tool started.")
     setup_database()
     initial_file_scan()  # Initial file scan to detect existing files
-    logging.info("Local files scanned, cleaning up old files from the queue based on retention policy.")
-    cleanup_old_files()
 
     global file_queue
     file_queue = queue.Queue()
@@ -290,13 +236,6 @@ def main():
     threads = [threading.Thread(target=worker, args=(file_queue, stop_event)) for _ in range(NUM_WORKERS)]
     for t in threads:
         t.start()
-
-    # Run the initial batch process
-    process_files()
-
-    # Start the daily batch process
-    batch_thread = threading.Thread(target=run_daily_batch, args=(stop_event,))
-    batch_thread.start()
 
     # Setup file system event handler
     event_handler = FileEventHandler()
@@ -308,12 +247,11 @@ def main():
         while True:
             time.sleep(1)
     except KeyboardInterrupt:
-        logging.info("Batch process interrupted by user.")
+        logging.info("Process interrupted by user.")
         stop_event.set()
     finally:
         for _ in range(NUM_WORKERS):
             file_queue.put(None)  # Signal the worker threads to exit
-        batch_thread.join()
         for t in threads:
             t.join()
         observer.stop()
@@ -321,18 +259,4 @@ def main():
         logging.debug("SFTP connections closed.")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Manage file uploads to SFTP server.")
-    parser.add_argument("--requeue-start", metavar="START", type=str, help="Re-queue files modified starting from this date and time (e.g., '2023-01-01 00:00:00').")
-    parser.add_argument("--requeue-end", metavar="END", type=str, help="Re-queue files modified up to this date and time (e.g., '2023-01-01 23:59:59').")
-    args = parser.parse_args()
-
-    if args.requeue_start and args.requeue_end:
-        try:
-            start_time = datetime.datetime.strptime(args.requeue_start, "%Y-%m-%d %H:%M:%S")
-            end_time = datetime.datetime.strptime(args.requeue_end, "%Y-%m-%d %H:%M:%S")
-            manual_requeue(start_time, end_time)
-        except ValueError as e:
-            logging.error(f"Failed to parse requeue date and time: {e}")
-        sys.exit(0)
-    else:
-        main()
+    main()
