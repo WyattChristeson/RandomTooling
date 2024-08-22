@@ -1,0 +1,4 @@
+paramiko==3.4.0
+configparser==5.2.0
+logging
+subprocess
