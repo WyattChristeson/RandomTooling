@@ -153,7 +153,6 @@ def worker(file_queue, stop_event):
             file_queue.task_done()
         except queue.Empty:
             continue
-            
 
 def manual_requeue(start_time, end_time):
     db_conn = get_db_connection()
@@ -171,6 +170,29 @@ def manual_requeue(start_time, end_time):
             logging.info(f"Re-queued file {filepath} for re-upload.")
         else:
             logging.info(f"Skipped re-queueing {filepath} because it was modified recently.")
+
+    db_conn.commit()
+    db_conn.close()
+
+def manual_requeue_by_filename(filenames):
+    db_conn = get_db_connection()
+    cursor = db_conn.cursor()
+
+    for filename in filenames:
+        cursor.execute("SELECT filename, last_modified FROM files WHERE filename=?", (filename,))
+        file = cursor.fetchone()
+        if file:
+            filepath, last_modified = file
+            now = datetime.datetime.now()
+            file_age = (now - last_modified).total_seconds()
+            if file_age >= MIN_FILE_AGE:
+                cursor.execute("UPDATE files SET status=? WHERE filename=?", ("pending", filepath))
+                file_queue.put(filepath)
+                logging.info(f"Re-queued file {filepath} for re-upload.")
+            else:
+                logging.info(f"Skipped re-queueing {filepath} because it was modified recently.")
+        else:
+            logging.warning(f"File {filename} not found in the database.")
 
     db_conn.commit()
     db_conn.close()
@@ -267,6 +289,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Manage file uploads to SFTP server.")
     parser.add_argument("--requeue-start", metavar="START", type=str, help="Re-queue files modified starting from this date and time (e.g., '2023-01-01 00:00:00').")
     parser.add_argument("--requeue-end", metavar="END", type=str, help="Re-queue files modified up to this date and time (e.g., '2023-01-01 23:59:59').")
+    parser.add_argument("--requeue-filenames", metavar="FILENAMES", type=str, nargs='+', help="Re-queue files by their filenames.")
     args = parser.parse_args()
 
     if args.requeue_start and args.requeue_end:
@@ -276,6 +299,9 @@ if __name__ == "__main__":
             manual_requeue(start_time, end_time)
         except ValueError as e:
             logging.error(f"Failed to parse requeue date and time: {e}")
+        sys.exit(0)
+    elif args.requeue_filenames:
+        manual_requeue_by_filename(args.requeue_filenames)
         sys.exit(0)
     else:
         main()
